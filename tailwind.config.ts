@@ -12,8 +12,15 @@ export default {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      display: ['Cormorant Garamond', 'Georgia', 'serif'],
+      body: ['Libre Franklin', 'system-ui', 'sans-serif'],
+    },
     extend: {
       colors: {
+        "section-alt": "hsl(var(--section-alt))",
+        "warm-glow": "hsl(var(--warm-glow))",
+        "hero-bg": "hsl(var(--hero-bg))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
