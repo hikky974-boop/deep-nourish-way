@@ -38,11 +38,9 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-display text-4xl md:text-5xl lg:text-6xl font-light leading-[1.15] mb-7"
         >
-          Libérez ce qui vous retient
+          Libérez-vous de l'intérieur.
           <br />
-          à l'intérieur.
-          <br />
-          <span className="italic font-light text-primary">Le reste suit naturellement.</span>
+          <span className="italic font-light text-primary">Le poids suit naturellement.</span>
         </motion.h1>
 
         <motion.p
@@ -51,9 +49,9 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-body text-base md:text-lg text-muted-foreground max-w-lg mx-auto mb-10 leading-relaxed"
         >
-          Un programme guidé pour apaiser votre relation à la nourriture,
-          réduire les automatismes émotionnels et retrouver un équilibre durable
-          — sans régime, sans lutte permanente.
+          Un programme guidé associant hypnose et PNL pour apaiser votre relation
+          à la nourriture, réduire les automatismes émotionnels et retrouver un
+          équilibre durable — sans régime, sans lutte permanente.
         </motion.p>
 
         <motion.div
