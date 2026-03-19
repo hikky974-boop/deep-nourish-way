@@ -8,19 +8,20 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background image */}
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
+      {/* Background botanical — more visible & layered */}
       <div className="absolute inset-0">
         <img
           src={heroImage}
           alt=""
-          className="w-full h-full object-cover opacity-20"
+          className="w-full h-full object-cover opacity-45"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/25 to-background/95" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/55 via-transparent to-background/40" />
       </div>
 
-      {/* Subtle organic gradient */}
-      <div className="absolute inset-0 organic-bg" />
+      {/* Warm depth overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-warm-glow/15 via-transparent to-primary/[0.03]" />
 
       <div className="relative z-10 text-center px-6 max-w-2xl mx-auto">
         <motion.p
