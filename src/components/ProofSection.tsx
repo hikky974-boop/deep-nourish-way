@@ -10,17 +10,30 @@ const fadeUp = {
 };
 
 const ProofSection = () => (
-  <section className="section-padding bg-background">
+  <section className="section-padding bg-background organic-bg">
     <div className="section-narrow text-center">
-      <motion.h2
+      <motion.p
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         custom={0}
         variants={fadeUp}
-        className="text-display text-3xl md:text-4xl font-light text-foreground mb-6"
+        className="text-body text-xs tracking-[0.25em] uppercase text-muted-foreground mb-4"
       >
-        Pourquoi ça <span className="italic text-primary">fonctionne</span>
+        Comprendre l'approche
+      </motion.p>
+
+      <motion.h2
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        custom={1}
+        variants={fadeUp}
+        className="text-display text-3xl md:text-4xl font-light mb-6"
+      >
+        Pourquoi cette approche peut créer
+        <br />
+        <span className="italic text-primary">un vrai changement</span>
       </motion.h2>
 
       <div className="divider-leaf" />
@@ -29,26 +42,26 @@ const ProofSection = () => (
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        custom={1}
+        custom={2}
         variants={fadeUp}
-        className="text-body text-base md:text-lg text-muted-foreground space-y-6 text-left max-w-2xl mx-auto"
+        className="text-body text-base md:text-lg text-muted-foreground space-y-6 text-left max-w-xl mx-auto"
       >
         <p>
-          L'hypnose n'est pas de la magie. C'est un état naturel de concentration profonde,
-          que vous expérimentez déjà chaque jour — quand vous êtes absorbé·e par un film,
-          ou quand vous conduisez en « pilote automatique ».
+          L'hypnose n'est pas une perte de contrôle.
+          C'est un <strong className="font-medium text-foreground">état naturel de concentration intérieure</strong>.
         </p>
         <p>
-          Dans cet état, votre esprit conscient se met en retrait, et votre <strong className="font-medium text-foreground">subconscient</strong> devient
-          réceptif à de nouvelles suggestions. C'est là que vivent vos habitudes alimentaires.
+          Dans cet état, l'esprit devient plus réceptif à de nouvelles suggestions,
+          de nouveaux repères et de nouvelles associations.
         </p>
         <p>
-          En travaillant directement à ce niveau, on ne force rien. On <em>propose</em> de
-          nouveaux schémas. Votre esprit les adopte naturellement, sans effort de volonté.
+          La <strong className="font-medium text-foreground">PNL</strong> vient soutenir ce processus en aidant à modifier
+          certains liens automatiques entre émotions, pensées et comportements.
         </p>
         <p>
-          C'est pour cela que les changements sont durables : ils ne viennent pas d'une règle imposée,
-          mais d'une <strong className="font-medium text-foreground">transformation intérieure profonde</strong>.
+          Le but n'est pas de forcer.
+          <br />
+          Le but est de faire évoluer durablement ce qui se rejoue en arrière-plan.
         </p>
       </motion.div>
     </div>
