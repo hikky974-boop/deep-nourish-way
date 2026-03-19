@@ -11,14 +11,14 @@ const fadeUp = {
 
 const ExperienceSection = () => (
   <section className="section-padding bg-section-alt">
-    <div className="section-narrow text-center">
+    <div className="section-medium text-center">
       <motion.h2
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         custom={0}
         variants={fadeUp}
-        className="text-display text-3xl md:text-4xl font-light text-foreground mb-12"
+        className="text-display text-3xl md:text-4xl font-light mb-14"
       >
         Simple. Doux. <span className="italic text-primary">À votre rythme.</span>
       </motion.h2>
@@ -33,7 +33,7 @@ const ExperienceSection = () => (
           {
             num: "02",
             title: "À votre rythme",
-            desc: "Pas de calendrier imposé. Vous avancez quand vous êtes prêt·e, sans pression.",
+            desc: "Pas de calendrier imposé. Vous avancez quand vous êtes prête, sans pression.",
           },
           {
             num: "03",
@@ -50,10 +50,10 @@ const ExperienceSection = () => (
             variants={fadeUp}
             className="text-left"
           >
-            <span className="text-display text-4xl font-light text-primary/30 block mb-2">
+            <span className="text-display text-4xl font-light text-primary/25 block mb-3">
               {item.num}
             </span>
-            <h3 className="text-display text-lg font-medium text-foreground mb-2">
+            <h3 className="text-display text-lg font-medium mb-2">
               {item.title}
             </h3>
             <p className="text-body text-sm text-muted-foreground">
