@@ -73,7 +73,7 @@ const HeroSection = () => {
           transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
           className="text-body text-xs tracking-[0.3em] uppercase text-muted-foreground mb-8"
         >
-          Programme de reprogrammation neuro-émotionnelle
+          Programme d'hypnose
         </motion.p>
 
         <motion.h1
