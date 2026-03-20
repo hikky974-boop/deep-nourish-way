@@ -13,13 +13,13 @@ const fadeUp = {
 const items = [
   {
     icon: Headphones,
-    title: "Audios guidés de reprogrammation",
-    desc: "Des séances enregistrées par un professionnel, à écouter dans le calme de votre quotidien.",
+     title: "Audios d'hypnose guidée",
+     desc: "Des séances enregistrées par un professionnel, à écouter dans le calme de votre quotidien.",
   },
   {
     icon: Lightbulb,
-    title: "Exercices de reprogrammation neuro-émotionnelle",
-    desc: "Des outils concrets pour modifier vos conditionnements et réponses automatiques.",
+     title: "Exercices de transformation intérieure",
+     desc: "Des outils concrets pour modifier vos conditionnements et réponses automatiques.",
   },
   {
     icon: Route,

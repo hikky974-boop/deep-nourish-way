@@ -13,12 +13,12 @@ const fadeUp = {
 
 const faqs = [
   {
-    q: "Est-ce que la reprogrammation neuro-émotionnelle est sans danger ?",
-    a: "Absolument. La reprogrammation neuro-émotionnelle repose sur un état naturel de concentration. Vous restez consciente et en contrôle à tout moment. Ce n'est ni du sommeil, ni une perte de contrôle.",
-  },
-  {
-    q: "Comment fonctionne la reprogrammation neuro-émotionnelle ?",
-    a: "Elle combine des techniques avancées pour identifier et modifier les schémas automatiques — les associations entre émotions, pensées et comportements. Elle agit en profondeur sur les mécanismes intérieurs.",
+     q: "Est-ce que l'hypnose est sans danger ?",
+     a: "Absolument. L'hypnose repose sur un état naturel de concentration. Vous restez consciente et en contrôle à tout moment. Ce n'est ni du sommeil, ni une perte de contrôle.",
+   },
+   {
+     q: "Comment fonctionne l'hypnose ?",
+     a: "Elle combine des techniques avancées pour identifier et modifier les schémas automatiques — les associations entre émotions, pensées et comportements. Elle agit en profondeur sur les mécanismes intérieurs.",
   },
   {
     q: "Est-ce que je dois suivre un régime en parallèle ?",

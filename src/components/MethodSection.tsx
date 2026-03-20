@@ -47,13 +47,13 @@ const MethodSection = () => (
         className="text-body text-base md:text-lg text-muted-foreground space-y-6 text-left max-w-2xl mx-auto mt-10"
       >
         <p>
-          Ce programme utilise la <strong className="font-medium text-foreground">reprogrammation neuro-émotionnelle</strong> pour agir en profondeur sur les automatismes, les associations émotionnelles et les schémas intérieurs liés à l'alimentation.
-        </p>
-        <p>
-          Elle permet d'accéder à un état de concentration intérieure favorable au changement.
-        </p>
-        <p>
-          Elle aide à modifier certains conditionnements, perceptions et réponses automatiques.
+           Ce programme utilise l'<strong className="font-medium text-foreground">hypnose guidée</strong> pour agir en profondeur sur les automatismes, les associations émotionnelles et les schémas intérieurs liés à l'alimentation.
+         </p>
+         <p>
+           L'hypnose permet d'accéder à un état de concentration intérieure favorable au changement.
+         </p>
+         <p>
+           Elle aide à modifier certains conditionnements, perceptions et réponses automatiques.
         </p>
         <p className="text-foreground font-normal italic font-display text-xl text-center pt-4 leading-relaxed">
           L'objectif n'est pas de lutter davantage,
