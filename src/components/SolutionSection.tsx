@@ -46,7 +46,7 @@ const SolutionSection = () => (
         className="text-body text-base md:text-lg text-muted-foreground space-y-6 text-left max-w-xl mx-auto"
       >
         <p>
-          Ce programme utilise la <strong className="font-medium text-foreground">reprogrammation neuro-émotionnelle</strong> pour intervenir en profondeur sur votre rapport à l'alimentation.
+          Ce programme utilise <strong className="font-medium text-foreground">l'hypnose guidée</strong> et la <strong className="font-medium text-foreground">PNL</strong> pour intervenir en profondeur sur votre rapport à l'alimentation.
         </p>
         <p>
           Il ne s'agit pas de vous contraindre davantage.
