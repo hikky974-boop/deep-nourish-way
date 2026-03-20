@@ -35,33 +35,33 @@ const HeroSection = () => {
       {/* Fine horizontal line accent */}
       <div className="absolute top-[18%] left-[8%] right-[8%] h-px bg-border/30 pointer-events-none hidden lg:block" />
 
-      {/* Botanical illustration — right side, partially cropped */}
+      {/* Botanical illustration — right side, large and visible */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.4, delay: 0.3 }}
-        className="absolute right-[-60px] md:right-[-30px] lg:right-[2%] top-[18%] md:top-[12%] w-[280px] md:w-[380px] lg:w-[440px] pointer-events-none z-[1]"
+        className="absolute right-[-40px] md:right-[-10px] lg:right-[0%] top-[8%] md:top-[5%] w-[360px] md:w-[500px] lg:w-[600px] pointer-events-none z-[1]"
       >
         <img
           src={heroBotanical}
           alt=""
-          className="w-full h-auto opacity-[0.18] md:opacity-[0.22] rotate-[8deg]"
-          style={{ filter: "saturate(0.7) contrast(0.9)" }}
+          className="w-full h-auto opacity-[0.28] md:opacity-[0.32] rotate-[8deg]"
+          style={{ filter: "saturate(0.8) contrast(0.92)" }}
         />
       </motion.div>
 
-      {/* Mirror botanical — left side, smaller and more faded */}
+      {/* Mirror botanical — left side */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.4, delay: 0.5 }}
-        className="absolute left-[-80px] md:left-[-40px] bottom-[10%] md:bottom-[8%] w-[180px] md:w-[240px] lg:w-[280px] pointer-events-none z-[1] hidden md:block"
+        className="absolute left-[-60px] md:left-[-20px] bottom-[5%] md:bottom-[3%] w-[240px] md:w-[340px] lg:w-[400px] pointer-events-none z-[1] hidden md:block"
       >
         <img
           src={heroBotanical}
           alt=""
-          className="w-full h-auto opacity-[0.10] md:opacity-[0.13] -rotate-[20deg] -scale-x-100"
-          style={{ filter: "saturate(0.5) contrast(0.85)" }}
+          className="w-full h-auto opacity-[0.15] md:opacity-[0.20] -rotate-[20deg] -scale-x-100"
+          style={{ filter: "saturate(0.6) contrast(0.88)" }}
         />
       </motion.div>
 
