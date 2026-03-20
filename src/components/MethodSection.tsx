@@ -9,9 +9,9 @@ const fadeUp = {
   }),
 };
 
-const ProofSection = () => (
+const MethodSection = () => (
   <section className="section-padding bg-background organic-bg">
-    <div className="section-narrow text-center">
+    <div className="section-medium text-center">
       <motion.p
         initial="hidden"
         whileInView="visible"
@@ -20,7 +20,7 @@ const ProofSection = () => (
         variants={fadeUp}
         className="text-body text-xs tracking-[0.25em] uppercase text-muted-foreground mb-4"
       >
-        Comprendre l'approche
+        La méthode
       </motion.p>
 
       <motion.h2
@@ -31,9 +31,9 @@ const ProofSection = () => (
         variants={fadeUp}
         className="text-display text-3xl md:text-4xl font-light mb-6"
       >
-        Pourquoi cette approche peut créer
+        Une approche douce, profonde
         <br />
-        <span className="italic text-primary">un vrai changement</span>
+        <span className="italic text-primary">et structurée</span>
       </motion.h2>
 
       <div className="divider-leaf" />
@@ -44,28 +44,27 @@ const ProofSection = () => (
         viewport={{ once: true }}
         custom={2}
         variants={fadeUp}
-        className="text-body text-base md:text-lg text-muted-foreground space-y-6 text-left max-w-xl mx-auto"
+        className="text-body text-base md:text-lg text-muted-foreground space-y-6 text-left max-w-2xl mx-auto mt-10"
       >
         <p>
-          La reprogrammation neuro-émotionnelle n'est pas une perte de contrôle.
-          C'est un <strong className="font-medium text-foreground">état naturel de concentration intérieure</strong>.
+          Ce programme utilise la <strong className="font-medium text-foreground">reprogrammation neuro-émotionnelle</strong> pour agir en profondeur sur les automatismes, les associations émotionnelles et les schémas intérieurs liés à l'alimentation.
         </p>
         <p>
-          Dans cet état, l'esprit devient plus réceptif à de nouvelles suggestions,
-          de nouveaux repères et de nouvelles associations.
+          Elle permet d'accéder à un état de concentration intérieure favorable au changement.
         </p>
         <p>
-          Ce processus aide à modifier
-          certains liens automatiques entre émotions, pensées et comportements.
+          Elle aide à modifier certains conditionnements, perceptions et réponses automatiques.
         </p>
-        <p>
-          Le but n'est pas de forcer.
+        <p className="text-foreground font-normal italic font-display text-xl text-center pt-4 leading-relaxed">
+          L'objectif n'est pas de lutter davantage,
           <br />
-          Le but est de faire évoluer durablement ce qui se rejoue en arrière-plan.
+          mais de transformer progressivement ce qui,
+          <br />
+          en vous, pilote encore malgré vous.
         </p>
       </motion.div>
     </div>
   </section>
 );
 
-export default ProofSection;
+export default MethodSection;
