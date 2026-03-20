@@ -18,8 +18,8 @@ const items = [
   },
   {
     icon: Lightbulb,
-    title: "Exercices de reprogrammation neuro-émotionnelle",
-    desc: "Des outils concrets pour modifier vos conditionnements et réponses automatiques.",
+     title: "Exercices de transformation intérieure",
+     desc: "Des outils concrets pour modifier vos conditionnements et réponses automatiques.",
   },
   {
     icon: Route,

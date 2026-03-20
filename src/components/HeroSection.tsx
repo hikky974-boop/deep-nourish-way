@@ -93,9 +93,9 @@ const HeroSection = () => {
           transition={{ duration: 0.7, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
           className="text-body text-base md:text-lg text-muted-foreground max-w-lg mx-auto mb-10 leading-relaxed"
         >
-          Un programme guidé de reprogrammation neuro-émotionnelle pour apaiser votre relation
-          à la nourriture, réduire les automatismes émotionnels et retrouver un
-          équilibre durable — sans régime, sans lutte permanente.
+           Un programme guidé d'hypnose pour apaiser votre relation
+           à la nourriture, réduire les automatismes émotionnels et retrouver un
+           équilibre durable — sans régime, sans lutte permanente.
         </motion.p>
 
         <motion.div

@@ -47,16 +47,16 @@ const ProofSection = () => (
         className="text-body text-base md:text-lg text-muted-foreground space-y-6 text-left max-w-xl mx-auto"
       >
         <p>
-          La reprogrammation neuro-émotionnelle n'est pas une perte de contrôle.
-          C'est un <strong className="font-medium text-foreground">état naturel de concentration intérieure</strong>.
-        </p>
-        <p>
-          Dans cet état, l'esprit devient plus réceptif à de nouvelles suggestions,
-          de nouveaux repères et de nouvelles associations.
-        </p>
-        <p>
-          Ce processus aide à modifier
-          certains liens automatiques entre émotions, pensées et comportements.
+           L'hypnose n'est pas une perte de contrôle.
+           C'est un <strong className="font-medium text-foreground">état naturel de concentration intérieure</strong>.
+         </p>
+         <p>
+           Dans cet état, l'esprit devient plus réceptif à de nouvelles suggestions,
+           de nouveaux repères et de nouvelles associations.
+         </p>
+         <p>
+           Ce processus aide à modifier
+           certains liens automatiques entre émotions, pensées et comportements.
         </p>
         <p>
           Le but n'est pas de forcer.
