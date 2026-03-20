@@ -28,7 +28,7 @@ const StickyHeader = () => {
         >
           <div className="max-w-5xl mx-auto flex items-center justify-between px-6 py-3">
             <p className="text-display text-lg font-medium tracking-tight">
-              Hypnose & PNL
+              Reprogrammation neuro-émotionnelle
             </p>
             <Button variant="hero" size="sm" onClick={scrollToCta} className="text-sm px-6 h-9">
               Commencer
