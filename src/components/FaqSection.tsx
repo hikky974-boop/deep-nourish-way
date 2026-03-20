@@ -13,12 +13,12 @@ const fadeUp = {
 
 const faqs = [
   {
-    q: "Est-ce que l'hypnose est sans danger ?",
-    a: "Absolument. L'hypnose est un état naturel de concentration. Vous restez consciente et en contrôle à tout moment. Ce n'est ni du sommeil, ni une perte de contrôle.",
+    q: "Est-ce que la reprogrammation neuro-émotionnelle est sans danger ?",
+    a: "Absolument. La reprogrammation neuro-émotionnelle repose sur un état naturel de concentration. Vous restez consciente et en contrôle à tout moment. Ce n'est ni du sommeil, ni une perte de contrôle.",
   },
   {
-    q: "En quoi la PNL complète-t-elle l'hypnose ?",
-    a: "La PNL apporte des outils complémentaires pour identifier et modifier les schémas automatiques — les associations entre émotions, pensées et comportements. Elle renforce et prolonge le travail fait en hypnose.",
+    q: "Comment fonctionne la reprogrammation neuro-émotionnelle ?",
+    a: "Elle combine des techniques avancées pour identifier et modifier les schémas automatiques — les associations entre émotions, pensées et comportements. Elle agit en profondeur sur les mécanismes intérieurs.",
   },
   {
     q: "Est-ce que je dois suivre un régime en parallèle ?",
