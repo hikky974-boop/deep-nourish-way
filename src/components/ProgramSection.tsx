@@ -13,8 +13,8 @@ const fadeUp = {
 const items = [
   {
     icon: Headphones,
-    title: "Audios guidés de reprogrammation",
-    desc: "Des séances enregistrées par un professionnel, à écouter dans le calme de votre quotidien.",
+     title: "Audios d'hypnose guidée",
+     desc: "Des séances enregistrées par un professionnel, à écouter dans le calme de votre quotidien.",
   },
   {
     icon: Lightbulb,
