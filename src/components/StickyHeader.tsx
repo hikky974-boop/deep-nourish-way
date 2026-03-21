@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import logoLunea from "@/assets/logo-lunea.png";
 
 const StickyHeader = () => {
   const [show, setShow] = useState(false);
