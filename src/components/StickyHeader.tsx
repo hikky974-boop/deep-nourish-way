@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import logoLunea from "@/assets/logo-lunea.png";
 
 const StickyHeader = () => {
   const [show, setShow] = useState(false);
@@ -27,9 +28,7 @@ const StickyHeader = () => {
           style={{ backgroundColor: "hsl(37 27% 95% / 0.92)" }}
         >
           <div className="max-w-5xl mx-auto flex items-center justify-between px-6 py-3">
-            <p className="text-display text-[30px] lg:text-[34px] font-medium tracking-tight text-heading">
-              Lunéa
-            </p>
+            <img src={logoLunea} alt="Lunéa" className="h-10 lg:h-12 w-auto object-contain" />
             <Button variant="hero" size="sm" onClick={scrollToCta} className="text-sm px-6 h-9">
               Commencer
             </Button>
