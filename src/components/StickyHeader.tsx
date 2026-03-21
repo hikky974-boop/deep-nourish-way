@@ -28,7 +28,7 @@ const StickyHeader = () => {
           style={{ backgroundColor: "hsl(37 27% 95% / 0.92)" }}
         >
           <div className="max-w-5xl mx-auto flex items-center justify-between px-6 py-3">
-            <img src={logoLunea} alt="Lunéa" className="h-10 lg:h-12 w-auto object-contain" />
+            <img src={logoLunea} alt="Lunéa" className="h-14 lg:h-16 w-auto object-contain" />
             <Button variant="hero" size="sm" onClick={scrollToCta} className="text-sm px-6 h-9">
               Commencer
             </Button>
