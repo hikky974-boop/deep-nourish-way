@@ -1,11 +1,9 @@
 import { motion } from "framer-motion";
+import { Leaf } from "lucide-react";
 import leafDecoration from "@/assets/leaf-decoration.png";
 
 const LeafIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7 text-primary">
-    <path d="M11 20A7 7 0 0 1 4 13c0-5 4-9 11-9 1 0 2 .1 2 .1S17 12 12 17c-2 2-5 3-5 3" />
-    <path d="M4 20c4-4 8-7 13-9" />
-  </svg>
+  <Leaf className="w-7 h-7 text-primary" strokeWidth={1.4} />
 );
 
 const LotusIcon = () => (
