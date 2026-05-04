@@ -1,20 +1,17 @@
 import { motion } from "framer-motion";
-import { Leaf, Flower2, Clock } from "lucide-react";
+import pillarIcon from "@/assets/pillar-icon.png";
 import leafDecoration from "@/assets/leaf-decoration.png";
 
 const pillars = [
   {
-    icon: Leaf,
     title: "Sans brutalité",
     desc: "Une approche douce et respectueuse pour transformer votre relation à l'alimentation durablement.",
   },
   {
-    icon: Flower2,
     title: "Approche intérieure",
     desc: "Nous travaillons sur vos émotions, vos croyances et vos déclencheurs pour un changement en profondeur.",
   },
   {
-    icon: Clock,
     title: "À votre rythme",
     desc: "Un programme 100% en ligne, à suivre quand vous voulez, où que vous soyez.",
   },
@@ -28,16 +25,16 @@ const PillarsSection = () => (
         src={leafDecoration}
         alt=""
         aria-hidden="true"
-        className="hidden md:block absolute -left-4 lg:-left-12 top-1/2 -translate-y-1/2 w-20 lg:w-28 opacity-80 pointer-events-none select-none"
+        className="hidden md:block absolute -left-2 lg:-left-8 top-1/2 -translate-y-1/2 h-[120px] w-auto opacity-90 pointer-events-none select-none"
       />
       <img
         src={leafDecoration}
         alt=""
         aria-hidden="true"
-        className="hidden md:block absolute -right-4 lg:-right-12 top-1/2 -translate-y-1/2 w-20 lg:w-28 opacity-80 pointer-events-none select-none scale-x-[-1]"
+        className="hidden md:block absolute -right-2 lg:-right-8 top-1/2 -translate-y-1/2 h-[120px] w-auto opacity-90 pointer-events-none select-none scale-x-[-1]"
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 lg:gap-14 px-0 md:px-16 lg:px-24">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 lg:gap-14 px-0 md:px-20 lg:px-32">
         {pillars.map((p, i) => (
           <motion.div
             key={p.title}
@@ -45,19 +42,20 @@ const PillarsSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: i * 0.1 }}
-            className="flex items-start gap-4"
+            className="flex flex-col items-center text-center"
           >
-            <div className="shrink-0 w-14 h-14 rounded-full bg-secondary/70 flex items-center justify-center">
-              <p.icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
-            </div>
-            <div>
-              <h3 className="text-display text-xl md:text-2xl font-semibold text-foreground mb-2">
-                {p.title}
-              </h3>
-              <p className="text-body text-sm text-muted-foreground leading-relaxed">
-                {p.desc}
-              </p>
-            </div>
+            <img
+              src={pillarIcon}
+              alt=""
+              aria-hidden="true"
+              className="w-[70px] h-[70px] mb-5 select-none"
+            />
+            <h3 className="text-display text-xl md:text-2xl font-semibold text-foreground mb-2">
+              {p.title}
+            </h3>
+            <p className="text-body text-sm text-muted-foreground leading-relaxed max-w-xs">
+              {p.desc}
+            </p>
           </motion.div>
         ))}
       </div>
