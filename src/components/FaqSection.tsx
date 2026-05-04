@@ -6,72 +6,54 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-};
-
 const faqs = [
   {
-    q: "Est-ce que l'hypnose est sans danger ?",
-    a: "Absolument. L'hypnose est un état naturel de concentration. Vous restez consciente et en contrôle à tout moment. Ce n'est ni du sommeil, ni une perte de contrôle.",
+    q: "À qui s'adresse Lunéa ?",
+    a: "Lunéa s'adresse à toutes les femmes qui souhaitent transformer leur relation à la nourriture en profondeur, sans régime ni privation. Le programme est particulièrement adapté à celles qui mangent sous l'effet des émotions ou des automatismes.",
   },
   {
-    q: "En quoi la PNL complète-t-elle l'hypnose ?",
-    a: "La PNL apporte des outils complémentaires pour identifier et modifier les schémas automatiques — les associations entre émotions, pensées et comportements. Elle renforce et prolonge le travail fait en hypnose.",
+    q: "Combien de temps dure le programme ?",
+    a: "Le parcours s'étend sur 33 jours, avec des contenus quotidiens courts (15 à 20 minutes). Vous gardez ensuite un accès illimité à l'ensemble des outils et audios.",
   },
   {
-    q: "Est-ce que je dois suivre un régime en parallèle ?",
-    a: "Non. Le programme ne repose sur aucune restriction alimentaire. L'objectif est de vous libérer de cette logique de contrôle pour retrouver une alimentation intuitive et naturelle.",
+    q: "Ai-je besoin d'expérience en hypnose ?",
+    a: "Aucune expérience préalable n'est nécessaire. Les audios d'hypnose et de PNL sont guidés étape par étape par une experte certifiée. Il vous suffit de vous installer confortablement et de vous laisser porter.",
   },
   {
-    q: "Combien de temps faut-il pour ressentir des effets ?",
-    a: "Certaines personnes ressentent un apaisement dès les premières séances. Les changements profonds s'installent progressivement, généralement en quelques semaines de pratique régulière.",
-  },
-  {
-    q: "Est-ce que cela fonctionne si j'ai déjà essayé beaucoup de choses ?",
-    a: "Oui. Ce programme agit différemment des approches classiques. Il ne travaille pas sur le contrôle mais sur les mécanismes intérieurs. C'est souvent ce qui fait la différence pour les personnes qui ont déjà tout essayé.",
+    q: "Est-ce accessible sur téléphone ?",
+    a: "Oui, le programme est 100% en ligne et conçu pour fonctionner parfaitement sur smartphone, tablette et ordinateur. Vous pouvez le suivre où vous voulez, quand vous voulez.",
   },
 ];
 
 const FaqSection = () => (
-  <section className="section-padding bg-section-alt">
-    <div className="section-medium">
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
+  <section id="faq" className="px-6 py-16 md:py-24 bg-section-alt">
+    <div className="max-w-3xl mx-auto">
+      <motion.h2
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        variants={fadeUp}
-        className="text-center mb-12"
+        transition={{ duration: 0.7 }}
+        className="text-display text-3xl md:text-4xl font-light text-center mb-12"
       >
-        <h2 className="text-display text-3xl md:text-4xl font-light">
-          Questions <span className="italic text-primary">fréquentes</span>
-        </h2>
-      </motion.div>
+        Questions <span className="italic text-primary">fréquentes</span>
+      </motion.h2>
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeUp}
-      >
-        <Accordion type="single" collapsible className="space-y-3">
-          {faqs.map((faq, i) => (
-            <AccordionItem
-              key={i}
-              value={`faq-${i}`}
-              className="bg-card rounded-2xl px-6 md:px-8 border-none transition-shadow duration-300 hover:shadow-sm"
-            >
-              <AccordionTrigger className="text-display text-base md:text-lg font-medium hover:no-underline py-6">
-                {faq.q}
-              </AccordionTrigger>
-              <AccordionContent className="text-body text-sm md:text-base text-muted-foreground pb-6 leading-relaxed">
-                {faq.a}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
-      </motion.div>
+      <Accordion type="single" collapsible className="space-y-3">
+        {faqs.map((f, i) => (
+          <AccordionItem
+            key={i}
+            value={`item-${i}`}
+            className="bg-card rounded-2xl border border-border/50 px-6 data-[state=open]:shadow-sm"
+          >
+            <AccordionTrigger className="text-display text-base md:text-lg font-medium hover:no-underline py-5 text-left">
+              {f.q}
+            </AccordionTrigger>
+            <AccordionContent className="text-body text-sm text-muted-foreground leading-relaxed pb-5">
+              {f.a}
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
     </div>
   </section>
 );

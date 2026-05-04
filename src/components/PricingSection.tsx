@@ -1,86 +1,87 @@
 import { motion } from "framer-motion";
+import { Check, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import summaryVase from "@/assets/summary-vase.jpg";
+
+const points = [
+  "Accès immédiat",
+  "33 jours de transformation complète",
+  "Un accompagnement bienveillant et intelligent",
+  "Des outils concrets, testés et validés",
+];
 
 const PricingSection = () => (
-  <section id="pricing" className="section-padding bg-background">
-    <div className="section-medium text-center">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.7 }}
-      >
-        <h2 className="text-display text-3xl md:text-4xl font-light mb-4">
-          Rejoindre <span className="italic text-primary">Lunéa</span> aujourd'hui
-        </h2>
-        <p className="text-body text-base md:text-lg text-muted-foreground max-w-lg mx-auto mb-12 leading-relaxed">
-          Pour le lancement, Lunéa est exceptionnellement proposé à un tarif préférentiel réservé aux premières personnes qui rejoignent le programme.
-        </p>
-      </motion.div>
+  <section id="pricing" className="px-6 py-16 md:py-24 bg-background">
+    <motion.div
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      className="max-w-6xl mx-auto bg-warm-glow/60 rounded-3xl border border-border/50 p-8 md:p-14 organic-bg"
+    >
+      <div className="grid md:grid-cols-[1fr,1.2fr] gap-10 md:gap-14 items-center">
+        {/* Left */}
+        <div className="text-center md:text-left">
+          <img
+            src={summaryVase}
+            alt=""
+            loading="lazy"
+            width={400}
+            height={400}
+            className="w-32 md:w-40 h-auto mb-6 mx-auto md:mx-0 mix-blend-multiply"
+          />
+          <p className="text-display text-2xl md:text-3xl italic text-primary font-light mb-3">
+            En résumé
+          </p>
+          <p className="text-body text-base text-muted-foreground mb-4 leading-relaxed">
+            Tu n'achètes pas un programme de perte de poids.
+          </p>
+          <p className="text-display text-xl md:text-2xl font-light leading-snug">
+            Tu investis dans une nouvelle relation avec toi-même.
+          </p>
+        </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 24 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.7, delay: 0.15 }}
-        className="max-w-xl mx-auto"
-      >
-        <div className="bg-card rounded-3xl border border-border/60 shadow-sm p-10 md:p-14 relative overflow-hidden">
-          {/* Subtle organic bg */}
-          <div className="absolute inset-0 organic-bg pointer-events-none" />
+        {/* Right */}
+        <div>
+          <ul className="space-y-3 mb-8">
+            {points.map((p) => (
+              <li key={p} className="flex items-start gap-3">
+                <span className="shrink-0 w-5 h-5 rounded-full bg-primary/15 flex items-center justify-center mt-0.5">
+                  <Check className="w-3 h-3 text-primary" strokeWidth={3} />
+                </span>
+                <span className="text-body text-base text-foreground/85">{p}</span>
+              </li>
+            ))}
+          </ul>
 
-          <div className="relative z-10">
-            <Badge
-              variant="secondary"
-              className="mb-6 text-[10px] tracking-[0.2em] uppercase font-body bg-accent/60 text-accent-foreground border-none px-4 py-1.5"
-            >
-              Offre de lancement
-            </Badge>
-
-            <p className="text-display text-2xl md:text-3xl font-light mb-8 tracking-tight">
-              Lunéa
+          <div className="bg-card rounded-2xl p-6 md:p-8 border border-border/50">
+            <p className="text-body text-[10px] tracking-[0.25em] uppercase text-primary mb-3">
+              Tarif de lancement
             </p>
-
-            {/* Price block */}
-            <div className="mb-6">
-              <p className="text-body text-lg text-muted-foreground line-through decoration-muted-foreground/50 mb-1">
-                97&nbsp;€ TTC
-              </p>
-              <p className="text-display text-5xl md:text-6xl font-light tracking-tight text-primary leading-none">
+            <div className="flex items-baseline gap-3 mb-5">
+              <span className="text-display text-5xl md:text-6xl font-light text-primary leading-none tracking-tight">
                 47,90&nbsp;€
-                <span className="text-lg md:text-xl font-body font-normal text-muted-foreground ml-1.5">TTC</span>
-              </p>
+              </span>
+              <span className="text-body text-lg text-muted-foreground line-through decoration-muted-foreground/50">
+                99&nbsp;€
+              </span>
             </div>
 
-            <p className="text-body text-xs tracking-wide text-primary/80 uppercase mb-8">
-              Prix de lancement réservé aux premières personnes
-            </p>
-
-            <div className="divider-leaf" />
-
-            <p className="text-body text-sm text-muted-foreground max-w-sm mx-auto mb-8 leading-relaxed">
-              Un tarif de lancement exceptionnel pour rejoindre Lunéa dès maintenant, avec un accès complet&nbsp;: hypnose guidée, outils de PNL, audios, exercices et parcours structuré.
-            </p>
-
-            <Button variant="hero" size="xl" className="mb-4 w-full sm:w-auto">
-              Commencer Lunéa
+            <Button variant="hero" size="lg" className="w-full mb-3">
+              Je commence maintenant
             </Button>
 
-            <p className="text-body text-[11px] text-muted-foreground/60 tracking-wide mb-8">
-              Création de votre accès puis redirection vers le paiement sécurisé
+            <p className="flex items-center justify-center gap-1.5 text-body text-xs text-muted-foreground">
+              <Lock className="w-3 h-3" /> Paiement sécurisé
             </p>
-
-            <div className="border-t border-border/40 pt-6">
-              <p className="text-body text-xs text-muted-foreground/70 leading-relaxed">
-                Vous profitez ici du tarif d'ouverture.<br />
-                Le tarif normal du programme est de 97&nbsp;€ TTC.
-              </p>
-            </div>
           </div>
+
+          <p className="text-body text-xs text-muted-foreground/80 mt-4 text-center md:text-left">
+            Tarif réservé aux premières personnes qui rejoignent le programme.
+          </p>
         </div>
-      </motion.div>
-    </div>
+      </div>
+    </motion.div>
   </section>
 );
 

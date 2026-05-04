@@ -1,20 +1,12 @@
 import { motion } from "framer-motion";
 import { Check, X } from "lucide-react";
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: i * 0.1, duration: 0.6 },
-  }),
-};
-
 const forYou = [
   "Vous mangez sous l'effet des émotions ou des automatismes",
   "Vous êtes fatiguée des approches superficielles",
   "Vous cherchez une transformation douce mais profonde",
   "Vous voulez un chemin plus respectueux et plus durable",
+  "Vous avez tout essayé et rien n'a duré",
 ];
 
 const notForYou = [
@@ -24,62 +16,51 @@ const notForYou = [
 ];
 
 const ForWhoSection = () => (
-  <section className="section-padding bg-section-alt">
-    <div className="section-medium">
-      <motion.h2
-        initial="hidden"
-        whileInView="visible"
+  <section className="px-6 py-16 md:py-24 bg-background">
+    <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6">
+      <motion.div
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        custom={0}
-        variants={fadeUp}
-        className="text-display text-3xl md:text-4xl font-light text-center mb-14"
+        transition={{ duration: 0.6 }}
+        className="bg-card rounded-2xl p-8 md:p-10 border border-border/50"
       >
-        Ce programme est fait <span className="italic text-primary">pour vous si…</span>
-      </motion.h2>
+        <h3 className="text-display text-xl md:text-2xl font-light mb-6 italic text-center">
+          Ce programme est fait pour vous si…
+        </h3>
+        <ul className="space-y-4">
+          {forYou.map((p) => (
+            <li key={p} className="flex items-start gap-3">
+              <span className="shrink-0 w-5 h-5 rounded-full bg-primary/15 flex items-center justify-center mt-0.5">
+                <Check className="w-3 h-3 text-primary" strokeWidth={3} />
+              </span>
+              <span className="text-body text-sm text-foreground/80">{p}</span>
+            </li>
+          ))}
+        </ul>
+      </motion.div>
 
-      <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          custom={1}
-          variants={fadeUp}
-          className="bg-card rounded-2xl p-8 md:p-10"
-        >
-          <h3 className="text-display text-xl font-medium mb-6">
-            Pour vous si…
-          </h3>
-          <ul className="space-y-4">
-            {forYou.map((item, i) => (
-              <li key={i} className="flex items-start gap-3">
-                <Check className="w-4 h-4 text-primary mt-1 flex-shrink-0" strokeWidth={2} />
-                <span className="text-body text-sm text-muted-foreground">{item}</span>
-              </li>
-            ))}
-          </ul>
-        </motion.div>
-
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          custom={2}
-          variants={fadeUp}
-          className="bg-card rounded-2xl p-8 md:p-10"
-        >
-          <h3 className="text-display text-xl font-medium mb-6">
-            Pas pour vous si…
-          </h3>
-          <ul className="space-y-4">
-            {notForYou.map((item, i) => (
-              <li key={i} className="flex items-start gap-3">
-                <X className="w-4 h-4 text-muted-foreground/60 mt-1 flex-shrink-0" strokeWidth={2} />
-                <span className="text-body text-sm text-muted-foreground">{item}</span>
-              </li>
-            ))}
-          </ul>
-        </motion.div>
-      </div>
+      <motion.div
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.1 }}
+        className="bg-card rounded-2xl p-8 md:p-10 border border-border/50"
+      >
+        <h3 className="text-display text-xl md:text-2xl font-light mb-6 italic text-center">
+          Pas pour vous si…
+        </h3>
+        <ul className="space-y-4">
+          {notForYou.map((p) => (
+            <li key={p} className="flex items-start gap-3">
+              <span className="shrink-0 w-5 h-5 rounded-full bg-muted flex items-center justify-center mt-0.5">
+                <X className="w-3 h-3 text-muted-foreground" strokeWidth={2.5} />
+              </span>
+              <span className="text-body text-sm text-foreground/80">{p}</span>
+            </li>
+          ))}
+        </ul>
+      </motion.div>
     </div>
   </section>
 );
