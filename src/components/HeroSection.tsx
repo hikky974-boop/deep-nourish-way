@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Zap, Headphones, ListChecks, CalendarCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroDoorway from "@/assets/hero-doorway.jpg";
+import heroDoorway from "@/assets/hero-doorway.png";
 
 const badges = [
   { icon: Zap, label: "Accès immédiat" },
@@ -17,7 +17,23 @@ const HeroSection = () => {
 
   return (
     <section className="relative overflow-hidden bg-background">
-      <div className="max-w-6xl mx-auto px-6 pt-12 pb-16 md:pt-20 md:pb-24 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+      {/* Right-side full-height image with soft fade on the left edge */}
+      <div className="hidden lg:block absolute inset-y-0 right-0 w-1/2 z-0">
+        <img
+          src={heroDoorway}
+          alt="Porte ouverte sur un jardin botanique fleuri"
+          className="w-full h-full object-cover"
+        />
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "linear-gradient(to right, hsl(var(--background)) 0%, hsl(var(--background) / 0.95) 12%, hsl(var(--background) / 0.6) 22%, hsl(var(--background) / 0.2) 30%, transparent 35%)",
+          }}
+        />
+      </div>
+
+      <div className="relative z-10 max-w-6xl mx-auto px-6 pt-12 pb-16 md:pt-20 md:pb-24 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         {/* Left content */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -63,21 +79,22 @@ const HeroSection = () => {
           </div>
         </motion.div>
 
-        {/* Right image */}
+        {/* Mobile / tablet image (kept inline so layout doesn't break) */}
         <motion.div
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.1, delay: 0.2 }}
-          className="relative"
+          className="relative lg:hidden"
         >
           <img
             src={heroDoorway}
             alt="Porte ouverte sur un jardin botanique fleuri"
-            width={1024}
-            height={1024}
-            className="w-full h-auto rounded-3xl object-cover"
+            className="w-full h-auto object-cover"
           />
         </motion.div>
+
+        {/* Spacer to preserve grid height on desktop where image is absolute */}
+        <div className="hidden lg:block" aria-hidden="true" />
       </div>
     </section>
   );
