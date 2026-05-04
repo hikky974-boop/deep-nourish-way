@@ -1,91 +1,119 @@
 import { motion } from "framer-motion";
-import { Headphones, Route, BookOpen, Laptop, Lightbulb } from "lucide-react";
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: i * 0.1, duration: 0.6 },
-  }),
-};
+import {
+  Calendar,
+  Headphones,
+  ListChecks,
+  Video,
+  Bell,
+  MessageCircle,
+  BarChart3,
+  Trophy,
+  Heart,
+  Check,
+} from "lucide-react";
 
 const items = [
   {
+    icon: Calendar,
+    title: "Un parcours de transformation de 33 jours",
+    desc: "Pas un régime de plus, mais une méthode qui agit là où tout se joue vraiment : ton cerveau, tes émotions, tes automatismes.",
+  },
+  {
     icon: Headphones,
-    title: "Audios guidés d'hypnose",
-    desc: "Des séances enregistrées par un professionnel, à écouter dans le calme de votre quotidien.",
+    title: "Des audios de reprogrammation neuro-émotionnelle",
+    desc: "Hypnose et PNL, enregistrés par une experte certifiée. Tu écoutes, tu te laisses guider, et ton cerveau commence à changer ses schémas en profondeur. Sans effort. Sans volonté forcée.",
   },
   {
-    icon: Lightbulb,
-    title: "Exercices inspirés de la PNL",
-    desc: "Des outils concrets pour modifier vos conditionnements et réponses automatiques.",
+    icon: ListChecks,
+    title: "15 exercices guidés",
+    list: [
+      "Identifier tes déclencheurs émotionnels",
+      "Traverser une compulsion sans craquer",
+      "Transformer tes croyances limitantes",
+      "Développer la bienveillance envers toi-même",
+      "Célébrer chaque petit progrès sans te juger",
+    ],
   },
   {
-    icon: Route,
-    title: "Parcours structuré étape par étape",
-    desc: "Un cheminement progressif qui respecte votre rythme et votre évolution.",
+    icon: Video,
+    title: "2 vidéos d'automassage drainant",
+    desc: "Visage & cou, corps & jambes. Des gestes guidés par une experte en drainage lymphatique pour alléger le corps, réduire la rétention d'eau et se reconnecter à soi avec douceur.",
   },
   {
-    icon: BookOpen,
-    title: "Intégration simple dans le quotidien",
-    desc: "De courts exercices pour ancrer les changements dans votre vie de tous les jours.",
+    icon: Bell,
+    title: "Un bouton urgence",
+    desc: "La compulsion arrive maintenant ? En 60 secondes, tu traverses le moment sans craquer. Disponible jour et nuit.",
   },
   {
-    icon: Laptop,
-    title: "Accès en ligne à tout moment",
-    desc: "Disponible sur tous vos appareils, quand vous le souhaitez.",
+    icon: MessageCircle,
+    title: "Un coach IA personnel",
+    desc: "Tu ne seras jamais seule. Un accompagnement disponible 24h/24 qui s'adapte à ce que tu vis. Pas de réponses génériques : un vrai accompagnement adapté à toi.",
+  },
+  {
+    icon: BarChart3,
+    title: "Un suivi quotidien",
+    desc: "Pour mesurer ta progression et rester ancrée dans ta transformation.",
+  },
+  {
+    icon: Trophy,
+    title: "Un système de motivation intégré",
+    desc: "Achievements, streaks, micro-victoires : chaque jour compte et te garde engagée jusqu'au bout.",
+  },
+  {
+    icon: Heart,
+    title: "Si tu décroches",
+    desc: "Le programme revient vers toi avec bienveillance. Pas de jugement. Juste un rappel doux que tu mérites de continuer.",
   },
 ];
 
 const ProgramSection = () => (
-  <section className="section-padding bg-background">
-    <div className="section-medium">
-      <div className="text-center mb-14">
-        <motion.p
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          custom={0}
-          variants={fadeUp}
-          className="text-body text-xs tracking-[0.25em] uppercase text-muted-foreground mb-4"
-        >
-          Le programme
-        </motion.p>
-        <motion.h2
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          custom={1}
-          variants={fadeUp}
-          className="text-display text-3xl md:text-4xl font-light"
-        >
-          Ce qui vous attend <span className="italic text-primary">à l'intérieur</span>
-        </motion.h2>
-      </div>
+  <section id="programme" className="px-6 py-16 md:py-24 bg-section-alt">
+    <div className="max-w-6xl mx-auto">
+      <motion.h2
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7 }}
+        className="text-display text-3xl md:text-4xl font-light text-center mb-12"
+      >
+        Ce que tu obtiens avec le{" "}
+        <span className="italic text-primary">programme Lunéa</span>
+      </motion.h2>
 
-      <div className="space-y-4">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
         {items.map((item, i) => (
           <motion.div
-            key={i}
-            initial="hidden"
-            whileInView="visible"
+            key={item.title}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            custom={i + 2}
-            variants={fadeUp}
-            className="flex items-start gap-5 bg-card rounded-2xl p-6 md:p-8 transition-shadow duration-300 hover:shadow-md"
+            transition={{ duration: 0.5, delay: (i % 3) * 0.08 }}
+            className="bg-card rounded-2xl p-6 border border-border/50"
           >
-            <div className="flex-shrink-0 w-11 h-11 rounded-full bg-accent/60 flex items-center justify-center">
-              <item.icon className="w-4.5 h-4.5 text-primary" strokeWidth={1.5} />
+            <div className="w-10 h-10 rounded-full bg-accent/60 flex items-center justify-center mb-4">
+              <item.icon className="w-4 h-4 text-primary" strokeWidth={1.6} />
             </div>
-            <div>
-              <h3 className="text-display text-lg font-medium mb-1">
-                {item.title}
-              </h3>
-              <p className="text-body text-sm text-muted-foreground">
+            <h3 className="text-display text-lg font-medium mb-3 leading-snug">
+              <span className="text-primary mr-1">{i + 1}.</span> {item.title}
+            </h3>
+            {item.desc && (
+              <p className="text-body text-sm text-muted-foreground leading-relaxed">
                 {item.desc}
               </p>
-            </div>
+            )}
+            {item.list && (
+              <ul className="space-y-2 mt-1">
+                {item.list.map((li) => (
+                  <li
+                    key={li}
+                    className="flex items-start gap-2 text-body text-sm text-muted-foreground"
+                  >
+                    <Check className="w-3.5 h-3.5 text-primary mt-1 shrink-0" strokeWidth={2} />
+                    <span>{li}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
           </motion.div>
         ))}
       </div>

@@ -1,18 +1,13 @@
 import StickyHeader from "@/components/StickyHeader";
 import HeroSection from "@/components/HeroSection";
-import ProblemSection from "@/components/ProblemSection";
-import WhySection from "@/components/WhySection";
-import SolutionSection from "@/components/SolutionSection";
-import MethodSection from "@/components/MethodSection";
-import BenefitsSection from "@/components/BenefitsSection";
+import PillarsSection from "@/components/PillarsSection";
+import CycleSection from "@/components/CycleSection";
 import ProgramSection from "@/components/ProgramSection";
 import ExperienceSection from "@/components/ExperienceSection";
-import PricingSection from "@/components/PricingSection";
 import ProofSection from "@/components/ProofSection";
+import PricingSection from "@/components/PricingSection";
 import ForWhoSection from "@/components/ForWhoSection";
 import FaqSection from "@/components/FaqSection";
-import ReassuranceSection from "@/components/ReassuranceSection";
-import CtaSection from "@/components/CtaSection";
 import FooterSection from "@/components/FooterSection";
 
 const Index = () => (
@@ -20,19 +15,14 @@ const Index = () => (
     <StickyHeader />
     <main>
       <HeroSection />
-      <ProblemSection />
-      <WhySection />
-      <SolutionSection />
-      <MethodSection />
-      <BenefitsSection />
+      <PillarsSection />
+      <CycleSection />
       <ProgramSection />
       <ExperienceSection />
-      <PricingSection />
       <ProofSection />
+      <PricingSection />
       <ForWhoSection />
       <FaqSection />
-      <ReassuranceSection />
-      <CtaSection />
       <FooterSection />
     </main>
   </>
