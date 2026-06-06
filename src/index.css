@@ -152,4 +152,13 @@
     background-image: radial-gradient(ellipse at 20% 50%, hsl(var(--primary) / 0.03) 0%, transparent 50%),
                        radial-gradient(ellipse at 80% 20%, hsl(var(--warm-glow) / 0.4) 0%, transparent 50%);
   }
+
+  .scrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
 }

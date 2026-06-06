@@ -16,7 +16,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-background">
+    <section className="relative overflow-x-clip bg-background">
       {/* Right-side full-height image with soft fade on the left edge */}
       <div className="hidden lg:block absolute inset-y-0 right-0 w-1/2 z-0">
         <img
@@ -39,9 +39,9 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="relative z-10"
+          className="relative z-10 min-w-0 w-full"
         >
-          <h1 className="text-display text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6 tracking-tight">
+          <h1 className="text-display text-[2.25rem] sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6 tracking-tight break-words">
             Perdre du poids
             <br />
             <span className="italic font-normal text-primary">autrement.</span>
@@ -66,7 +66,7 @@ const HeroSection = () => {
             </Button>
           </div>
 
-          <div className="flex flex-nowrap gap-1.5 sm:gap-2 overflow-x-auto sm:overflow-visible">
+          <div className="-mx-6 px-6 flex flex-nowrap gap-1.5 sm:gap-2 overflow-x-auto scrollbar-none">
             {badges.map((b) => (
               <div
                 key={b.label}
@@ -78,6 +78,7 @@ const HeroSection = () => {
             ))}
           </div>
         </motion.div>
+
 
         {/* Mobile / tablet image (kept inline so layout doesn't break) */}
         <motion.div
