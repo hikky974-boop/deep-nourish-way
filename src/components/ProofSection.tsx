@@ -3,19 +3,22 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Camille",
-    initial: "C",
-    text: "Lunéa m'a permis de comprendre pourquoi je mangeais, sans me blâmer. Les audios m'aident beaucoup au quotidien, je me sens plus légère et plus alignée avec moi-même.",
+    name: "Mélanie D.",
+    initial: "M",
+    age: 38,
+    text: "Avant Lunéa, je finissais chaque soirée à grignoter devant Netflix sans vraiment avoir faim — surtout après les journées de boulot difficiles, c'était automatique. J'avais essayé les applis calories, deux régimes, rien ne tenait plus de 15 jours. Ce qui m'a surprise, c'est l'audio du soir. La troisième semaine, j'ai réalisé que je n'avais pas craqué depuis 5 jours. Pas parce que je me retenais — l'envie était juste moins forte. J'ai encore des soirs compliqués, mais maintenant je sais quoi faire quand ça arrive.",
   },
   {
-    name: "Sophie",
-    initial: "S",
-    text: "Une approche douce et profonde. J'ai enfin trouvé un programme qui ne me punit pas et qui travaille vraiment sur mon ressenti et ma confiance. Un vrai changement !",
+    name: "Aurélie B.",
+    initial: "A",
+    age: 43,
+    text: "Je mangeais en cachette. Dans ma voiture, dans les placards après que mon mari soit couché. J'avais honte mais je n'arrivais pas à m'arrêter. J'étais vraiment sceptique sur l'hypnose. Mais après 4 semaines, j'ai compris que je mangeais pour gérer mon anxiété, pas la faim. C'est pas magique — il y a encore des mauvais jours — mais je ne me cache plus. Et ça, c'est énorme pour moi.",
   },
   {
-    name: "Élodie",
-    initial: "É",
-    text: "Les outils sont concrets et puissants. Je sens vraiment changer ma relation à la nourriture. Lunéa m'accompagne chaque jour sur le bon chemin.",
+    name: "Justine R.",
+    initial: "J",
+    age: 29,
+    text: "Je grignote depuis le lycée dès que je stresse. Les exercices m'ont aidée à identifier les déclencheurs sur le moment, vraiment. Trois semaines après le début, j'ai traversé une semaine de stress intense au boulot sans compulsion — enfin, une seule le mardi soir. Mais j'ai utilisé le bouton urgence et j'ai tenu. Avant, je n'aurais pas su quoi faire de cette envie.",
   },
 ];
 
@@ -57,7 +60,10 @@ const ProofSection = () => (
               <div className="w-10 h-10 rounded-full bg-accent/70 flex items-center justify-center text-display text-primary font-medium">
                 {t.initial}
               </div>
-              <span className="text-body text-sm text-foreground/80">{t.name}</span>
+              <div>
+                <span className="text-body text-sm text-foreground/80 block">{t.name}</span>
+                <span className="text-body text-xs text-muted-foreground">{t.age} ans</span>
+              </div>
             </div>
           </motion.div>
         ))}

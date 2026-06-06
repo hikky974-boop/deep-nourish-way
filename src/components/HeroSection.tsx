@@ -54,7 +54,7 @@ const HeroSection = () => {
 
           <div className="flex flex-col sm:flex-row gap-3 mb-8">
             <Button variant="hero" size="lg" onClick={() => scrollTo("pricing")} className="w-full sm:w-auto">
-              Accéder au programme
+              Je commence ma transformation
             </Button>
             <Button
               variant="outline"

@@ -47,7 +47,7 @@ const FooterSection = () => (
         <p className="text-body text-sm text-muted-foreground leading-relaxed">
           Une question ?
           <br />
-          Nous sommes là pour vous.
+          Nous sommes là pour toi.
           <br />
           <a href="mailto:contact@lunea.fr" className="text-primary hover:underline">Contactez-nous</a>
         </p>

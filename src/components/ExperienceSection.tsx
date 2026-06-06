@@ -18,12 +18,12 @@ const features = [
   {
     icon: Headphones,
     title: "Audios d'hypnose guidée",
-    desc: "Pour apaiser, reprogrammer et retrouver votre équilibre.",
+    desc: "Pour apaiser, reprogrammer et retrouver ton équilibre.",
   },
   {
     icon: ListChecks,
     title: "Exercices de recentrage",
-    desc: "Des pratiques concrètes pour revenir à vous au quotidien.",
+    desc: "Des pratiques concrètes pour revenir à toi au quotidien.",
   },
   {
     icon: Shield,
@@ -38,7 +38,7 @@ const features = [
   {
     icon: Monitor,
     title: "Accès mobile, tablette et ordinateur",
-    desc: "Accédez à votre espace où et quand vous voulez.",
+    desc: "Accède à ton espace où et quand tu veux.",
   },
 ];
 
@@ -58,7 +58,7 @@ const ExperienceSection = () => (
         transition={{ duration: 0.7 }}
         className="text-display text-3xl md:text-4xl font-light mb-10 md:mb-14"
       >
-        Ce que vous trouvez dans le programme
+        Ce que tu trouves dans le programme
       </motion.h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
@@ -123,7 +123,7 @@ const ExperienceSection = () => (
             ))}
           </div>
           <p className="text-body text-xs text-muted-foreground mt-5 leading-relaxed">
-            Et bien d'autres modules pour vous accompagner vers votre transformation.
+            Et bien d'autres modules pour t'accompagner vers ta transformation.
           </p>
         </motion.div>
 

@@ -79,7 +79,7 @@ const PricingSection = () => (
             </div>
 
             <Button variant="hero" size="lg" className="w-full mb-3">
-              Je commence maintenant
+              Rejoindre Lunéa maintenant
             </Button>
 
             <p className="flex items-center justify-center gap-1.5 text-body text-xs text-muted-foreground">

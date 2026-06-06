@@ -2,17 +2,17 @@ import { motion } from "framer-motion";
 import { Check, X } from "lucide-react";
 
 const forYou = [
-  "Vous mangez sous l'effet des émotions ou des automatismes",
-  "Vous êtes fatiguée des approches superficielles",
-  "Vous cherchez une transformation douce mais profonde",
-  "Vous voulez un chemin plus respectueux et plus durable",
-  "Vous avez tout essayé et rien n'a duré",
+  "Tu manges sous l'effet des émotions ou des automatismes",
+  "Tu es fatiguée des approches superficielles",
+  "Tu cherches une transformation douce mais profonde",
+  "Tu veux un chemin plus respectueux et plus durable",
+  "Tu as tout essayé et rien n'a duré",
 ];
 
 const notForYou = [
-  "Vous cherchez une solution express",
-  "Vous voulez uniquement des règles alimentaires strictes",
-  "Vous refusez toute approche intérieure du changement",
+  "Tu cherches une solution express",
+  "Tu veux uniquement des règles alimentaires strictes",
+  "Tu refuses toute approche intérieure du changement",
 ];
 
 const ForWhoSection = () => (
@@ -26,7 +26,7 @@ const ForWhoSection = () => (
         className="bg-card rounded-2xl p-8 md:p-10 border border-border/50"
       >
         <h3 className="text-display text-xl md:text-2xl font-light mb-6 italic text-center">
-          Ce programme est fait pour vous si…
+          Ce programme est fait pour toi si…
         </h3>
         <ul className="space-y-4">
           {forYou.map((p) => (
@@ -51,7 +51,7 @@ const ForWhoSection = () => (
         className="bg-card rounded-2xl p-8 md:p-10 border border-border/50"
       >
         <h3 className="text-display text-xl md:text-2xl font-light mb-6 italic text-center">
-          Pas pour vous si…
+          Pas pour toi si…
         </h3>
         <ul className="space-y-4">
           {notForYou.map((p) => (

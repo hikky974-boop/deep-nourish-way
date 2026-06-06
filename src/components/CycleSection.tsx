@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 const items = [
   "Le stress s'installe, les émotions débordent et la nourriture devient un refuge.",
-  "Vous mangez sans vraiment choisir, presque sans y penser, pour apaiser le moment.",
+  "Tu manges sans vraiment choisir, presque sans y penser, pour apaiser le moment.",
   "La culpabilité arrive juste après, avec la honte et les promesses de faire mieux demain.",
-  "Vous recommencez avec détermination, mais c'est toujours plus fort que vous.",
+  "Tu recommences avec détermination, mais c'est toujours plus fort que toi.",
 ];
 
 const CycleSection = () => (
@@ -17,7 +17,7 @@ const CycleSection = () => (
         transition={{ duration: 0.7 }}
         className="text-display text-3xl md:text-4xl font-light text-center mb-10 italic"
       >
-        Ce cercle que vous connaissez trop bien
+        Ce cercle que tu connais trop bien
       </motion.h2>
 
       <ol className="space-y-5">
@@ -50,11 +50,11 @@ const CycleSection = () => (
             5
           </span>
           <p className="text-body text-base text-foreground/80 leading-relaxed pt-0.5">
-            Vous vous êtes peut-être dit&nbsp;: le problème c'est moi. Que vous
-            manquez de volonté. Que les autres y arrivent mais pas vous. Cette
+            Tu t'es peut-être dit&nbsp;: le problème c'est moi. Que tu
+            manques de volonté. Que les autres y arrivent mais pas toi. Cette
             pensée est fausse —{" "}
             <span className="text-foreground font-medium">
-              et Lunéa est là pour vous le prouver.
+              et Lunéa est là pour te le prouver.
             </span>
           </p>
         </motion.li>

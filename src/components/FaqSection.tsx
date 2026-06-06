@@ -13,15 +13,31 @@ const faqs = [
   },
   {
     q: "Combien de temps dure le programme ?",
-    a: "Le parcours s'étend sur 33 jours, avec des contenus quotidiens courts (15 à 20 minutes). Vous gardez ensuite un accès illimité à l'ensemble des outils et audios.",
+    a: "Le parcours s'étend sur 33 jours, avec des contenus quotidiens courts (15 à 20 minutes). Tu gardes ensuite un accès illimité à l'ensemble des outils et audios.",
   },
   {
     q: "Ai-je besoin d'expérience en hypnose ?",
-    a: "Aucune expérience préalable n'est nécessaire. Les audios d'hypnose et de PNL sont guidés étape par étape par une experte certifiée. Il vous suffit de vous installer confortablement et de vous laisser porter.",
+    a: "Aucune expérience préalable n'est nécessaire. Les audios d'hypnose et de PNL sont guidés étape par étape par une experte certifiée. Il te suffit de t'installer confortablement et de te laisser porter.",
   },
   {
     q: "Est-ce accessible sur téléphone ?",
-    a: "Oui, le programme est 100% en ligne et conçu pour fonctionner parfaitement sur smartphone, tablette et ordinateur. Vous pouvez le suivre où vous voulez, quand vous voulez.",
+    a: "Oui, le programme est 100% en ligne et conçu pour fonctionner parfaitement sur smartphone, tablette et ordinateur. Tu peux le suivre où tu veux, quand tu veux.",
+  },
+  {
+    q: "Combien de temps par jour ?",
+    a: "Chaque journée demande entre 10 et 20 minutes. Certains contenus — comme les audios d'hypnose — se font allongée, souvent le soir avant de dormir, donc tu peux les glisser dans ta routine sans réorganiser ta vie. Si tu as une journée vraiment chargée, certains exercices tiennent en 5 minutes. L'idée n'est pas d'ajouter une contrainte de plus, mais d'intégrer quelque chose qui te fait du bien.",
+  },
+  {
+    q: "Est-ce que ça marche vraiment ?",
+    a: "Honnêtement : oui, si tu t'y engages vraiment. Lunéa n'est pas une formule magique. C'est un programme qui agit sur les mécanismes profonds derrière les compulsions — pas seulement sur les symptômes. Les résultats varient selon les personnes : certaines ressentent un changement dès la première semaine, d'autres après 3 ou 4 semaines. Ce qui revient le plus souvent dans les retours, c'est moins de culpabilité, moins d'automatismes, et une vraie conscience de ce qui se passe quand l'envie arrive.",
+  },
+  {
+    q: "C'est quoi exactement la reprogrammation neuro-émotionnelle ?",
+    a: "C'est une approche qui combine l'hypnose et la PNL (Programmation Neuro-Linguistique) pour agir sur les schémas automatiques du cerveau. Quand tu manges sous l'effet d'une émotion, ce n'est pas un manque de volonté — c'est un automatisme que ton cerveau a appris, souvent depuis longtemps. La reprogrammation neuro-émotionnelle vient défaire ces associations doucement, sans que tu aies à te forcer. Les audios guidés créent un état de relaxation profonde dans lequel le cerveau est plus réceptif au changement. Pas besoin de comprendre la technique pour en ressentir les effets — tu te laisses guider, c'est tout.",
+  },
+  {
+    q: "Je peux commencer même si je n'ai jamais fait ce type de programme ?",
+    a: "Absolument — et c'est même pour ça que Lunéa a été conçu. Tout est guidé pas à pas, sans jargon, sans prérequis. Que tu aies déjà exploré le développement personnel ou que ce soit ta toute première fois, le programme t'accueille là où tu en es. Le seul vrai prérequis, c'est d'avoir envie de changer quelque chose.",
   },
 ];
 

@@ -45,7 +45,7 @@ const StickyHeader = () => {
         </nav>
 
         <Button variant="hero" size="sm" onClick={scrollToCta} className="text-sm px-5 h-9">
-          Commencer
+          Me lancer
         </Button>
       </div>
     </header>

@@ -26,17 +26,17 @@ const pillars = [
   {
     Icon: LeafIcon,
     title: "Sans brutalité",
-    desc: "Une approche douce et respectueuse pour transformer votre relation à l'alimentation durablement.",
+    desc: "Une approche douce et respectueuse pour transformer ta relation à l'alimentation durablement.",
   },
   {
     Icon: LotusIcon,
     title: "Approche intérieure",
-    desc: "Nous travaillons sur vos émotions, vos croyances et vos déclencheurs pour un changement en profondeur.",
+    desc: "Nous travaillons sur tes émotions, tes croyances et tes déclencheurs pour un changement en profondeur.",
   },
   {
     Icon: ClockIcon,
-    title: "À votre rythme",
-    desc: "Un programme 100% en ligne, à suivre quand vous voulez, où que vous soyez.",
+    title: "À ton rythme",
+    desc: "Un programme 100% en ligne, à suivre quand tu veux, où que tu sois.",
   },
 ];
 
