@@ -2,7 +2,7 @@ import { Moon } from "lucide-react";
 
 const FooterSection = () => (
   <footer className="px-6 pt-16 pb-8 bg-background border-t border-border/40">
-    <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-10 mb-10">
+    <div className="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-4 gap-10 mb-10">
       <div className="md:col-span-1">
         <div className="flex items-center gap-2 mb-3">
           <span className="text-display text-2xl font-light">Lunéa</span>

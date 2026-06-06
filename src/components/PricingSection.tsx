@@ -34,6 +34,7 @@ const PricingSection = () => (
 
           <div className="relative z-10 max-w-md mx-auto md:mx-0">
             <p className="text-display text-2xl md:text-3xl italic text-primary font-light mb-3">
+
               En résumé
             </p>
             <p className="text-body text-base text-muted-foreground mb-4 leading-relaxed">
@@ -69,7 +70,7 @@ const PricingSection = () => (
               Tarif de lancement
             </p>
             <div className="flex items-baseline gap-3 mb-5">
-              <span className="text-display text-5xl md:text-6xl font-light text-primary leading-none tracking-tight">
+              <span className="text-display text-4xl sm:text-5xl md:text-6xl font-light text-primary leading-none tracking-tight">
                 67,90&nbsp;€
               </span>
               <span className="text-body text-lg text-muted-foreground line-through decoration-muted-foreground/50">
