@@ -16,7 +16,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-background">
+    <section className="relative overflow-x-clip bg-background">
       {/* Right-side full-height image with soft fade on the left edge */}
       <div className="hidden lg:block absolute inset-y-0 right-0 w-1/2 z-0">
         <img
