@@ -41,7 +41,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
           className="relative z-10"
         >
-          <h1 className="text-display text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.02] mb-6 tracking-tight">
+          <h1 className="text-display text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6 tracking-tight">
             Perdre du poids
             <br />
             <span className="italic font-normal text-primary">autrement.</span>
@@ -53,14 +53,14 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 mb-8">
-            <Button variant="hero" size="lg" onClick={() => scrollTo("pricing")}>
+            <Button variant="hero" size="lg" onClick={() => scrollTo("pricing")} className="w-full sm:w-auto">
               Accéder au programme
             </Button>
             <Button
               variant="outline"
               size="lg"
               onClick={() => scrollTo("approche")}
-              className="rounded-full border-foreground/20 hover:bg-accent/40"
+              className="w-full sm:w-auto rounded-full border-foreground/20 hover:bg-accent/40"
             >
               Découvrir l'approche
             </Button>
