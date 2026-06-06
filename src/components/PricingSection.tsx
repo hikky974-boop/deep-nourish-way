@@ -34,6 +34,7 @@ const PricingSection = () => (
 
           <div className="relative z-10 max-w-md mx-auto md:mx-0">
             <p className="text-display text-2xl md:text-3xl italic text-primary font-light mb-3">
+
               En résumé
             </p>
             <p className="text-body text-base text-muted-foreground mb-4 leading-relaxed">
