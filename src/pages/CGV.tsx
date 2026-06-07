@@ -89,7 +89,7 @@ const CGV = () => (
       <Section num="3" title="Prix">
         <p>Les prix sont indiqués en euros, toutes taxes comprises (TTC) :</p>
         <ul className="list-disc list-inside space-y-1 pl-2">
-          <li>Tarif de lancement : <strong>69,00 € TTC</strong></li>
+          <li>Tarif de lancement : <strong>67,90 € TTC</strong></li>
           <li>Tarif régulier : <strong>97,00 € TTC</strong></li>
         </ul>
         <p>
