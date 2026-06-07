@@ -1,4 +1,5 @@
 import { Moon } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const FooterSection = () => (
   <footer className="px-6 pt-16 pb-8 bg-background border-t border-border/40">
@@ -36,7 +37,7 @@ const FooterSection = () => (
         <ul className="space-y-2 text-body text-sm text-muted-foreground">
           <li><a href="#" className="hover:text-primary transition-colors">Mentions légales</a></li>
           <li><a href="#" className="hover:text-primary transition-colors">Politique de confidentialité</a></li>
-          <li><a href="#" className="hover:text-primary transition-colors">CGV</a></li>
+          <li><Link to="/cgv" className="hover:text-primary transition-colors">CGV</Link></li>
         </ul>
       </div>
 
