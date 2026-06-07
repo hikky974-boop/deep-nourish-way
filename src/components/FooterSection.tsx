@@ -36,7 +36,7 @@ const FooterSection = () => (
         </p>
         <ul className="space-y-2 text-body text-sm text-muted-foreground">
           <li><Link to="/mentions-legales" className="hover:text-primary transition-colors">Mentions légales</Link></li>
-          <li><a href="#" className="hover:text-primary transition-colors">Politique de confidentialité</a></li>
+          <li><Link to="/politique-confidentialite" className="hover:text-primary transition-colors">Politique de confidentialité</Link></li>
           <li><Link to="/cgv" className="hover:text-primary transition-colors">CGV</Link></li>
         </ul>
       </div>
