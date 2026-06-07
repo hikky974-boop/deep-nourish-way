@@ -76,6 +76,14 @@ const CGV = () => (
           accès à vie au programme, sans abonnement ni date d'expiration, sous réserve du maintien de la
           plateforme.
         </p>
+        <p>
+          Le programme Lunéa est conçu selon une logique pédagogique progressive : les contenus se débloquent
+          au fur et à mesure de l'avancement du Client dans le parcours. L'accès immédiat consécutif au
+          paiement porte sur le démarrage du programme ; les modules et contenus suivants deviennent
+          accessibles à mesure que le Client progresse dans son parcours. Cette organisation constitue un
+          choix pédagogique délibéré, inhérent à la nature et à l'efficacité du programme, et ne saurait
+          être interprétée comme une restriction d'accès ou un accès incomplet au contenu acquis.
+        </p>
       </Section>
 
       <Section num="3" title="Prix">
