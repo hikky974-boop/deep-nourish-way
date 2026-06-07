@@ -7,6 +7,7 @@ import ExperienceSection from "@/components/ExperienceSection";
 import ProofSection from "@/components/ProofSection";
 import PricingSection from "@/components/PricingSection";
 import ForWhoSection from "@/components/ForWhoSection";
+import GuaranteeSection from "@/components/GuaranteeSection";
 import FaqSection from "@/components/FaqSection";
 import FooterSection from "@/components/FooterSection";
 
@@ -21,6 +22,7 @@ const Index = () => (
       <ProgramSection />
       <ExperienceSection />
       <ProofSection />
+      <GuaranteeSection />
       <PricingSection />
       <FaqSection />
       <FooterSection />
