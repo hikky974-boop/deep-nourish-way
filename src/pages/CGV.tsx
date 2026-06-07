@@ -38,7 +38,7 @@ const CGV = () => (
       {/* Vendeur */}
       <div className="bg-card rounded-2xl border border-border/50 p-6 mb-10 text-body text-sm text-foreground/80 leading-relaxed space-y-1">
         <p className="font-medium text-foreground">RIVIERE Research & Consulting SAS</p>
-        <p>Société par actions simplifiée</p>
+        <p>Société par actions simplifiée au capital de 1 000 €</p>
         <p>RCS Paris 881 598 981</p>
         <p>Siège social : La Réunion, France</p>
         <p>Contact : <a href="mailto:contact@lunea.fr" className="text-primary hover:underline">contact@lunea.fr</a></p>
@@ -251,9 +251,25 @@ const CGV = () => (
           afin de rechercher une solution amiable.
         </p>
         <p>
-          En l'absence de résolution amiable dans un délai de <strong>30 jours calendaires</strong>, le Client
-          peut recourir à la médiation de la consommation, conformément aux articles L616-1 et R616-1 du Code
-          de la consommation. Le recours à la médiation est gratuit pour le consommateur.
+          En l'absence de résolution amiable dans un délai de <strong>30 jours calendaires</strong> après
+          réclamation écrite auprès du Vendeur, le Client peut recourir gratuitement à la médiation de la
+          consommation, conformément aux articles L616-1 et R616-1 du Code de la consommation, dans un délai
+          d'un an à compter de sa réclamation écrite.
+        </p>
+        <p>
+          Le médiateur désigné est :{" "}
+          <strong>CM2C — Centre de Médiation de la Consommation de Conciliateurs de Justice</strong>
+          <br />
+          49 rue de Ponthieu, 75008 Paris
+          <br />
+          <a
+            href="https://www.cm2c.net"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:underline"
+          >
+            www.cm2c.net
+          </a>
         </p>
         <p>
           Le Client peut également utiliser la plateforme européenne de Règlement en Ligne des Litiges (RLL),
