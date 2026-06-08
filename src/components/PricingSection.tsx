@@ -11,7 +11,7 @@ const points = [
 ];
 
 const PricingSection = () => (
-  <section id="pricing" className="px-4 md:px-6 py-10 md:py-16 bg-accent/30">
+  <section id="pricing" className="px-4 md:px-6 py-10 md:py-16" style={{ backgroundColor: "#e8ede6" }}>
     <motion.div
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -66,14 +66,23 @@ const PricingSection = () => (
           </ul>
 
           <div className="bg-card rounded-2xl p-4 sm:p-6 md:p-8 border border-border/50 min-w-0">
-            <p className="text-body text-[10px] tracking-[0.25em] uppercase text-primary mb-3">
+            <span
+              className="inline-block mb-3 px-3 py-1 rounded-full text-[10px] tracking-[0.2em] font-semibold"
+              style={{ backgroundColor: "#8b2635", color: "#fff", fontVariant: "small-caps" }}
+            >
               Tarif de lancement
-            </p>
+            </span>
             <div className="flex items-baseline gap-3 mb-5 flex-wrap">
-              <span className="text-display text-4xl sm:text-5xl md:text-6xl font-light text-primary leading-none tracking-tight">
+              <span
+                className="text-display text-5xl sm:text-6xl md:text-7xl font-light leading-none tracking-tight"
+                style={{ color: "#2d4a2a" }}
+              >
                 67,90&nbsp;€
               </span>
-              <span className="text-body text-2xl font-semibold text-foreground/40 line-through decoration-2">
+              <span
+                className="text-body text-xl font-medium line-through decoration-2"
+                style={{ color: "#8b2635" }}
+              >
                 99&nbsp;€
               </span>
             </div>
