@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Zap, Headphones, ListChecks, CalendarCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroBotanical from "@/assets/hero-botanical.jpg";
+import heroDoorway from "@/assets/hero-doorway.png";
 
 const badges = [
   { icon: Zap, label: "Accès immédiat" },
@@ -20,10 +20,9 @@ const HeroSection = () => {
       {/* Right-side full-height image with soft fade on the left edge */}
       <div className="hidden lg:block absolute inset-y-0 right-0 w-1/2 z-0">
         <img
-          src={heroBotanical}
-          alt="Illustration botanique eucalyptus et olivier"
+          src={heroDoorway}
+          alt="Porte ouverte sur un jardin botanique fleuri"
           className="w-full h-full object-cover"
-          style={{ objectPosition: "right center" }}
         />
         <div
           className="absolute inset-0 pointer-events-none"
@@ -89,8 +88,8 @@ const HeroSection = () => {
           className="relative lg:hidden"
         >
           <img
-            src={heroBotanical}
-            alt="Illustration botanique eucalyptus et olivier"
+            src={heroDoorway}
+            alt="Porte ouverte sur un jardin botanique fleuri"
             className="w-full h-auto object-cover"
           />
         </motion.div>
