@@ -16,7 +16,7 @@ const faqs = [
     a: "Le parcours s'étend sur 33 jours, avec des contenus quotidiens courts (15 à 20 minutes). Tu gardes ensuite un accès illimité à l'ensemble des outils et audios.",
   },
   {
-    q: "Ai-je besoin d'expérience préalable ?",
+    q: "Ai-je besoin d'expérience en reprogrammation neuro-émotionnelle ?",
     a: "Aucune expérience préalable n'est nécessaire. Les audios de reprogrammation sont guidés étape par étape par une experte certifiée. Il te suffit de t'installer confortablement et de te laisser porter.",
   },
   {

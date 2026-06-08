@@ -17,7 +17,7 @@ const features = [
   },
   {
     icon: Headphones,
-    title: "Audios de reprogrammation",
+    title: "Audios de reprogrammation neuro-émotionnelle",
     desc: "Pour apaiser, reprogrammer et retrouver ton équilibre.",
   },
   {
