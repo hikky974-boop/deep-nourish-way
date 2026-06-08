@@ -77,6 +77,13 @@ const CGV = () => (
           plateforme.
         </p>
         <p>
+          Le compte Lunéa est <strong>strictement personnel, individuel et intransmissible</strong>. Le Client
+          est seul responsable de la confidentialité de ses identifiants de connexion. RIVIERE Research &
+          Consulting SAS se réserve le droit de <strong>suspendre ou supprimer immédiatement tout compte,
+          sans préavis ni remboursement</strong>, en cas de connexions simultanées suspectes, de partage
+          d'identifiants avec des tiers, ou de toute activité anormale détectée sur le compte.
+        </p>
+        <p>
           Le programme Lunéa est conçu selon une logique pédagogique progressive : les contenus se débloquent
           au fur et à mesure de l'avancement du Client dans le parcours. L'accès immédiat consécutif au
           paiement porte sur le démarrage du programme ; les modules et contenus suivants deviennent
@@ -166,23 +173,36 @@ const CGV = () => (
           Le Vendeur se réserve le droit de suspendre tout accès en cas de paiement frauduleux ou de
           rétrofacturation (chargeback) non justifiée.
         </p>
+        <p>
+          Les journaux de connexion, adresses IP et données d'utilisation conservés par les serveurs de
+          Lunéa constituent une <strong>preuve juridique de l'accès effectif au service</strong>. Toute
+          demande de rétrofacturation infondée pourra entraîner des frais de recouvrement à la charge du
+          Client ainsi qu'un <strong>bannissement définitif de la plateforme</strong>.
+        </p>
       </Section>
 
       <Section num="8" title="Propriété intellectuelle">
         <p>
-          L'ensemble du contenu de Lunéa — notamment les audios d'hypnose, textes, méthodes, exercices,
-          visuels, structure du programme et éléments de la marque — est la propriété exclusive de RIVIERE
-          Research & Consulting SAS et est protégé par les dispositions du Code de la propriété intellectuelle.
+          L'intégralité du contenu de Lunéa — audios d'hypnose, textes, visuels, protocoles, méthodes,
+          exercices, architecture du programme et éléments de la marque — est la <strong>propriété exclusive
+          de RIVIERE Research & Consulting SAS</strong> et est protégée par le droit d'auteur ainsi que par
+          les dispositions du Code de la propriété intellectuelle.
         </p>
         <p>
-          Toute reproduction, représentation, modification, diffusion, revente, partage de compte, mise à
-          disposition à des tiers ou exploitation commerciale, partielle ou totale, est strictement interdite
-          sans autorisation écrite préalable du Vendeur.
+          Sont strictement interdits, sans autorisation écrite préalable du Vendeur :
         </p>
+        <ul className="list-disc list-inside space-y-1 pl-2">
+          <li>Toute reproduction, copie ou duplication du contenu ;</li>
+          <li>Tout enregistrement ou téléchargement non autorisé des audios ou vidéos ;</li>
+          <li>Toute diffusion, mise à disposition ou partage du contenu avec des tiers ;</li>
+          <li>Toute revente, exploitation commerciale ou utilisation à des fins professionnelles ;</li>
+          <li>Tout partage d'identifiants permettant à un tiers d'accéder au programme.</li>
+        </ul>
         <p>
-          Toute violation de ces dispositions constitue une contrefaçon au sens des articles L335-2 et suivants
-          du Code de la propriété intellectuelle, susceptible d'engager la responsabilité civile et pénale de
-          son auteur.
+          Toute violation de ces dispositions constitue une <strong>contrefaçon au sens des articles L335-2
+          et suivants du Code de la propriété intellectuelle</strong>, susceptible d'engager la responsabilité
+          civile et pénale de son auteur. Tout contrevenant verra son accès supprimé immédiatement et
+          définitivement, sans préavis ni remboursement.
         </p>
         <p>
           Le Client bénéficie d'un droit d'usage strictement personnel, non exclusif et non transférable,
@@ -190,13 +210,19 @@ const CGV = () => (
         </p>
       </Section>
 
-      <Section num="9" title="Limitation de responsabilité">
-        <p>
-          Lunéa est un outil d'accompagnement personnel fondé sur des techniques de reprogrammation
-          neuro-émotionnelle (hypnose et PNL). Il ne constitue en aucun cas un dispositif médical, un
-          traitement psychologique ou psychiatrique, ni un substitut à un suivi médical ou thérapeutique
-          professionnel.
-        </p>
+      <Section num="9" title="Limitation de responsabilité et avertissement médical">
+        <div className="bg-secondary/50 border border-border rounded-xl p-4 my-2">
+          <p className="font-bold text-foreground text-sm uppercase tracking-wide">
+            Avertissement important
+          </p>
+          <p className="mt-2 font-medium text-foreground">
+            LUNÉA EST UN OUTIL DE BIEN-ÊTRE ET DE DÉVELOPPEMENT PERSONNEL. IL NE REMPLACE EN AUCUN
+            CAS UNE CONSULTATION, UN DIAGNOSTIC OU UN TRAITEMENT MÉDICAL OU PSYCHOLOGIQUE
+            PROFESSIONNEL. AUCUNE OBLIGATION DE RÉSULTAT N'EST GARANTIE. RIVIERE RESEARCH &
+            CONSULTING S'ENGAGE UNIQUEMENT À FOURNIR L'ACCÈS AUX CONTENUS DU PROGRAMME
+            (OBLIGATION DE MOYENS).
+          </p>
+        </div>
         <p>
           Le Vendeur ne garantit aucun résultat spécifique. Les résultats varient selon les individus et
           dépendent notamment de l'engagement du Client dans le programme.
@@ -212,9 +238,18 @@ const CGV = () => (
           En cas de manquement prouvé du Vendeur, sa responsabilité est limitée au montant effectivement
           payé par le Client pour l'accès au programme.
         </p>
-        <p className="text-foreground/60 italic text-xs mt-2">
-          Il est conseillé aux personnes souffrant de troubles alimentaires sévères, de troubles psychiatriques
-          ou suivant un traitement médical de consulter leur médecin avant de commencer le programme.
+        <p>
+          <strong>Disponibilité du service.</strong> L'accès à Lunéa est fourni en l'état. RIVIERE
+          Research & Consulting SAS s'engage à maintenir le service disponible dans la mesure du
+          possible mais ne garantit pas une disponibilité sans interruption (principe du « best
+          effort »). Les périodes de maintenance planifiée, de mise à jour ou d'incident technique
+          ne donnent droit à aucune indemnité ni remboursement, sauf indisponibilité prolongée
+          imputable exclusivement au Vendeur dépassant 7 jours ouvrés consécutifs.
+        </p>
+        <p className="text-foreground/60 italic text-xs">
+          Il est conseillé aux personnes souffrant de troubles alimentaires sévères, de troubles
+          psychiatriques ou suivant un traitement médical de consulter leur médecin avant de
+          commencer le programme.
         </p>
       </Section>
 
@@ -320,7 +355,7 @@ const CGV = () => (
 
       <div className="mt-12 pt-8 border-t border-border/40 text-body text-xs text-muted-foreground/70">
         <p>RIVIERE Research & Consulting SAS — RCS Paris 881 598 981 — La Réunion, France</p>
-        <p className="mt-1">CGV version 1.0 — Dernière mise à jour : 7 juin 2026</p>
+        <p className="mt-1">CGV version 1.1 — Dernière mise à jour : 8 juin 2026</p>
       </div>
     </main>
   </div>
