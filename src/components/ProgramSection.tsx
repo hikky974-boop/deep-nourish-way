@@ -21,7 +21,7 @@ const items = [
   {
     icon: Headphones,
     title: "Des audios de reprogrammation neuro-émotionnelle",
-    desc: "Hypnose et PNL, enregistrés par une experte certifiée. Tu écoutes, tu te laisses guider, et ton cerveau commence à changer ses schémas en profondeur. Sans effort. Sans volonté forcée.",
+    desc: "Reprogrammation neuro-émotionnelle et PNL, enregistrés par une experte certifiée. Tu écoutes, tu te laisses guider, et ton cerveau commence à changer ses schémas en profondeur. Sans effort. Sans volonté forcée.",
   },
   {
     icon: ListChecks,

@@ -17,7 +17,7 @@ const features = [
   },
   {
     icon: Headphones,
-    title: "Audios d'hypnose guidée",
+    title: "Audios de reprogrammation",
     desc: "Pour apaiser, reprogrammer et retrouver ton équilibre.",
   },
   {

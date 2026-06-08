@@ -63,7 +63,7 @@ const CGV = () => (
       <Section num="2" title="Description du produit">
         <p>
           Lunéa est un programme digital de reprogrammation neuro-émotionnelle, accessible via une application
-          web. Il comprend notamment : un parcours structuré de 33 jours, des audios d'hypnose guidée et de PNL,
+          web. Il comprend notamment : un parcours structuré de 33 jours, des audios de reprogrammation neuro-émotionnelle,
           des exercices de recentrage émotionnel, un suivi quotidien, un bouton urgence et un coach IA personnel.
         </p>
         <p>
@@ -183,7 +183,7 @@ const CGV = () => (
 
       <Section num="8" title="Propriété intellectuelle">
         <p>
-          L'intégralité du contenu de Lunéa — audios d'hypnose, textes, visuels, protocoles, méthodes,
+          L'intégralité du contenu de Lunéa — audios de reprogrammation, textes, visuels, protocoles, méthodes,
           exercices, architecture du programme et éléments de la marque — est la <strong>propriété exclusive
           de RIVIERE Research & Consulting SAS</strong> et est protégée par le droit d'auteur ainsi que par
           les dispositions du Code de la propriété intellectuelle.
