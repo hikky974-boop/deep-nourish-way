@@ -41,7 +41,7 @@ const pillars = [
 ];
 
 const PillarsSection = () => (
-  <section id="approche" className="px-6 py-16 md:py-24 bg-background">
+  <section id="approche" className="px-6 py-10 md:py-16 bg-background">
     <div className="relative max-w-6xl mx-auto">
       {/* Botanical decorations */}
       <img

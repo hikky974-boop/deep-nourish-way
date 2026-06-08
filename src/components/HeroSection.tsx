@@ -33,7 +33,7 @@ const HeroSection = () => {
         />
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 pt-12 pb-16 md:pt-20 md:pb-24 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 pt-10 pb-12 md:pt-16 md:pb-20 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         {/* Left content */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -49,7 +49,7 @@ const modules = [
 ];
 
 const ExperienceSection = () => (
-  <section id="experience" className="px-6 py-16 md:py-24 bg-background">
+  <section id="experience" className="px-6 py-10 md:py-16 bg-background">
     <div className="max-w-7xl mx-auto">
       <motion.h2
         initial={{ opacity: 0, y: 16 }}

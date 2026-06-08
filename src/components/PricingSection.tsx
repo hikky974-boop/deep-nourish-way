@@ -11,7 +11,7 @@ const points = [
 ];
 
 const PricingSection = () => (
-  <section id="pricing" className="px-6 py-16 md:py-24 bg-background">
+  <section id="pricing" className="px-6 py-10 md:py-16 bg-accent/30">
     <motion.div
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -73,12 +73,12 @@ const PricingSection = () => (
               <span className="text-display text-4xl sm:text-5xl md:text-6xl font-light text-primary leading-none tracking-tight">
                 67,90&nbsp;€
               </span>
-              <span className="text-body text-lg text-muted-foreground line-through decoration-muted-foreground/50">
+              <span className="text-body text-2xl font-semibold text-foreground/40 line-through decoration-2">
                 99&nbsp;€
               </span>
             </div>
 
-            <Button variant="hero" size="lg" className="w-full mb-3">
+            <Button variant="hero" size="xl" className="w-full mb-3 shadow-md shadow-primary/20">
               Rejoindre Lunéa maintenant
             </Button>
 

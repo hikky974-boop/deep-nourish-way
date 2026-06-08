@@ -8,7 +8,7 @@ const items = [
 ];
 
 const CycleSection = () => (
-  <section className="px-6 py-16 md:py-24 bg-background">
+  <section className="px-6 py-10 md:py-16 bg-background">
     <div className="max-w-4xl mx-auto bg-card rounded-3xl border border-border/50 p-8 md:p-14">
       <motion.h2
         initial={{ opacity: 0, y: 16 }}

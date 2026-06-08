@@ -16,7 +16,7 @@ const notForYou = [
 ];
 
 const ForWhoSection = () => (
-  <section className="px-6 py-16 md:py-24 bg-background">
+  <section className="px-6 py-10 md:py-16 bg-background">
     <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6">
       <motion.div
         initial={{ opacity: 0, y: 16 }}

@@ -67,7 +67,7 @@ const items = [
 ];
 
 const ProgramSection = () => (
-  <section id="programme" className="px-6 py-16 md:py-24 bg-section-alt">
+  <section id="programme" className="px-6 py-10 md:py-16 bg-section-alt">
     <div className="max-w-6xl mx-auto">
       <motion.h2
         initial={{ opacity: 0, y: 16 }}
