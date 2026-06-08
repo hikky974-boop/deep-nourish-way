@@ -32,12 +32,19 @@ const HeroSection = () => {
         />
       </div>
 
-      {/* Desktop : image collée à droite, sans overlay */}
+      {/* Desktop : image collée à droite avec dégradé crème vers la gauche */}
       <div className="hidden lg:block absolute inset-y-0 right-0 w-1/2 z-0">
         <img
           src={heroDoorway}
           alt="Porte ouverte sur un jardin botanique fleuri"
           className="w-full h-full object-cover"
+        />
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "linear-gradient(to right, hsl(var(--hero-bg)) 0%, hsl(var(--hero-bg) / 0.85) 15%, hsl(var(--hero-bg) / 0.4) 35%, transparent 65%)",
+          }}
         />
       </div>
 
