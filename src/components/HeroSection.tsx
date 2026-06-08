@@ -74,12 +74,12 @@ const HeroSection = () => {
             </Button>
           </div>
 
-          {/* Pills — flex-wrap pour que tous les badges tiennent */}
-          <div className="flex flex-wrap gap-1.5 sm:gap-2">
+          {/* Pills — wrap sur mobile/tablette, ligne unique sur desktop */}
+          <div className="flex flex-wrap lg:flex-nowrap gap-1.5 sm:gap-2 lg:overflow-visible">
             {badges.map((b) => (
               <div
                 key={b.label}
-                className="inline-flex items-center gap-1.5 px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-full bg-card border border-border/60 text-body text-[11px] sm:text-xs text-foreground/75 whitespace-nowrap"
+                className="inline-flex items-center gap-1.5 px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-full bg-card border border-border/60 text-body text-[11px] sm:text-xs text-foreground/75 whitespace-nowrap shrink-0"
               >
                 <b.icon className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-primary shrink-0" strokeWidth={1.6} />
                 {b.label}
