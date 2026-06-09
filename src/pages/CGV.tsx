@@ -326,7 +326,7 @@ const CGV = () => (
         </p>
         <p>
           En cas de litige non résolu par voie amiable ou de médiation, les juridictions compétentes seront
-          celles du ressort du siège social du Vendeur, soit les juridictions de La Réunion, sous réserve des
+          celles du ressort du siège social du Vendeur, soit les juridictions de Paris, sous réserve des
           dispositions légales impératives applicables aux consommateurs en matière de compétence territoriale.
         </p>
       </Section>
@@ -354,7 +354,7 @@ const CGV = () => (
       </Section>
 
       <div className="mt-12 pt-8 border-t border-border/40 text-body text-xs text-muted-foreground/70">
-        <p>RIVIERE Research & Consulting SAS — RCS Paris 881 598 981 — La Réunion, France</p>
+        <p>RIVIERE Research & Consulting SAS — RCS Paris 881 598 981 — Paris, France</p>
         <p className="mt-1">CGV version 1.1 — Dernière mise à jour : 8 juin 2026</p>
       </div>
     </main>
