@@ -51,7 +51,7 @@ const MentionsLegales = () => (
           <strong>Immatriculation :</strong> RCS Paris 881 598 981
         </p>
         <p>
-          <strong>Siège social :</strong> La Réunion, France
+          <strong>Siège social :</strong> Paris, France
         </p>
         <p>
           <strong>Contact :</strong>{" "}
