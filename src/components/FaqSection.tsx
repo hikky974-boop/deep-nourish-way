@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: "Ai-je besoin d'expérience en reprogrammation neuro-émotionnelle ?",
-    a: "Aucune expérience préalable n'est nécessaire. Les audios de reprogrammation sont guidés étape par étape par une experte certifiée. Il te suffit de t'installer confortablement et de te laisser porter.",
+    a: "Aucune expérience préalable n'est nécessaire. Les audios de reprogrammation et de PNL sont guidés étape par étape par une experte certifiée. Il te suffit de t'installer confortablement et de te laisser porter.",
   },
   {
     q: "Est-ce accessible sur téléphone ?",

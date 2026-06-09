@@ -63,7 +63,7 @@ const CGV = () => (
       <Section num="2" title="Description du produit">
         <p>
           Lunéa est un programme digital de reprogrammation neuro-émotionnelle, accessible via une application
-          web. Il comprend notamment : un parcours structuré de 33 jours, des audios de reprogrammation neuro-émotionnelle,
+          web. Il comprend notamment : un parcours structuré de 33 jours, des audios de reprogrammation neuro-émotionnelle et de PNL,
           des exercices de recentrage émotionnel, un suivi quotidien, un bouton urgence et un coach IA personnel.
         </p>
         <p>

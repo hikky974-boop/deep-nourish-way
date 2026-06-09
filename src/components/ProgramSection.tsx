@@ -21,7 +21,7 @@ const items = [
   {
     icon: Headphones,
     title: "Des audios de reprogrammation neuro-émotionnelle",
-    desc: "Enregistrés par une experte certifiée en reprogrammation neuro-émotionnelle. Tu écoutes, tu te laisses guider, et ton cerveau commence à changer ses schémas en profondeur. Sans effort. Sans volonté forcée.",
+    desc: "Enregistrés par une experte certifiée en reprogrammation neuro-émotionnelle et PNL. Tu écoutes, tu te laisses guider, et ton cerveau commence à changer ses schémas en profondeur. Sans effort. Sans volonté forcée.",
   },
   {
     icon: ListChecks,
