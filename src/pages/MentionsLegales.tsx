@@ -178,7 +178,7 @@ const MentionsLegales = () => (
         <p>
           Les présentes mentions légales sont régies par le droit français. Tout litige relatif à
           l'utilisation du site lunea.fr relève de la compétence exclusive des juridictions de
-          La Réunion, sauf disposition légale impérative contraire.
+          Paris, sauf disposition légale impérative contraire.
         </p>
       </Block>
 
