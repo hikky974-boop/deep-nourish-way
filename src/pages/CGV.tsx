@@ -326,7 +326,7 @@ const CGV = () => (
         </p>
         <p>
           En cas de litige non résolu par voie amiable ou de médiation, les juridictions compétentes seront
-          celles du ressort du siège social du Vendeur, soit les juridictions de La Réunion, sous réserve des
+          celles du ressort du siège social du Vendeur, soit les juridictions de Paris, sous réserve des
           dispositions légales impératives applicables aux consommateurs en matière de compétence territoriale.
         </p>
       </Section>
