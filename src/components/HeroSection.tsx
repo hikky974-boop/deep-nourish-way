@@ -5,7 +5,7 @@ import heroDoorway from "@/assets/hero-doorway.png";
 
 const badges = [
   { icon: Zap, label: "Accès immédiat" },
-  { icon: Headphones, label: "Audios de reprogrammation" },
+  { icon: Headphones, label: "Audios PNL & reprogrammation neuro-émotionnelle" },
   { icon: ListChecks, label: "Exercices guidés" },
   { icon: CalendarCheck, label: "Suivi quotidien" },
 ];
