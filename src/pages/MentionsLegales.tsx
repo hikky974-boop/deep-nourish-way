@@ -51,7 +51,7 @@ const MentionsLegales = () => (
           <strong>Immatriculation :</strong> RCS Paris 881 598 981
         </p>
         <p>
-          <strong>Siège social :</strong> La Réunion, France
+          <strong>Siège social :</strong> Paris, France
         </p>
         <p>
           <strong>Contact :</strong>{" "}
@@ -178,7 +178,7 @@ const MentionsLegales = () => (
         <p>
           Les présentes mentions légales sont régies par le droit français. Tout litige relatif à
           l'utilisation du site lunea.fr relève de la compétence exclusive des juridictions de
-          La Réunion, sauf disposition légale impérative contraire.
+          Paris, sauf disposition légale impérative contraire.
         </p>
       </Block>
 

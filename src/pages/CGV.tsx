@@ -40,7 +40,7 @@ const CGV = () => (
         <p className="font-medium text-foreground">RIVIERE Research & Consulting SAS</p>
         <p>Société par actions simplifiée au capital de 1 000 €</p>
         <p>RCS Paris 881 598 981</p>
-        <p>Siège social : La Réunion, France</p>
+        <p>Siège social : Paris, France</p>
         <p>Contact : <a href="mailto:contact@lunea.fr" className="text-primary hover:underline">contact@lunea.fr</a></p>
       </div>
 
