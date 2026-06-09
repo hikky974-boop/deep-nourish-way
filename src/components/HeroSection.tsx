@@ -75,8 +75,10 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 mb-8">
-            <Button variant="hero" size="lg" onClick={() => scrollTo("pricing")} className="w-full sm:w-auto">
-              Je commence ma transformation
+            <Button variant="hero" size="lg" asChild className="w-full sm:w-auto">
+              <a href="https://preview-sandbox--694e3c28e92421880795f791.base44.app/checkout">
+                Je commence ma transformation
+              </a>
             </Button>
             <Button
               variant="outline"

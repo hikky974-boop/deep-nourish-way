@@ -90,9 +90,12 @@ const PricingSection = () => (
             <Button
               variant="hero"
               size="xl"
+              asChild
               className="w-full mb-3 shadow-md shadow-primary/20 text-sm sm:text-base px-3 sm:px-6 whitespace-nowrap"
             >
-              Rejoindre Lunéa maintenant
+              <a href="https://preview-sandbox--694e3c28e92421880795f791.base44.app/checkout">
+                Rejoindre Lunéa maintenant
+              </a>
             </Button>
 
             <p className="flex items-center justify-center gap-1.5 text-body text-xs text-muted-foreground">
