@@ -1,4 +1,3 @@
-import { Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
@@ -24,11 +23,12 @@ const StickyHeader = () => {
       style={{ backgroundColor: "hsl(var(--background) / 0.92)" }}
     >
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-        <a href="#" className="flex items-center gap-2">
-          <span className="text-display text-2xl md:text-[26px] font-light tracking-tight">
-            Lunéa
-          </span>
-          <Moon className="w-4 h-4 text-primary" strokeWidth={1.4} />
+        <a href="#" className="flex items-center">
+          <img
+            src="/logo-lunea.png"
+            alt="Lunéa"
+            className="h-8 md:h-9 w-auto"
+          />
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
