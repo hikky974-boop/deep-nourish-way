@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import logoLunea from "@/assets/logo-lunea.png";
 
 const navItems = [
   { label: "Le programme", href: "#programme" },
@@ -25,7 +26,7 @@ const StickyHeader = () => {
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
         <a href="#" className="flex items-center">
           <img
-            src="/logo-lunea.png"
+            src={logoLunea}
             alt="Lunéa"
             className="h-8 md:h-9 w-auto"
           />
