@@ -105,9 +105,9 @@ const MentionsLegales = () => (
             base44.com
           </a>
           <br />
-          <span className="text-foreground/50 text-xs italic">
-            (Adresse physique à compléter — à confirmer directement auprès de Base44)
-          </span>
+          40 Namal Tel Aviv St., Tel Aviv 6350671, Israël
+          <br />
+          (service exploité par Wix.com Ltd.)
         </p>
       </Block>
 
