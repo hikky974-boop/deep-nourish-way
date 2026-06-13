@@ -63,9 +63,6 @@ const FooterSection = () => (
         troubles du comportement alimentaire, suivant un traitement psychiatrique ou présentant des
         problèmes de santé sont invitées à consulter leur médecin avant toute utilisation.
       </p>
-      <p className="text-body text-xs text-muted-foreground/50">
-        TVA non applicable, art. 293 B du CGI.
-      </p>
       <p className="text-body text-xs text-muted-foreground/70 tracking-wide">
         © {new Date().getFullYear()} — Lunéa. Tous droits réservés.
       </p>

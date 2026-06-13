@@ -159,15 +159,36 @@ const PolitiqueConfidentialite = () => (
       </Block>
 
       {/* 5. Hébergement */}
-      <Block title="5. Localisation des données — Hébergement en Europe">
+      <Block title="5. Localisation des données et transferts hors EEE">
         <p>
-          Les données personnelles des utilisateurs sont hébergées sur des serveurs situés au
-          sein de l'<strong>Union européenne</strong>, conformément aux exigences du RGPD.
+          Le site lunea.fr est hébergé par <strong>Lovable Labs AB</strong> (Stockholm, Suède),
+          au sein de l'Espace Économique Européen (EEE).
         </p>
         <p>
-          Aucun transfert de données vers un pays tiers hors UE n'est effectué sans garanties
-          appropriées (clauses contractuelles types de la Commission européenne ou décision
-          d'adéquation).
+          L'application Lunéa (espace membre, données de progression, coach IA) est hébergée par{" "}
+          <strong>Base44</strong>, service exploité par <strong>Wix.com Ltd.</strong>, dont le
+          siège social est situé en <strong>Israël</strong>. À ce titre, certaines données
+          personnelles des utilisatrices — y compris les données saisies dans le programme et
+          les échanges avec le coach IA — sont susceptibles d'être transférées et hébergées en
+          Israël, hors de l'EEE.
+        </p>
+        <p>
+          Ce transfert est encadré par la{" "}
+          <strong>décision d'adéquation de la Commission européenne concernant Israël</strong>{" "}
+          (décision 2011/61/UE du 31 janvier 2011), qui reconnaît qu'Israël assure un niveau de
+          protection des données personnelles adéquat au regard du RGPD. Aucune garantie
+          supplémentaire n'est requise pour ce transfert.
+        </p>
+        <p>
+          Pour tout autre sous-traitant situé hors EEE et non couvert par une décision
+          d'adéquation — notamment le fournisseur du coach IA si celui-ci est établi aux
+          États-Unis —, les transferts sont encadrés par les{" "}
+          <strong>clauses contractuelles types</strong> adoptées par la Commission européenne
+          (décision d'exécution 2021/914/UE), conformément à l'article 46 du RGPD.
+        </p>
+        <p className="text-foreground/50 italic text-xs">
+          [À VÉRIFIER : localisation et garanties du fournisseur IA — à compléter une fois le
+          prestataire confirmé.]
         </p>
       </Block>
 
