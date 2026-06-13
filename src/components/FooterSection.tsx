@@ -55,7 +55,17 @@ const FooterSection = () => (
       </div>
     </div>
 
-    <div className="max-w-6xl mx-auto pt-6 border-t border-border/40 text-center">
+    <div className="max-w-6xl mx-auto pt-6 border-t border-border/40 text-center space-y-3">
+      <p className="text-body text-xs text-muted-foreground/50 leading-relaxed max-w-3xl mx-auto">
+        Lunéa est un programme de bien-être et de développement personnel. Il ne constitue pas un
+        dispositif médical, un traitement, une psychothérapie, ni un substitut à une consultation
+        avec un professionnel de santé. Aucun résultat n'est garanti. Les personnes souffrant de
+        troubles du comportement alimentaire, suivant un traitement psychiatrique ou présentant des
+        problèmes de santé sont invitées à consulter leur médecin avant toute utilisation.
+      </p>
+      <p className="text-body text-xs text-muted-foreground/50">
+        TVA non applicable, art. 293 B du CGI.
+      </p>
       <p className="text-body text-xs text-muted-foreground/70 tracking-wide">
         © {new Date().getFullYear()} — Lunéa. Tous droits réservés.
       </p>

@@ -50,8 +50,8 @@ const PolitiqueConfidentialite = () => (
         </p>
         <div className="bg-card rounded-xl border border-border/50 p-4 mt-2 space-y-1">
           <p className="font-medium text-foreground">RIVIERE Research & Consulting SAS</p>
-          <p>Société par actions simplifiée au capital de 1 000 €</p>
-          <p>RCS Paris 881 598 981 — Paris, France</p>
+          <p>Société par actions simplifiée à associé unique, au capital de 1 050,00 €</p>
+          <p>RCS Paris 881 598 981 — 6 rue d'Armaillé, 75017 Paris</p>
           <p>
             Contact :{" "}
             <a href="mailto:contact@lunea.fr" className="text-primary hover:underline">
@@ -277,8 +277,8 @@ const PolitiqueConfidentialite = () => (
       </Block>
 
       <div className="mt-12 pt-8 border-t border-border/40 text-body text-xs text-muted-foreground/70">
-        <p>RIVIERE Research & Consulting SAS — RCS Paris 881 598 981 — Paris, France</p>
-        <p className="mt-1">Politique de confidentialité v1.0 — Dernière mise à jour : 8 juin 2026</p>
+        <p>RIVIERE Research & Consulting SAS — RCS Paris 881 598 981 — 6 rue d'Armaillé, 75017 Paris</p>
+        <p className="mt-1">Politique de confidentialité v1.1 — Dernière mise à jour : 12 juin 2026</p>
       </div>
     </main>
   </div>

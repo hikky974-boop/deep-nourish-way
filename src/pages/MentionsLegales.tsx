@@ -45,13 +45,13 @@ const MentionsLegales = () => (
         <p>
           Le site lunea.fr est édité par la société{" "}
           <strong>RIVIERE Research & Consulting SAS</strong>, société par actions simplifiée au
-          capital de <strong>1 000 €</strong>.
+          capital de <strong>1 050,00 €</strong> — société par actions simplifiée à associé unique.
         </p>
         <p>
           <strong>Immatriculation :</strong> RCS Paris 881 598 981
         </p>
         <p>
-          <strong>Siège social :</strong> Paris, France
+          <strong>Siège social :</strong> 6 rue d'Armaillé, 75017 Paris
         </p>
         <p>
           <strong>Contact :</strong>{" "}
@@ -64,8 +64,8 @@ const MentionsLegales = () => (
       {/* 2. Directeur de publication */}
       <Block title="2. Directeur de la publication">
         <p>
-          Le directeur de la publication est le représentant légal de RIVIERE Research &
-          Consulting SAS.
+          Le directeur de la publication est <strong>Virginie Rivière</strong>, représentante
+          légale de RIVIERE Research & Consulting SAS.
         </p>
         <p>
           <strong>Contact :</strong>{" "}
@@ -76,20 +76,38 @@ const MentionsLegales = () => (
       </Block>
 
       {/* 3. Hébergeur */}
-      <Block title="3. Hébergeur">
+      <Block title="3. Hébergement">
+        <p className="font-medium text-foreground">Site lunea.fr (landing page)</p>
         <p>
-          Le site est hébergé par la société <strong>Lovable Technology Inc.</strong>
+          Hébergé par <strong>Lovable Labs AB</strong>
+          <br />
+          Regeringsgatan 25, 111 53 Stockholm, Suède
+          <br />
+          <strong>Contact DPO :</strong>{" "}
+          <a href="mailto:dpo@lovable.dev" className="text-primary hover:underline">
+            dpo@lovable.dev
+          </a>
+        </p>
+
+        <p className="font-medium text-foreground mt-4">
+          Application Lunéa (espace membre, données utilisateurs, coach IA)
         </p>
         <p>
+          Hébergée par <strong>Base44</strong>
+          <br />
           <strong>Site web :</strong>{" "}
           <a
-            href="https://lovable.dev"
+            href="https://base44.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary hover:underline"
           >
-            lovable.dev
+            base44.com
           </a>
+          <br />
+          <span className="text-foreground/50 text-xs italic">
+            (Adresse physique à compléter — à confirmer directement auprès de Base44)
+          </span>
         </p>
       </Block>
 

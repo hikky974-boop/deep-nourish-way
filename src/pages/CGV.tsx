@@ -38,9 +38,9 @@ const CGV = () => (
       {/* Vendeur */}
       <div className="bg-card rounded-2xl border border-border/50 p-6 mb-10 text-body text-sm text-foreground/80 leading-relaxed space-y-1">
         <p className="font-medium text-foreground">RIVIERE Research & Consulting SAS</p>
-        <p>Société par actions simplifiée au capital de 1 000 €</p>
+        <p>Société par actions simplifiée à associé unique, au capital de 1 050,00 €</p>
         <p>RCS Paris 881 598 981</p>
-        <p>Siège social : Paris, France</p>
+        <p>Siège social : 6 rue d'Armaillé, 75017 Paris</p>
         <p>Contact : <a href="mailto:contact@lunea.fr" className="text-primary hover:underline">contact@lunea.fr</a></p>
       </div>
 
@@ -52,7 +52,24 @@ const CGV = () => (
         </p>
         <p>
           Tout achat implique l'acceptation pleine, entière et sans réserve des présentes CGV. Le Client déclare
-          avoir la capacité juridique de contracter et être majeur.
+          avoir la capacité juridique de contracter et être âgé d'au moins 18 ans.
+        </p>
+        <p>
+          Lunéa s'adresse à des adultes en bonne santé générale souhaitant améliorer leur rapport à
+          l'alimentation et à leurs émotions dans une démarche de bien-être. <strong>Le programme ne
+          s'adresse pas aux personnes suivantes</strong>, auxquelles il est fortement recommandé de
+          consulter un professionnel de santé avant toute utilisation :
+        </p>
+        <ul className="list-disc list-inside space-y-1 pl-2">
+          <li>Les personnes mineures (moins de 18 ans) ;</li>
+          <li>Les femmes enceintes ;</li>
+          <li>Les personnes souffrant de troubles du comportement alimentaire (TCA) diagnostiqués
+          cliniquement (anorexie, boulimie, hyperphagie boulimique) ;</li>
+          <li>Les personnes sous traitement psychiatrique actif ou suivies pour un trouble mental sévère.</li>
+        </ul>
+        <p>
+          En cas de doute sur votre état de santé, consultez votre médecin traitant ou un professionnel
+          de santé qualifié avant de commencer le programme.
         </p>
         <p>
           Les présentes CGV prévalent sur tout autre document. Les CGV applicables à une commande sont celles
@@ -94,11 +111,12 @@ const CGV = () => (
       </Section>
 
       <Section num="3" title="Prix">
-        <p>Les prix sont indiqués en euros, toutes taxes comprises (TTC) :</p>
+        <p>Les prix sont indiqués en euros :</p>
         <ul className="list-disc list-inside space-y-1 pl-2">
-          <li>Tarif de lancement : <strong>67,90 € TTC</strong></li>
-          <li>Tarif régulier : <strong>97,00 € TTC</strong></li>
+          <li>Tarif de lancement : <strong>67,90 €</strong></li>
+          <li>Tarif régulier : <strong>99 €</strong></li>
         </ul>
+        <p className="text-foreground/60 italic text-xs">TVA non applicable, art. 293 B du CGI.</p>
         <p>
           Le Vendeur se réserve le droit de modifier ses tarifs à tout moment. Le prix applicable est celui
           affiché au moment de la validation de la commande.
@@ -121,7 +139,7 @@ const CGV = () => (
 
       <Section num="5" title="Droit de rétractation — Exclusion expresse">
         <p>
-          Conformément à l'article <strong>L221-28 12° du Code de la consommation</strong>, le droit de
+          Conformément à l'article <strong>L221-28 13° du Code de la consommation</strong>, le droit de
           rétractation <strong>ne s'applique pas</strong> aux contenus numériques fournis sur support immatériel
           dont l'exécution a commencé avec l'accord préalable exprès du consommateur, lequel a reconnu qu'il
           perdrait ainsi son droit de rétractation.
@@ -133,7 +151,7 @@ const CGV = () => (
         <blockquote className="border-l-4 border-primary/40 pl-4 italic text-foreground/70 my-3">
           « Je reconnais que Lunéa est un contenu numérique à accès immédiat. En cochant cette case, je
           consens expressément à ce que l'exécution commence immédiatement après mon paiement et je renonce
-          expressément à mon droit de rétractation de 14 jours, conformément à l'article L221-28 12° du Code
+          expressément à mon droit de rétractation de 14 jours, conformément à l'article L221-28 13° du Code
           de la consommation. »
         </blockquote>
         <p>
@@ -354,8 +372,8 @@ const CGV = () => (
       </Section>
 
       <div className="mt-12 pt-8 border-t border-border/40 text-body text-xs text-muted-foreground/70">
-        <p>RIVIERE Research & Consulting SAS — RCS Paris 881 598 981 — Paris, France</p>
-        <p className="mt-1">CGV version 1.1 — Dernière mise à jour : 8 juin 2026</p>
+        <p>RIVIERE Research & Consulting SAS — RCS Paris 881 598 981 — 6 rue d'Armaillé, 75017 Paris</p>
+        <p className="mt-1">CGV version 1.2 — Dernière mise à jour : 12 juin 2026</p>
       </div>
     </main>
   </div>
