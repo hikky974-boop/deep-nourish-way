@@ -110,7 +110,35 @@ const CGV = () => (
         </p>
       </Section>
 
-      <Section num="3" title="Prix">
+      <Section num="3" title="Étendue de l'accès et de l'accompagnement">
+        <p className="font-medium text-foreground">Accès à vie au contenu</p>
+        <p>
+          L'achat du programme Lunéa donne au client un accès à vie au contenu du programme :
+          les audios, les ressources associées et la possibilité de suivre le programme de nouveau,
+          en autonomie, sans limitation de durée ni de nombre de fois.
+        </p>
+        <p className="font-medium text-foreground">Accompagnement personnalisé pendant le cycle actif</p>
+        <p>
+          L'accompagnement personnalisé assisté par intelligence artificielle (suivi quotidien,
+          relances, échanges approfondis) est inclus pendant le cycle actif du programme, d'une
+          durée de trente-trois (33) jours à compter du démarrage du parcours par le client.
+        </p>
+        <p className="font-medium text-foreground">Assistance après le cycle actif</p>
+        <p>
+          À l'issue du cycle actif, le client conserve l'accès à vie au contenu ainsi qu'une
+          assistance allégée assistée par intelligence artificielle, permettant notamment de
+          répondre à ses questions et de l'orienter dans le contenu du programme.
+        </p>
+        <p className="font-medium text-foreground">Réactivation de l'accompagnement complet</p>
+        <p>
+          Le client qui souhaite bénéficier à nouveau de l'accompagnement personnalisé complet,
+          dans le cadre d'un nouveau parcours guidé, peut en demander la réactivation. Les
+          modalités et conditions de cette réactivation sont communiquées au client au moment
+          de sa demande.
+        </p>
+      </Section>
+
+      <Section num="4" title="Prix">
         <p>Les prix sont indiqués en euros :</p>
         <ul className="list-disc list-inside space-y-1 pl-2">
           <li>Tarif de lancement : <strong>67,90 €</strong></li>
@@ -123,11 +151,11 @@ const CGV = () => (
         </p>
       </Section>
 
-      <Section num="4" title="Commande et accès">
+      <Section num="5" title="Commande et accès">
         <p>La commande est finalisée lorsque le Client :</p>
         <ol className="list-decimal list-inside space-y-1 pl-2">
           <li>Remplit le formulaire de commande ;</li>
-          <li>Coche la case de renonciation expresse au droit de rétractation (voir Article 5) ;</li>
+          <li>Coche la case de renonciation expresse au droit de rétractation (voir Article 6) ;</li>
           <li>Valide le paiement.</li>
         </ol>
         <p>
@@ -137,7 +165,7 @@ const CGV = () => (
         </p>
       </Section>
 
-      <Section num="5" title="Droit de rétractation — Exclusion expresse">
+      <Section num="6" title="Droit de rétractation — Exclusion expresse">
         <p>
           Conformément à l'article <strong>L221-28 13° du Code de la consommation</strong>, le droit de
           rétractation <strong>ne s'applique pas</strong> aux contenus numériques fournis sur support immatériel
@@ -161,10 +189,10 @@ const CGV = () => (
         </p>
       </Section>
 
-      <Section num="6" title="Politique de remboursement">
+      <Section num="7" title="Politique de remboursement">
         <p>
           En raison de la nature numérique du produit et de la renonciation expresse du Client à son droit de
-          rétractation (Article 5), <strong>toute vente est définitive dès lors que l'accès au programme a
+          rétractation (Article 6), <strong>toute vente est définitive dès lors que l'accès au programme a
           été ouvert ou que les identifiants de connexion ont été transmis</strong>.
         </p>
         <p>Aucun remboursement ne sera accordé, sauf dans les cas strictement suivants :</p>
@@ -181,7 +209,7 @@ const CGV = () => (
         </p>
       </Section>
 
-      <Section num="7" title="Modalités de paiement">
+      <Section num="8" title="Modalités de paiement">
         <p>
           Le paiement s'effectue par carte bancaire via un prestataire de paiement sécurisé. Les données
           bancaires du Client sont traitées directement par ce prestataire et ne sont jamais stockées par
@@ -199,7 +227,7 @@ const CGV = () => (
         </p>
       </Section>
 
-      <Section num="8" title="Propriété intellectuelle">
+      <Section num="9" title="Propriété intellectuelle">
         <p>
           L'intégralité du contenu de Lunéa — audios de reprogrammation, textes, visuels, protocoles, méthodes,
           exercices, architecture du programme et éléments de la marque — est la <strong>propriété exclusive
@@ -228,7 +256,7 @@ const CGV = () => (
         </p>
       </Section>
 
-      <Section num="9" title="Limitation de responsabilité et avertissement médical">
+      <Section num="10" title="Limitation de responsabilité et avertissement médical">
         <div className="bg-secondary/50 border border-border rounded-xl p-4 my-2">
           <p className="font-bold text-foreground text-sm uppercase tracking-wide">
             Avertissement important
@@ -271,7 +299,7 @@ const CGV = () => (
         </p>
       </Section>
 
-      <Section num="10" title="Données personnelles">
+      <Section num="11" title="Données personnelles">
         <p>
           Conformément au Règlement Général sur la Protection des Données (RGPD, règlement UE 2016/679) et à
           la loi Informatique et Libertés, le Vendeur collecte et traite les données personnelles du Client
@@ -296,7 +324,7 @@ const CGV = () => (
         </p>
       </Section>
 
-      <Section num="11" title="Médiation et règlement des litiges">
+      <Section num="12" title="Médiation et règlement des litiges">
         <p>
           En cas de litige relatif à l'interprétation ou à l'exécution des présentes CGV, le Client s'engage
           à contacter préalablement le Vendeur à l'adresse{" "}
@@ -338,7 +366,7 @@ const CGV = () => (
         </p>
       </Section>
 
-      <Section num="12" title="Droit applicable et juridiction compétente">
+      <Section num="13" title="Droit applicable et juridiction compétente">
         <p>
           Les présentes CGV sont régies exclusivement par le droit français.
         </p>
@@ -349,7 +377,7 @@ const CGV = () => (
         </p>
       </Section>
 
-      <Section num="13" title="Modification des CGV">
+      <Section num="14" title="Modification des CGV">
         <p>
           Le Vendeur se réserve le droit de modifier les présentes CGV à tout moment. Les modifications
           prennent effet dès leur publication sur le site lunea.fr.
@@ -360,7 +388,7 @@ const CGV = () => (
         </p>
       </Section>
 
-      <Section num="14" title="Dispositions diverses">
+      <Section num="15" title="Dispositions diverses">
         <p>
           Si une clause des présentes CGV était déclarée nulle ou inapplicable par une décision judiciaire
           définitive, les autres clauses demeurent pleinement en vigueur.

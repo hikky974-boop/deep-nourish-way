@@ -1,11 +1,5 @@
 import { motion } from "framer-motion";
-import { Moon, Check } from "lucide-react";
-
-const points = [
-  "Sans abonnement, sans date d'expiration",
-  "Avance à ton rythme, recommence quand tu veux",
-  "Mises à jour incluses, pour toujours",
-];
+import { Moon } from "lucide-react";
 
 const GuaranteeSection = () => (
   <section className="px-6 py-10 md:py-16 bg-background">
@@ -39,30 +33,32 @@ const GuaranteeSection = () => (
 
       {/* Titre */}
       <h2
-        className="text-display text-3xl md:text-4xl font-bold mb-3"
+        className="text-display text-3xl md:text-4xl font-bold mb-4"
         style={{ color: "#2d4a2a" }}
       >
-        Accès à vie garanti
+        Accès à vie au programme Lunéa
       </h2>
 
-      <p className="text-body text-base text-muted-foreground mb-8 leading-relaxed">
-        Lunéa t'accompagne aussi longtemps que tu en as besoin.
+      <p className="text-body text-base text-muted-foreground leading-relaxed">
+        Tes audios et ton contenu, pour toujours. Tu peux refaire ton parcours autant de fois
+        que tu en ressens le besoin, à ton rythme, toute ta vie.
       </p>
 
-      {/* Liste */}
-      <ul className="space-y-3 inline-block text-left">
-        {points.map((p) => (
-          <li key={p} className="flex items-center gap-3">
-            <span
-              className="w-5 h-5 rounded-full flex items-center justify-center shrink-0"
-              style={{ backgroundColor: "rgba(139,38,53,0.1)" }}
-            >
-              <Check className="w-3 h-3" strokeWidth={2.5} style={{ color: "#8b2635" }} />
-            </span>
-            <span className="text-body text-sm text-foreground/80">{p}</span>
-          </li>
-        ))}
-      </ul>
+      {/* Séparateur */}
+      <div className="w-full border-t my-8" style={{ borderColor: "rgba(107,143,102,0.35)" }} />
+
+      {/* Sous-bloc accompagnement */}
+      <h3
+        className="text-display text-xl md:text-2xl font-semibold mb-3"
+        style={{ color: "#2d4a2a" }}
+      >
+        Un accompagnement qui te guide jour après jour
+      </h3>
+      <p className="text-body text-base text-muted-foreground leading-relaxed">
+        Pendant tes 33 jours, ton accompagnement personnalisé t'épaule au quotidien : il
+        t'écoute, s'ajuste à toi, et t'aide à tenir jusqu'au bout — pour que ce que tu vis
+        devienne durable.
+      </p>
     </motion.div>
   </section>
 );
