@@ -93,7 +93,7 @@ const PricingSection = () => (
               asChild
               className="w-full mb-3 shadow-md shadow-primary/20 text-sm sm:text-base px-3 sm:px-6 whitespace-nowrap"
             >
-              <a href="https://preview-sandbox--694e3c28e92421880795f791.base44.app/checkout">
+              <a href="https://equilibre-interieur-0795f791.base44.app/Paywall">
                 Rejoindre Lunéa maintenant
               </a>
             </Button>
