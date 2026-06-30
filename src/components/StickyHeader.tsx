@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import logoLunea from "@/assets/logo-lunea.png";
+import logoLunea from "@/assets/logo-lunea.svg";
 
 const navItems = [
   { label: "Le programme", href: "#programme" },
