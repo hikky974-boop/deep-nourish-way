@@ -137,7 +137,7 @@ const ExperienceSection = () => (
         >
           <img
             src={devicesMockup}
-            alt="Aperçu de l'application Lunéa sur mobile et ordinateur"
+            alt="Aperçu de l'application Lunaé sur mobile et ordinateur"
             loading="lazy"
             className="w-full h-auto rounded-3xl object-cover"
           />

@@ -77,7 +77,7 @@ const ProgramSection = () => (
         className="text-display text-3xl md:text-4xl font-light text-center mb-12"
       >
         Ce que tu obtiens avec le{" "}
-        <span className="italic text-primary">programme Lunéa</span>
+        <span className="italic text-primary">programme Lunaé</span>
       </motion.h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">

@@ -17,7 +17,7 @@ const PolitiqueConfidentialite = () => (
     >
       <div className="max-w-4xl mx-auto flex items-center justify-between px-6 py-4">
         <Link to="/" className="flex items-center gap-2">
-          <span className="text-display text-2xl font-light tracking-tight">Lunéa</span>
+          <span className="text-display text-2xl font-light tracking-tight">Lunaé</span>
           <Moon className="w-4 h-4 text-primary" strokeWidth={1.4} />
         </Link>
         <Link
@@ -46,7 +46,7 @@ const PolitiqueConfidentialite = () => (
       {/* 1. Responsable */}
       <Block title="1. Responsable du traitement">
         <p>
-          Le responsable du traitement des données personnelles collectées sur le site lunea.fr est :
+          Le responsable du traitement des données personnelles collectées sur le site lunae-app.fr est :
         </p>
         <div className="bg-card rounded-xl border border-border/50 p-4 mt-2 space-y-1">
           <p className="font-medium text-foreground">RIVIERE Research & Consulting SAS</p>
@@ -54,8 +54,8 @@ const PolitiqueConfidentialite = () => (
           <p>RCS Paris 881 598 981 — 6 rue d'Armaillé, 75017 Paris</p>
           <p>
             Contact :{" "}
-            <a href="mailto:contact@lunea.fr" className="text-primary hover:underline">
-              contact@lunea.fr
+            <a href="mailto:contact@lunae-app.fr" className="text-primary hover:underline">
+              contact@lunae-app.fr
             </a>
           </p>
         </div>
@@ -64,7 +64,7 @@ const PolitiqueConfidentialite = () => (
       {/* 2. Données collectées */}
       <Block title="2. Données collectées">
         <p>
-          Dans le cadre de la fourniture du programme Lunéa, nous collectons uniquement les
+          Dans le cadre de la fourniture du programme Lunaé, nous collectons uniquement les
           données strictement nécessaires à l'exécution du service :
         </p>
         <div className="space-y-4 mt-2">
@@ -161,11 +161,11 @@ const PolitiqueConfidentialite = () => (
       {/* 5. Hébergement */}
       <Block title="5. Localisation des données et transferts hors EEE">
         <p>
-          Le site lunea.fr est hébergé par <strong>Lovable Labs AB</strong> (Stockholm, Suède),
+          Le site lunae-app.fr est hébergé par <strong>Lovable Labs AB</strong> (Stockholm, Suède),
           au sein de l'Espace Économique Européen (EEE).
         </p>
         <p>
-          L'application Lunéa (espace membre, données de progression, coach IA) est hébergée par{" "}
+          L'application Lunaé (espace membre, données de progression, coach IA) est hébergée par{" "}
           <strong>Base44</strong>, service exploité par <strong>Wix.com Ltd.</strong>, dont le
           siège social est situé en <strong>Israël</strong>. À ce titre, certaines données
           personnelles des utilisatrices — y compris les données saisies dans le programme et
@@ -253,8 +253,8 @@ const PolitiqueConfidentialite = () => (
         </ul>
         <p className="mt-3">
           Pour exercer l'un de ces droits, adressez votre demande par email à{" "}
-          <a href="mailto:contact@lunea.fr" className="text-primary hover:underline">
-            contact@lunea.fr
+          <a href="mailto:contact@lunae-app.fr" className="text-primary hover:underline">
+            contact@lunae-app.fr
           </a>
           , en précisant votre identité. Nous nous engageons à répondre dans un délai d'un mois.
         </p>
@@ -268,7 +268,7 @@ const PolitiqueConfidentialite = () => (
       {/* 8. Cookies */}
       <Block title="8. Cookies et traceurs">
         <p>
-          Le site lunea.fr utilise uniquement des cookies <strong>strictement nécessaires</strong>{" "}
+          Le site lunae-app.fr utilise uniquement des cookies <strong>strictement nécessaires</strong>{" "}
           au fonctionnement technique du service (gestion de session, préférences d'affichage).
           Ces cookies ne nécessitent pas de consentement préalable.
         </p>

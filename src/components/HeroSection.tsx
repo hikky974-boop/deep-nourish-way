@@ -70,7 +70,7 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-body text-sm md:text-base text-foreground/70 max-w-md mb-8 leading-relaxed">
-            Lunéa est un parcours de transformation de 33 jours qui agit là où
+            Lunaé est un parcours de transformation de 33 jours qui agit là où
             tout se joue vraiment&nbsp;: le cerveau, les émotions et les automatismes.
           </p>
 

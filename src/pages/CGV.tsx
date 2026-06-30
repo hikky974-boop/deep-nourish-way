@@ -18,7 +18,7 @@ const CGV = () => (
     <header className="sticky top-0 z-50 backdrop-blur-md border-b border-border/40" style={{ backgroundColor: "hsl(var(--background) / 0.92)" }}>
       <div className="max-w-4xl mx-auto flex items-center justify-between px-6 py-4">
         <Link to="/" className="flex items-center gap-2">
-          <span className="text-display text-2xl font-light tracking-tight">Lunéa</span>
+          <span className="text-display text-2xl font-light tracking-tight">Lunaé</span>
           <Moon className="w-4 h-4 text-primary" strokeWidth={1.4} />
         </Link>
         <Link to="/" className="flex items-center gap-1.5 text-body text-sm text-foreground/70 hover:text-primary transition-colors">
@@ -41,21 +41,21 @@ const CGV = () => (
         <p>Société par actions simplifiée à associé unique, au capital de 1 050,00 €</p>
         <p>RCS Paris 881 598 981</p>
         <p>Siège social : 6 rue d'Armaillé, 75017 Paris</p>
-        <p>Contact : <a href="mailto:contact@lunea.fr" className="text-primary hover:underline">contact@lunea.fr</a></p>
+        <p>Contact : <a href="mailto:contact@lunae-app.fr" className="text-primary hover:underline">contact@lunae-app.fr</a></p>
       </div>
 
       <Section num="1" title="Objet et champ d'application">
         <p>
           Les présentes Conditions Générales de Vente (ci-après « CGV ») régissent exclusivement les relations
           contractuelles entre la société RIVIERE Research & Consulting SAS (ci-après « le Vendeur ») et toute
-          personne physique effectuant un achat sur le site lunea.fr (ci-après « le Client »).
+          personne physique effectuant un achat sur le site lunae-app.fr (ci-après « le Client »).
         </p>
         <p>
           Tout achat implique l'acceptation pleine, entière et sans réserve des présentes CGV. Le Client déclare
           avoir la capacité juridique de contracter et être âgé d'au moins 18 ans.
         </p>
         <p>
-          Lunéa s'adresse à des adultes en bonne santé générale souhaitant améliorer leur rapport à
+          Lunaé s'adresse à des adultes en bonne santé générale souhaitant améliorer leur rapport à
           l'alimentation et à leurs émotions dans une démarche de bien-être. <strong>Le programme ne
           s'adresse pas aux personnes suivantes</strong>, auxquelles il est fortement recommandé de
           consulter un professionnel de santé avant toute utilisation :
@@ -79,12 +79,12 @@ const CGV = () => (
 
       <Section num="2" title="Description du produit">
         <p>
-          Lunéa est un programme digital de reprogrammation neuro-émotionnelle, accessible via une application
+          Lunaé est un programme digital de reprogrammation neuro-émotionnelle, accessible via une application
           web. Il comprend notamment : un parcours structuré de 33 jours, des audios de reprogrammation neuro-émotionnelle et de PNL,
           des exercices de recentrage émotionnel, un suivi quotidien, un bouton urgence et un coach IA personnel.
         </p>
         <p>
-          Lunéa constitue un <strong>contenu numérique fourni sur support immatériel</strong>, au sens de
+          Lunaé constitue un <strong>contenu numérique fourni sur support immatériel</strong>, au sens de
           l'article L221-1 du Code de la consommation. Il ne s'agit pas d'un bien physique ni d'un dispositif
           médical ou d'un service de santé.
         </p>
@@ -94,14 +94,14 @@ const CGV = () => (
           plateforme.
         </p>
         <p>
-          Le compte Lunéa est <strong>strictement personnel, individuel et intransmissible</strong>. Le Client
+          Le compte Lunaé est <strong>strictement personnel, individuel et intransmissible</strong>. Le Client
           est seul responsable de la confidentialité de ses identifiants de connexion. RIVIERE Research &
           Consulting SAS se réserve le droit de <strong>suspendre ou supprimer immédiatement tout compte,
           sans préavis ni remboursement</strong>, en cas de connexions simultanées suspectes, de partage
           d'identifiants avec des tiers, ou de toute activité anormale détectée sur le compte.
         </p>
         <p>
-          Le programme Lunéa est conçu selon une logique pédagogique progressive : les contenus se débloquent
+          Le programme Lunaé est conçu selon une logique pédagogique progressive : les contenus se débloquent
           au fur et à mesure de l'avancement du Client dans le parcours. L'accès immédiat consécutif au
           paiement porte sur le démarrage du programme ; les modules et contenus suivants deviennent
           accessibles à mesure que le Client progresse dans son parcours. Cette organisation constitue un
@@ -113,7 +113,7 @@ const CGV = () => (
       <Section num="3" title="Étendue de l'accès et de l'accompagnement">
         <p className="font-medium text-foreground">Accès à vie au contenu</p>
         <p>
-          L'achat du programme Lunéa donne au client un accès à vie au contenu du programme :
+          L'achat du programme Lunaé donne au client un accès à vie au contenu du programme :
           les audios, les ressources associées et la possibilité de suivre le programme de nouveau,
           en autonomie, sans limitation de durée ni de nombre de fois.
         </p>
@@ -177,7 +177,7 @@ const CGV = () => (
           validation est obligatoire pour finaliser l'achat :
         </p>
         <blockquote className="border-l-4 border-primary/40 pl-4 italic text-foreground/70 my-3">
-          « Je reconnais que Lunéa est un contenu numérique à accès immédiat. En cochant cette case, je
+          « Je reconnais que Lunaé est un contenu numérique à accès immédiat. En cochant cette case, je
           consens expressément à ce que l'exécution commence immédiatement après mon paiement et je renonce
           expressément à mon droit de rétractation de 14 jours, conformément à l'article L221-28 13° du Code
           de la consommation. »
@@ -199,12 +199,12 @@ const CGV = () => (
         <ul className="list-disc list-inside space-y-1 pl-2">
           <li>
             Défaut avéré d'accès technique imputable exclusivement au Vendeur, non résolu dans un délai de
-            7 jours ouvrés après signalement écrit à contact@lunea.fr ;
+            7 jours ouvrés après signalement écrit à contact@lunae-app.fr ;
           </li>
           <li>Double facturation ou erreur de paiement documentée.</li>
         </ul>
         <p>
-          Toute demande de remboursement doit être adressée par email à contact@lunea.fr avec les justificatifs
+          Toute demande de remboursement doit être adressée par email à contact@lunae-app.fr avec les justificatifs
           correspondants. Le Vendeur s'engage à traiter tout signalement dans les meilleurs délais.
         </p>
       </Section>
@@ -221,7 +221,7 @@ const CGV = () => (
         </p>
         <p>
           Les journaux de connexion, adresses IP et données d'utilisation conservés par les serveurs de
-          Lunéa constituent une <strong>preuve juridique de l'accès effectif au service</strong>. Toute
+          Lunaé constituent une <strong>preuve juridique de l'accès effectif au service</strong>. Toute
           demande de rétrofacturation infondée pourra entraîner des frais de recouvrement à la charge du
           Client ainsi qu'un <strong>bannissement définitif de la plateforme</strong>.
         </p>
@@ -229,7 +229,7 @@ const CGV = () => (
 
       <Section num="9" title="Propriété intellectuelle">
         <p>
-          L'intégralité du contenu de Lunéa — audios de reprogrammation, textes, visuels, protocoles, méthodes,
+          L'intégralité du contenu de Lunaé — audios de reprogrammation, textes, visuels, protocoles, méthodes,
           exercices, architecture du programme et éléments de la marque — est la <strong>propriété exclusive
           de RIVIERE Research & Consulting SAS</strong> et est protégée par le droit d'auteur ainsi que par
           les dispositions du Code de la propriété intellectuelle.
@@ -262,7 +262,7 @@ const CGV = () => (
             Avertissement important
           </p>
           <p className="mt-2 font-medium text-foreground">
-            LUNÉA EST UN OUTIL DE BIEN-ÊTRE ET DE DÉVELOPPEMENT PERSONNEL. IL NE REMPLACE EN AUCUN
+            LUNAÉ EST UN OUTIL DE BIEN-ÊTRE ET DE DÉVELOPPEMENT PERSONNEL. IL NE REMPLACE EN AUCUN
             CAS UNE CONSULTATION, UN DIAGNOSTIC OU UN TRAITEMENT MÉDICAL OU PSYCHOLOGIQUE
             PROFESSIONNEL. AUCUNE OBLIGATION DE RÉSULTAT N'EST GARANTIE. RIVIERE RESEARCH &
             CONSULTING S'ENGAGE UNIQUEMENT À FOURNIR L'ACCÈS AUX CONTENUS DU PROGRAMME
@@ -285,7 +285,7 @@ const CGV = () => (
           payé par le Client pour l'accès au programme.
         </p>
         <p>
-          <strong>Disponibilité du service.</strong> L'accès à Lunéa est fourni en l'état. RIVIERE
+          <strong>Disponibilité du service.</strong> L'accès à Lunaé est fourni en l'état. RIVIERE
           Research & Consulting SAS s'engage à maintenir le service disponible dans la mesure du
           possible mais ne garantit pas une disponibilité sans interruption (principe du « best
           effort »). Les périodes de maintenance planifiée, de mise à jour ou d'incident technique
@@ -316,7 +316,7 @@ const CGV = () => (
         <p>
           Le Client dispose d'un droit d'accès, de rectification, de suppression, de limitation et de
           portabilité de ses données, ainsi que d'un droit d'opposition, exerceable à l'adresse :
-          <a href="mailto:contact@lunea.fr" className="text-primary hover:underline ml-1">contact@lunea.fr</a>.
+          <a href="mailto:contact@lunae-app.fr" className="text-primary hover:underline ml-1">contact@lunae-app.fr</a>.
         </p>
         <p>
           Pour tout recours relatif au traitement de ses données, le Client peut saisir la Commission
@@ -328,7 +328,7 @@ const CGV = () => (
         <p>
           En cas de litige relatif à l'interprétation ou à l'exécution des présentes CGV, le Client s'engage
           à contacter préalablement le Vendeur à l'adresse{" "}
-          <a href="mailto:contact@lunea.fr" className="text-primary hover:underline">contact@lunea.fr</a>{" "}
+          <a href="mailto:contact@lunae-app.fr" className="text-primary hover:underline">contact@lunae-app.fr</a>{" "}
           afin de rechercher une solution amiable.
         </p>
         <p>
@@ -380,7 +380,7 @@ const CGV = () => (
       <Section num="14" title="Modification des CGV">
         <p>
           Le Vendeur se réserve le droit de modifier les présentes CGV à tout moment. Les modifications
-          prennent effet dès leur publication sur le site lunea.fr.
+          prennent effet dès leur publication sur le site lunae-app.fr.
         </p>
         <p>
           Les CGV applicables à une commande sont celles en vigueur au moment de la validation de ladite

@@ -6,7 +6,7 @@ const FooterSection = () => (
     <div className="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-4 gap-10 mb-10">
       <div className="md:col-span-1">
         <div className="flex items-center gap-2 mb-3">
-          <span className="text-display text-2xl font-light">Lunéa</span>
+          <span className="text-display text-2xl font-light">Lunaé</span>
           <Moon className="w-4 h-4 text-primary" strokeWidth={1.4} />
         </div>
         <p className="text-body text-xs text-muted-foreground leading-relaxed">
@@ -50,21 +50,21 @@ const FooterSection = () => (
           <br />
           Nous sommes là pour toi.
           <br />
-          <a href="mailto:contact@lunea.fr" className="text-primary hover:underline">Contactez-nous</a>
+          <a href="mailto:contact@lunae-app.fr" className="text-primary hover:underline">Contactez-nous</a>
         </p>
       </div>
     </div>
 
     <div className="max-w-6xl mx-auto pt-6 border-t border-border/40 text-center space-y-3">
       <p className="text-body text-xs text-muted-foreground/50 leading-relaxed max-w-3xl mx-auto">
-        Lunéa est un programme de bien-être et de développement personnel. Il ne constitue pas un
+        Lunaé est un programme de bien-être et de développement personnel. Il ne constitue pas un
         dispositif médical, un traitement, une psychothérapie, ni un substitut à une consultation
         avec un professionnel de santé. Aucun résultat n'est garanti. Les personnes souffrant de
         troubles du comportement alimentaire, suivant un traitement psychiatrique ou présentant des
         problèmes de santé sont invitées à consulter leur médecin avant toute utilisation.
       </p>
       <p className="text-body text-xs text-muted-foreground/70 tracking-wide">
-        © {new Date().getFullYear()} — Lunéa. Tous droits réservés.
+        © {new Date().getFullYear()} — Lunaé. Tous droits réservés.
       </p>
     </div>
   </footer>

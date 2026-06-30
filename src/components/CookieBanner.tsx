@@ -29,7 +29,7 @@ const CookieBanner = () => {
     >
       <div className="max-w-3xl mx-auto bg-card border border-border/60 rounded-2xl shadow-lg px-5 py-4 md:px-7 md:py-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
         <p className="text-body text-sm text-foreground/75 leading-relaxed flex-1">
-          Lunéa utilise des cookies essentiels au fonctionnement du site. En continuant, tu acceptes notre{" "}
+          Lunaé utilise des cookies essentiels au fonctionnement du site. En continuant, tu acceptes notre{" "}
           <Link
             to="/politique-confidentialite"
             className="text-primary underline underline-offset-2 hover:text-primary/80 transition-colors"

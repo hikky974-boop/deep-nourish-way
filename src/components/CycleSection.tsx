@@ -54,7 +54,7 @@ const CycleSection = () => (
             manques de volonté. Que les autres y arrivent mais pas toi. Cette
             pensée est fausse —{" "}
             <span className="text-foreground font-medium">
-              et Lunéa est là pour te le prouver.
+              et Lunaé est là pour te le prouver.
             </span>
           </p>
         </motion.li>

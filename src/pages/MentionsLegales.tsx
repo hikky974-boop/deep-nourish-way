@@ -17,7 +17,7 @@ const MentionsLegales = () => (
     >
       <div className="max-w-4xl mx-auto flex items-center justify-between px-6 py-4">
         <Link to="/" className="flex items-center gap-2">
-          <span className="text-display text-2xl font-light tracking-tight">Lunéa</span>
+          <span className="text-display text-2xl font-light tracking-tight">Lunaé</span>
           <Moon className="w-4 h-4 text-primary" strokeWidth={1.4} />
         </Link>
         <Link
@@ -43,7 +43,7 @@ const MentionsLegales = () => (
       {/* 1. Éditeur */}
       <Block title="1. Éditeur du site">
         <p>
-          Le site lunea.fr est édité par la société{" "}
+          Le site lunae-app.fr est édité par la société{" "}
           <strong>RIVIERE Research & Consulting SAS</strong>, société par actions simplifiée au
           capital de <strong>1 050,00 €</strong> — société par actions simplifiée à associé unique.
         </p>
@@ -55,8 +55,8 @@ const MentionsLegales = () => (
         </p>
         <p>
           <strong>Contact :</strong>{" "}
-          <a href="mailto:contact@lunea.fr" className="text-primary hover:underline">
-            contact@lunea.fr
+          <a href="mailto:contact@lunae-app.fr" className="text-primary hover:underline">
+            contact@lunae-app.fr
           </a>
         </p>
       </Block>
@@ -69,15 +69,15 @@ const MentionsLegales = () => (
         </p>
         <p>
           <strong>Contact :</strong>{" "}
-          <a href="mailto:contact@lunea.fr" className="text-primary hover:underline">
-            contact@lunea.fr
+          <a href="mailto:contact@lunae-app.fr" className="text-primary hover:underline">
+            contact@lunae-app.fr
           </a>
         </p>
       </Block>
 
       {/* 3. Hébergeur */}
       <Block title="3. Hébergement">
-        <p className="font-medium text-foreground">Site lunea.fr (landing page)</p>
+        <p className="font-medium text-foreground">Site lunae-app.fr (landing page)</p>
         <p>
           Hébergé par <strong>Lovable Labs AB</strong>
           <br />
@@ -90,7 +90,7 @@ const MentionsLegales = () => (
         </p>
 
         <p className="font-medium text-foreground mt-4">
-          Application Lunéa (espace membre, données utilisateurs, coach IA)
+          Application Lunaé (espace membre, données utilisateurs, coach IA)
         </p>
         <p>
           Hébergée par <strong>Base44</strong>
@@ -114,7 +114,7 @@ const MentionsLegales = () => (
       {/* 4. Propriété intellectuelle */}
       <Block title="4. Propriété intellectuelle">
         <p>
-          L'ensemble du contenu publié sur le site lunea.fr — textes, images, audios, vidéos,
+          L'ensemble du contenu publié sur le site lunae-app.fr — textes, images, audios, vidéos,
           graphismes, logo, structure et programme — est la propriété exclusive de RIVIERE
           Research & Consulting SAS et est protégé par le droit d'auteur et le droit des marques
           (Code de la propriété intellectuelle).
@@ -130,7 +130,7 @@ const MentionsLegales = () => (
       {/* 5. Données personnelles */}
       <Block title="5. Données personnelles">
         <p>
-          Le site lunea.fr est susceptible de collecter des données personnelles (adresse email,
+          Le site lunae-app.fr est susceptible de collecter des données personnelles (adresse email,
           données de connexion) dans le cadre de la gestion des commandes et de l'accès au
           programme. Ces données sont traitées conformément au Règlement Général sur la Protection
           des Données (RGPD, règlement UE 2016/679) et à la loi Informatique et Libertés.
@@ -143,8 +143,8 @@ const MentionsLegales = () => (
           Conformément aux articles 15 à 22 du RGPD, vous disposez d'un droit d'accès, de
           rectification, de suppression, de limitation, de portabilité et d'opposition concernant
           vos données personnelles. Ces droits s'exercent par email à{" "}
-          <a href="mailto:contact@lunea.fr" className="text-primary hover:underline">
-            contact@lunea.fr
+          <a href="mailto:contact@lunae-app.fr" className="text-primary hover:underline">
+            contact@lunae-app.fr
           </a>
           .
         </p>
@@ -157,7 +157,7 @@ const MentionsLegales = () => (
       {/* 6. Cookies */}
       <Block title="6. Cookies">
         <p>
-          Le site lunea.fr est susceptible d'utiliser des cookies techniques nécessaires à son
+          Le site lunae-app.fr est susceptible d'utiliser des cookies techniques nécessaires à son
           fonctionnement. Aucun cookie publicitaire ou de traçage tiers n'est déposé sans
           consentement préalable.
         </p>
@@ -171,7 +171,7 @@ const MentionsLegales = () => (
       {/* 7. Liens hypertextes */}
       <Block title="7. Liens hypertextes">
         <p>
-          Le site lunea.fr peut contenir des liens vers des sites tiers. RIVIERE Research &
+          Le site lunae-app.fr peut contenir des liens vers des sites tiers. RIVIERE Research &
           Consulting SAS n'exerce aucun contrôle sur ces sites et décline toute responsabilité
           quant à leur contenu ou leur politique de confidentialité.
         </p>
@@ -195,7 +195,7 @@ const MentionsLegales = () => (
       <Block title="9. Droit applicable">
         <p>
           Les présentes mentions légales sont régies par le droit français. Tout litige relatif à
-          l'utilisation du site lunea.fr relève de la compétence exclusive des juridictions de
+          l'utilisation du site lunae-app.fr relève de la compétence exclusive des juridictions de
           Paris, sauf disposition légale impérative contraire.
         </p>
       </Block>

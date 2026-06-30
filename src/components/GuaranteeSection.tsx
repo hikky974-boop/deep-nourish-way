@@ -36,7 +36,7 @@ const GuaranteeSection = () => (
         className="text-display text-3xl md:text-4xl font-bold mb-4"
         style={{ color: "#2d4a2a" }}
       >
-        Accès à vie au programme Lunéa
+        Accès à vie au programme Lunaé
       </h2>
 
       <p className="text-body text-base text-muted-foreground leading-relaxed">

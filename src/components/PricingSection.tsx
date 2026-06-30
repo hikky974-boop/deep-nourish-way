@@ -94,7 +94,7 @@ const PricingSection = () => (
               className="w-full mb-3 shadow-md shadow-primary/20 text-sm sm:text-base px-3 sm:px-6 whitespace-nowrap"
             >
               <a href="https://equilibre-interieur-0795f791.base44.app/Paywall">
-                Rejoindre Lunéa maintenant
+                Rejoindre Lunaé maintenant
               </a>
             </Button>
 

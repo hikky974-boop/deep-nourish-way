@@ -27,7 +27,7 @@ const StickyHeader = () => {
         <a href="#" className="flex items-center">
           <img
             src={logoLunea}
-            alt="Lunéa"
+            alt="Lunaé"
             className="h-8 md:h-9 w-auto"
           />
         </a>

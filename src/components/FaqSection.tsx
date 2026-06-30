@@ -8,8 +8,8 @@ import {
 
 const faqs = [
   {
-    q: "À qui s'adresse Lunéa ?",
-    a: "Lunéa s'adresse à toutes les femmes qui souhaitent transformer leur relation à la nourriture en profondeur, sans régime ni privation. Le programme est particulièrement adapté à celles qui mangent sous l'effet des émotions ou des automatismes.",
+    q: "À qui s'adresse Lunaé ?",
+    a: "Lunaé s'adresse à toutes les femmes qui souhaitent transformer leur relation à la nourriture en profondeur, sans régime ni privation. Le programme est particulièrement adapté à celles qui mangent sous l'effet des émotions ou des automatismes.",
   },
   {
     q: "Combien de temps dure le programme ?",
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: "Est-ce que ça marche vraiment ?",
-    a: "Honnêtement : oui, si tu t'y engages vraiment. Lunéa n'est pas une formule magique. C'est un programme qui agit sur les mécanismes profonds derrière les compulsions — pas seulement sur les symptômes. Les résultats varient selon les personnes : certaines ressentent un changement dès la première semaine, d'autres après 3 ou 4 semaines. Ce qui revient le plus souvent dans les retours, c'est moins de culpabilité, moins d'automatismes, et une vraie conscience de ce qui se passe quand l'envie arrive.",
+    a: "Honnêtement : oui, si tu t'y engages vraiment. Lunaé n'est pas une formule magique. C'est un programme qui agit sur les mécanismes profonds derrière les compulsions — pas seulement sur les symptômes. Les résultats varient selon les personnes : certaines ressentent un changement dès la première semaine, d'autres après 3 ou 4 semaines. Ce qui revient le plus souvent dans les retours, c'est moins de culpabilité, moins d'automatismes, et une vraie conscience de ce qui se passe quand l'envie arrive.",
   },
   {
     q: "C'est quoi exactement la reprogrammation neuro-émotionnelle ?",
@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: "Je peux commencer même si je n'ai jamais fait ce type de programme ?",
-    a: "Absolument — et c'est même pour ça que Lunéa a été conçu. Tout est guidé pas à pas, sans jargon, sans prérequis. Que tu aies déjà exploré le développement personnel ou que ce soit ta toute première fois, le programme t'accueille là où tu en es. Le seul vrai prérequis, c'est d'avoir envie de changer quelque chose.",
+    a: "Absolument — et c'est même pour ça que Lunaé a été conçu. Tout est guidé pas à pas, sans jargon, sans prérequis. Que tu aies déjà exploré le développement personnel ou que ce soit ta toute première fois, le programme t'accueille là où tu en es. Le seul vrai prérequis, c'est d'avoir envie de changer quelque chose.",
   },
 ];
 
