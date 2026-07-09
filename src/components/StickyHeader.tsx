@@ -45,7 +45,7 @@ const StickyHeader = () => {
           ))}
         </nav>
 
-        <Button variant="hero" size="sm" onClick={() => { window.location.href = "https://equilibre-interieur-0795f791.base44.app/Paywall"; }} className="text-sm px-5 h-9">
+        <Button variant="hero" size="sm" onClick={() => { window.location.href = "https://app.lunae-app.fr/Paywall"; }} className="text-sm px-5 h-9">
           Me lancer
         </Button>
       </div>

@@ -76,7 +76,7 @@ const HeroSection = () => {
 
           <div className="flex flex-col sm:flex-row gap-3 mb-8">
             <Button variant="hero" size="lg" asChild className="w-full sm:w-auto">
-              <a href="https://equilibre-interieur-0795f791.base44.app/Paywall">
+              <a href="https://app.lunae-app.fr/Paywall">
                 Je commence ma transformation
               </a>
             </Button>
