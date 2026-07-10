@@ -3,7 +3,7 @@ import {
   Calendar,
   Headphones,
   ListChecks,
-  Video,
+  
   Bell,
   MessageCircle,
   BarChart3,
