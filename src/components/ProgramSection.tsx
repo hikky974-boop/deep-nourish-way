@@ -3,7 +3,7 @@ import {
   Calendar,
   Headphones,
   ListChecks,
-  Video,
+  
   Bell,
   MessageCircle,
   BarChart3,
@@ -33,11 +33,6 @@ const items = [
       "Développer la bienveillance envers toi-même",
       "Célébrer chaque petit progrès sans te juger",
     ],
-  },
-  {
-    icon: Video,
-    title: "2 vidéos d'automassage drainant",
-    desc: "Visage & cou, corps & jambes. Des gestes guidés par une experte en drainage lymphatique pour alléger le corps, réduire la rétention d'eau et se reconnecter à soi avec douceur.",
   },
   {
     icon: Bell,
