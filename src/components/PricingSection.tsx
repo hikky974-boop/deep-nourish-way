@@ -93,8 +93,14 @@ const PricingSection = () => (
               asChild
               className="w-full mb-3 shadow-md shadow-primary/20 text-sm sm:text-base px-3 sm:px-6 whitespace-nowrap"
             >
-              <a href="https://app.lunae-app.fr/Paywall">
-                Rejoindre Lunaé maintenant
+              <a href="https://app.lunae-app.fr/checkout/self">
+                Commencer Lunaé
+              </a>
+            </Button>
+
+            <Button variant="outline" size="lg" asChild className="w-full mb-3 rounded-full border-foreground/20 hover:bg-accent/40">
+              <a href="https://app.lunae-app.fr/checkout/gift">
+                Offrir Lunaé
               </a>
             </Button>
 
