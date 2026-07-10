@@ -35,11 +35,6 @@ const items = [
     ],
   },
   {
-    icon: Video,
-    title: "2 vidéos d'automassage drainant",
-    desc: "Visage & cou, corps & jambes. Des gestes guidés par une experte en drainage lymphatique pour alléger le corps, réduire la rétention d'eau et se reconnecter à soi avec douceur.",
-  },
-  {
     icon: Bell,
     title: "Un bouton urgence",
     desc: "La compulsion arrive maintenant ? En 60 secondes, tu traverses le moment sans craquer. Disponible jour et nuit.",
