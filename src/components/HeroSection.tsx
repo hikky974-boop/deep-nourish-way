@@ -74,10 +74,15 @@ const HeroSection = () => {
             tout se joue vraiment&nbsp;: le cerveau, les émotions et les automatismes.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-3 mb-8">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-8">
             <Button variant="hero" size="lg" asChild className="w-full sm:w-auto">
-              <a href="https://app.lunae-app.fr/Paywall">
-                Je commence ma transformation
+              <a href="https://app.lunae-app.fr/checkout/self">
+                Commencer Lunaé
+              </a>
+            </Button>
+            <Button variant="outline" size="lg" asChild className="w-full sm:w-auto rounded-full border-foreground/20 hover:bg-accent/40">
+              <a href="https://app.lunae-app.fr/checkout/gift">
+                Offrir Lunaé
               </a>
             </Button>
             <Button
