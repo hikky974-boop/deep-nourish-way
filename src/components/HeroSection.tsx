@@ -76,13 +76,8 @@ const HeroSection = () => {
 
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-8">
             <Button variant="hero" size="lg" asChild className="w-full sm:w-auto">
-              <a href="https://app.lunae-app.fr/checkout/self">
+              <a href="https://app.lunae-app.fr/Paywall">
                 Commencer Lunaé
-              </a>
-            </Button>
-            <Button variant="outline" size="lg" asChild className="w-full sm:w-auto rounded-full border-foreground/20 hover:bg-accent/40">
-              <a href="https://app.lunae-app.fr/checkout/gift">
-                Offrir Lunaé
               </a>
             </Button>
             <Button
