@@ -57,15 +57,15 @@ const CGV = () => (
         <p>
           Lunaé s'adresse à des adultes en bonne santé générale souhaitant améliorer leur rapport à
           l'alimentation et à leurs émotions dans une démarche de bien-être. <strong>Le programme ne
-          s'adresse pas aux personnes suivantes</strong>, auxquelles il est fortement recommandé de
+          s'adresse pas aux utilisateurs suivants</strong>, auxquels il est fortement recommandé de
           consulter un professionnel de santé avant toute utilisation :
         </p>
         <ul className="list-disc list-inside space-y-1 pl-2">
-          <li>Les personnes mineures (moins de 18 ans) ;</li>
+          <li>Les utilisateurs mineurs (moins de 18 ans) ;</li>
           <li>Les femmes enceintes ;</li>
-          <li>Les personnes souffrant de troubles du comportement alimentaire (TCA) diagnostiqués
+          <li>Les utilisateurs souffrant de troubles du comportement alimentaire (TCA) diagnostiqués
           cliniquement (anorexie, boulimie, hyperphagie boulimique) ;</li>
-          <li>Les personnes sous traitement psychiatrique actif ou suivies pour un trouble mental sévère.</li>
+          <li>Les utilisateurs sous traitement psychiatrique actif ou suivis pour un trouble mental sévère.</li>
         </ul>
         <p>
           En cas de doute sur votre état de santé, consultez votre médecin traitant ou un professionnel
