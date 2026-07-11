@@ -32,7 +32,7 @@ const ProofSection = () => (
         transition={{ duration: 0.7 }}
         className="text-display text-3xl md:text-4xl font-light text-center mb-12"
       >
-        Elles en <span className="italic text-primary">parlent</span>
+        Ils en <span className="italic text-primary">parlent</span>
       </motion.h2>
 
       <div className="grid md:grid-cols-3 gap-6">

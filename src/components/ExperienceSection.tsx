@@ -33,7 +33,7 @@ const features = [
   {
     icon: MessageCircle,
     title: "Suivi personnel",
-    desc: "Un accompagnement bienveillant pour ne jamais rester seule.",
+    desc: "Un accompagnement bienveillant pour ne jamais rester seul.",
   },
   {
     icon: Monitor,

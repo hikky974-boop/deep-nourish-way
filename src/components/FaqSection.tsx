@@ -9,7 +9,7 @@ import {
 const faqs = [
   {
     q: "À qui s'adresse Lunaé ?",
-    a: "Lunaé s'adresse à toutes les femmes qui souhaitent transformer leur relation à la nourriture en profondeur, sans régime ni privation. Le programme est particulièrement adapté à celles qui mangent sous l'effet des émotions ou des automatismes.",
+    a: "Lunaé s'adresse à tous les utilisateurs qui souhaitent transformer leur relation à la nourriture en profondeur, sans régime ni privation. Le programme est particulièrement adapté à ceux qui mangent sous l'effet des émotions ou des automatismes.",
   },
   {
     q: "Combien de temps dure le programme ?",
@@ -25,11 +25,11 @@ const faqs = [
   },
   {
     q: "Combien de temps par jour ?",
-    a: "Chaque journée demande entre 10 et 20 minutes. Certains contenus — comme les audios de reprogrammation — se font allongée, souvent le soir avant de dormir, donc tu peux les glisser dans ta routine sans réorganiser ta vie. Si tu as une journée vraiment chargée, certains exercices tiennent en 5 minutes. L'idée n'est pas d'ajouter une contrainte de plus, mais d'intégrer quelque chose qui te fait du bien.",
+    a: "Chaque journée demande entre 10 et 20 minutes. Certains contenus — comme les audios de reprogrammation — s'écoutent allongé, souvent le soir avant de dormir, donc tu peux les glisser dans ta routine sans réorganiser ta vie. Si tu as une journée vraiment chargée, certains exercices tiennent en 5 minutes. L'idée n'est pas d'ajouter une contrainte de plus, mais d'intégrer quelque chose qui te fait du bien.",
   },
   {
     q: "Est-ce que ça marche vraiment ?",
-    a: "Honnêtement : oui, si tu t'y engages vraiment. Lunaé n'est pas une formule magique. C'est un programme qui agit sur les mécanismes profonds derrière les compulsions — pas seulement sur les symptômes. Les résultats varient selon les personnes : certaines ressentent un changement dès la première semaine, d'autres après 3 ou 4 semaines. Ce qui revient le plus souvent dans les retours, c'est moins de culpabilité, moins d'automatismes, et une vraie conscience de ce qui se passe quand l'envie arrive.",
+    a: "Honnêtement : oui, si tu t'y engages vraiment. Lunaé n'est pas une formule magique. C'est un programme qui agit sur les mécanismes profonds derrière les compulsions — pas seulement sur les symptômes. Les résultats varient selon les utilisateurs : certains ressentent un changement dès la première semaine, d'autres après 3 ou 4 semaines. Ce qui revient le plus souvent dans les retours, c'est moins de culpabilité, moins d'automatismes, et une vraie conscience de ce qui se passe quand l'envie arrive.",
   },
   {
     q: "C'est quoi exactement la reprogrammation neuro-émotionnelle ?",

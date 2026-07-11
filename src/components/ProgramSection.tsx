@@ -42,17 +42,17 @@ const items = [
   {
     icon: MessageCircle,
     title: "Un coach IA personnel",
-    desc: "Tu ne seras jamais seule. Un accompagnement disponible 24h/24 qui s'adapte à ce que tu vis. Pas de réponses génériques : un vrai accompagnement adapté à toi.",
+    desc: "Tu ne seras jamais seul. Un accompagnement disponible 24h/24 qui s'adapte à ce que tu vis. Pas de réponses génériques : un vrai accompagnement adapté à toi.",
   },
   {
     icon: BarChart3,
     title: "Un suivi quotidien",
-    desc: "Pour mesurer ta progression et rester ancrée dans ta transformation.",
+    desc: "Pour mesurer ta progression et rester ancré dans ta transformation.",
   },
   {
     icon: Trophy,
     title: "Un système de motivation intégré",
-    desc: "Achievements, streaks, micro-victoires : chaque jour compte et te garde engagée jusqu'au bout.",
+    desc: "Achievements, streaks, micro-victoires : chaque jour compte et te garde engagé jusqu'au bout.",
   },
   {
     icon: Heart,
