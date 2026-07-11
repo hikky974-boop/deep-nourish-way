@@ -293,7 +293,7 @@ const CGV = () => (
           imputable exclusivement au Vendeur dépassant 7 jours ouvrés consécutifs.
         </p>
         <p className="text-foreground/60 italic text-xs">
-          Il est conseillé aux personnes souffrant de troubles alimentaires sévères, de troubles
+          Il est conseillé aux utilisateurs souffrant de troubles alimentaires sévères, de troubles
           psychiatriques ou suivant un traitement médical de consulter leur médecin avant de
           commencer le programme.
         </p>
