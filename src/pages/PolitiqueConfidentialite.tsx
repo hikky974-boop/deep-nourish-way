@@ -168,7 +168,7 @@ const PolitiqueConfidentialite = () => (
           L'application Lunaé (espace membre, données de progression, coach IA) est hébergée par{" "}
           <strong>Base44</strong>, service exploité par <strong>Wix.com Ltd.</strong>, dont le
           siège social est situé en <strong>Israël</strong>. À ce titre, certaines données
-          personnelles des utilisatrices — y compris les données saisies dans le programme et
+          personnelles des utilisateurs — y compris les données saisies dans le programme et
           les échanges avec le coach IA — sont susceptibles d'être transférées et hébergées en
           Israël, hors de l'EEE.
         </p>
