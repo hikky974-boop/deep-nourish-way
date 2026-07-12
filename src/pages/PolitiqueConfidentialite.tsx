@@ -209,7 +209,7 @@ const PolitiqueConfidentialite = () => (
           (décision d'exécution 2021/914/UE), conformément à l'article 46 du RGPD.
         </p>
         <p>
-          <strong>Intelligence artificielle — Anthropic :</strong> Le coach IA de Lunaé utilise l'API Anthropic et ses modèles Claude. Lorsque vous utilisez cette fonctionnalité, le texte saisi et les seuls éléments de contexte nécessaires à la génération de la réponse sont transmis de manière sécurisée à Anthropic. Cette transmission sert uniquement à produire la réponse demandée. Les autres données du compte ne sont pas transmises lorsqu'elles ne sont pas nécessaires à cette fonctionnalité.
+          <strong>Intelligence artificielle :</strong> Le coach IA de Lunaé utilise un prestataire spécialisé en intelligence artificielle. Seuls le texte saisi et les éléments de contexte strictement nécessaires à la génération de la réponse lui sont transmis. Cette transmission sert uniquement à produire la réponse demandée. Les autres données du compte ne sont pas transmises lorsqu'elles ne sont pas nécessaires à cette fonctionnalité.
         </p>
       </Block>
 
