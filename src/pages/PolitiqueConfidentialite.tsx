@@ -161,6 +161,25 @@ const PolitiqueConfidentialite = () => (
         </p>
       </Block>
 
+      {/* Connexion avec Google */}
+      <Block title="Connexion avec Google">
+        <p>
+          Lorsque vous choisissez « Continuer avec Google », l'authentification est gérée par Google et par Base44, la plateforme technique utilisée par Lunaé. Lunaé ne reçoit jamais votre mot de passe Google.
+        </p>
+        <p>
+          L'intégration demande uniquement les autorisations Google openid, email et profile. Elles permettent à Base44 de recevoir l'identifiant unique de votre compte Google, votre adresse e-mail et son statut de vérification, ainsi que les informations de profil de base rendues disponibles par Google, notamment votre nom et, le cas échéant, votre photo de profil et votre langue. Aucune autre donnée Google n'est demandée.
+        </p>
+        <p>
+          Ces données servent exclusivement à créer ou retrouver votre compte Lunaé, vous identifier, sécuriser votre connexion et personnaliser les informations de base de votre espace. Les données nécessaires au compte sont enregistrées dans l'environnement Base44 et conservées selon la même durée que les autres données de compte, soit trois ans après votre dernière activité, sauf demande de suppression antérieure ou obligation légale contraire. Elles ne sont ni vendues ni utilisées à des fins publicitaires. Elles sont partagées uniquement avec Google et Base44 dans la mesure nécessaire au fonctionnement et à la sécurisation de cette connexion.
+        </p>
+        <p>
+          Les autorisations demandées ne donnent aucun accès à Gmail, Google Drive, Google Contacts ou Google Agenda. Lunaé ne peut donc ni lire vos e-mails, ni consulter ou modifier vos fichiers, vos contacts ou votre calendrier.
+        </p>
+        <p>
+          Vous pouvez retirer l'autorisation depuis les paramètres de sécurité de votre compte Google. Ce retrait empêche une future connexion avec Google, mais ne supprime pas automatiquement votre compte Lunaé. Pour demander la suppression de votre compte Lunaé et des données associées, écrivez à <a href="mailto:contact@lunae-app.fr" className="text-primary hover:underline">contact@lunae-app.fr</a>. Les données qui ne doivent pas être conservées pour une obligation légale seront supprimées ou anonymisées.
+        </p>
+      </Block>
+
       {/* 5. Hébergement */}
       <Block title="5. Localisation des données et transferts hors EEE">
         <p>
