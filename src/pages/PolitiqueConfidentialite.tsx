@@ -39,7 +39,7 @@ const PolitiqueConfidentialite = () => (
         <p className="text-body text-sm text-muted-foreground">
           Conformément au Règlement Général sur la Protection des Données (RGPD, règlement UE
           2016/679) et à la loi Informatique et Libertés n° 78-17 du 6 janvier 1978 modifiée.
-          Dernière mise à jour : 8 juin 2026.
+          Version 1.2 — Dernière mise à jour : 12 juillet 2026.
         </p>
       </div>
 
