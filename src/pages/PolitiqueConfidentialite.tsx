@@ -39,7 +39,7 @@ const PolitiqueConfidentialite = () => (
         <p className="text-body text-sm text-muted-foreground">
           Conformément au Règlement Général sur la Protection des Données (RGPD, règlement UE
           2016/679) et à la loi Informatique et Libertés n° 78-17 du 6 janvier 1978 modifiée.
-          Dernière mise à jour : 8 juin 2026.
+          Version 1.2 — Dernière mise à jour : 12 juillet 2026.
         </p>
       </div>
 
@@ -144,10 +144,13 @@ const PolitiqueConfidentialite = () => (
           sous-traitants techniques suivants :
         </p>
         <ul className="list-disc list-inside pl-2 space-y-1 text-foreground/75 mt-1">
-          <li>Prestataire de paiement (traitement sécurisé des transactions)</li>
+          <li>Stripe (prestataire de paiement)</li>
           <li>Hébergeur de la plateforme (stockage et disponibilité du service)</li>
           <li>Outil d'envoi d'emails transactionnels (confirmation de commande, accès)</li>
         </ul>
+        <p>
+          <strong>Paiements — Stripe :</strong> Les paiements sont traités sur une page sécurisée fournie par Stripe. Les coordonnées bancaires sont saisies directement auprès de Stripe. Lunaé ne collecte ni ne conserve le numéro complet de la carte, sa date d'expiration ou son cryptogramme. Lunaé reçoit seulement les informations nécessaires au suivi de la transaction, à l'activation de l'accès et au respect de ses obligations comptables.
+        </p>
         <p>
           Chacun de ces sous-traitants est lié par un accord de traitement de données conforme
           au RGPD et n'est autorisé à utiliser les données qu'aux fins expressément définies.
@@ -155,6 +158,25 @@ const PolitiqueConfidentialite = () => (
         <p>
           En dehors de ces cas, les données ne sont communiquées à des tiers qu'en cas
           d'obligation légale (réquisition judiciaire, contrôle fiscal).
+        </p>
+      </Block>
+
+      {/* Connexion avec Google */}
+      <Block title="Connexion avec Google">
+        <p>
+          Lorsque vous choisissez « Continuer avec Google », l'authentification est gérée par Google et par Base44, la plateforme technique utilisée par Lunaé. Lunaé ne reçoit jamais votre mot de passe Google.
+        </p>
+        <p>
+          L'intégration demande uniquement les autorisations Google openid, email et profile. Elles permettent à Base44 de recevoir l'identifiant unique de votre compte Google, votre adresse e-mail et son statut de vérification, ainsi que les informations de profil de base rendues disponibles par Google, notamment votre nom et, le cas échéant, votre photo de profil et votre langue. Aucune autre donnée Google n'est demandée.
+        </p>
+        <p>
+          Ces données servent exclusivement à créer ou retrouver votre compte Lunaé, vous identifier, sécuriser votre connexion et personnaliser les informations de base de votre espace. Les données nécessaires au compte sont enregistrées dans l'environnement Base44 et conservées selon la même durée que les autres données de compte, soit trois ans après votre dernière activité, sauf demande de suppression antérieure ou obligation légale contraire. Elles ne sont ni vendues ni utilisées à des fins publicitaires. Elles sont partagées uniquement avec Google et Base44 dans la mesure nécessaire au fonctionnement et à la sécurisation de cette connexion.
+        </p>
+        <p>
+          Les autorisations demandées ne donnent aucun accès à Gmail, Google Drive, Google Contacts ou Google Agenda. Lunaé ne peut donc ni lire vos e-mails, ni consulter ou modifier vos fichiers, vos contacts ou votre calendrier.
+        </p>
+        <p>
+          Vous pouvez retirer l'autorisation depuis les paramètres de sécurité de votre compte Google. Ce retrait empêche une future connexion avec Google, mais ne supprime pas automatiquement votre compte Lunaé. Pour demander la suppression de votre compte Lunaé et des données associées, écrivez à <a href="mailto:contact@lunae-app.fr" className="text-primary hover:underline">contact@lunae-app.fr</a>. Les données qui ne doivent pas être conservées pour une obligation légale seront supprimées ou anonymisées.
         </p>
       </Block>
 
@@ -186,9 +208,8 @@ const PolitiqueConfidentialite = () => (
           <strong>clauses contractuelles types</strong> adoptées par la Commission européenne
           (décision d'exécution 2021/914/UE), conformément à l'article 46 du RGPD.
         </p>
-        <p className="text-foreground/50 italic text-xs">
-          [À VÉRIFIER : localisation et garanties du fournisseur IA — à compléter une fois le
-          prestataire confirmé.]
+        <p>
+          <strong>Intelligence artificielle — Anthropic :</strong> Le coach IA de Lunaé utilise l'API Anthropic et ses modèles Claude. Lorsque vous utilisez cette fonctionnalité, le texte saisi et les seuls éléments de contexte nécessaires à la génération de la réponse sont transmis de manière sécurisée à Anthropic. Cette transmission sert uniquement à produire la réponse demandée. Les autres données du compte ne sont pas transmises lorsqu'elles ne sont pas nécessaires à cette fonctionnalité.
         </p>
       </Block>
 
@@ -299,7 +320,7 @@ const PolitiqueConfidentialite = () => (
 
       <div className="mt-12 pt-8 border-t border-border/40 text-body text-xs text-muted-foreground/70">
         <p>RIVIERE Research & Consulting SAS — RCS Paris 881 598 981 — 6 rue d'Armaillé, 75017 Paris</p>
-        <p className="mt-1">Politique de confidentialité v1.1 — Dernière mise à jour : 12 juin 2026</p>
+        <p className="mt-1">Version 1.2 — Dernière mise à jour : 12 juillet 2026</p>
       </div>
     </main>
   </div>
