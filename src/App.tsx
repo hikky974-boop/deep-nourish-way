@@ -5,6 +5,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import CGV from "./pages/CGV.tsx";
+import CGU from "./pages/CGU.tsx";
+import Aide from "./pages/Aide.tsx";
 import MentionsLegales from "./pages/MentionsLegales.tsx";
 import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite.tsx";
 import NotFound from "./pages/NotFound.tsx";
@@ -21,6 +23,8 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/cgv" element={<CGV />} />
+          <Route path="/cgu" element={<CGU />} />
+          <Route path="/aide" element={<Aide />} />
           <Route path="/mentions-legales" element={<MentionsLegales />} />
           <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
