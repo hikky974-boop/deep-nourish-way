@@ -144,10 +144,13 @@ const PolitiqueConfidentialite = () => (
           sous-traitants techniques suivants :
         </p>
         <ul className="list-disc list-inside pl-2 space-y-1 text-foreground/75 mt-1">
-          <li>Prestataire de paiement (traitement sécurisé des transactions)</li>
+          <li>Stripe (prestataire de paiement)</li>
           <li>Hébergeur de la plateforme (stockage et disponibilité du service)</li>
           <li>Outil d'envoi d'emails transactionnels (confirmation de commande, accès)</li>
         </ul>
+        <p>
+          <strong>Paiements — Stripe :</strong> Les paiements sont traités sur une page sécurisée fournie par Stripe. Les coordonnées bancaires sont saisies directement auprès de Stripe. Lunaé ne collecte ni ne conserve le numéro complet de la carte, sa date d'expiration ou son cryptogramme. Lunaé reçoit seulement les informations nécessaires au suivi de la transaction, à l'activation de l'accès et au respect de ses obligations comptables.
+        </p>
         <p>
           Chacun de ces sous-traitants est lié par un accord de traitement de données conforme
           au RGPD et n'est autorisé à utiliser les données qu'aux fins expressément définies.
