@@ -1,5 +1,6 @@
+import { useEffect } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -12,6 +13,35 @@ import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import CookieBanner from "./components/CookieBanner.tsx";
 
+const canonicalMap: Record<string, string> = {
+  "/": "https://lunae-app.fr/",
+  "/politique-confidentialite": "https://lunae-app.fr/politique-confidentialite",
+  "/cgv": "https://lunae-app.fr/cgv",
+  "/cgu": "https://lunae-app.fr/cgu",
+  "/mentions-legales": "https://lunae-app.fr/mentions-legales",
+  "/aide": "https://lunae-app.fr/aide",
+};
+
+const CanonicalManager = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const path = location.pathname;
+    const href = canonicalMap[path];
+
+    document.head.querySelectorAll('link[rel="canonical"]').forEach((el) => el.remove());
+
+    if (href) {
+      const link = document.createElement("link");
+      link.setAttribute("rel", "canonical");
+      link.setAttribute("href", href);
+      document.head.appendChild(link);
+    }
+  }, [location.pathname]);
+
+  return null;
+};
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -20,6 +50,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <CanonicalManager />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/cgv" element={<CGV />} />
