@@ -72,12 +72,13 @@ export const expireClarityCookies = (): void => {
 };
 
 /**
- * Start Clarity. Guarded by the strict predicate + idempotent
- * (DOM id + global marker, safe under React StrictMode / rerenders).
- * Does NOT check consent — callers (ClarityManager) must gate on consent.
+ * Start Clarity. Self-guarded: verifies the strict host/path predicate AND
+ * explicit granted consent (via getStoredConsent) before doing anything.
+ * Idempotent via DOM id + global marker, safe under React StrictMode / rerenders.
  */
 export const startClarity = (loc: LocationLike = window.location): void => {
   if (!isClarityAllowedLocation(loc)) return;
+  if (getStoredConsent() !== "granted") return;
 
   const w = window as unknown as Record<string, unknown> & {
     clarity?: ((...args: unknown[]) => void) & { q?: unknown[] };
