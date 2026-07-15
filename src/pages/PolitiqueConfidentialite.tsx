@@ -304,6 +304,28 @@ const PolitiqueConfidentialite = () => (
         </p>
       </Block>
 
+      {/* Microsoft Clarity */}
+      <Block title="Microsoft Clarity et mesure d’audience">
+        <p>
+          Sous réserve de votre consentement, Lunaé utilise Microsoft Clarity, un service de mesure d’audience fourni par Microsoft.
+        </p>
+        <p>
+          Clarity nous permet de comprendre de manière agrégée comment les visiteurs interagissent avec la page publique Lunaé, notamment les zones cliquées, la profondeur de défilement et le temps passé sur les différentes parties de la page.
+        </p>
+        <p>
+          Microsoft Clarity n’est chargé qu’après votre acceptation explicite de la catégorie “Mesure d’audience”. En cas de refus ou d’absence de choix, aucune collecte Clarity n’est déclenchée.
+        </p>
+        <p>
+          Les contenus identifiés comme sensibles sont masqués avant leur transmission. Lunaé ne transmet volontairement à Clarity aucun nom, adresse e-mail, message personnel, réponse d’onboarding, information de paiement ou donnée provenant du coach.
+        </p>
+        <p>
+          Clarity peut utiliser les cookies _clck et _clsk afin de mesurer les visites et les sessions sur la page publique, uniquement lorsque la mesure d’audience a été acceptée.
+        </p>
+        <p>
+          Vous pouvez retirer ou modifier votre consentement à tout moment depuis le lien “Gérer mes cookies” présent dans le pied de page du site.
+        </p>
+      </Block>
+
       {/* 9. Modifications */}
       <Block title="9. Modifications de la présente politique">
         <p>
