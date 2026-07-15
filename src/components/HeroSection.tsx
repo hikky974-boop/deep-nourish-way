@@ -64,11 +64,14 @@ const HeroSection = () => {
           className="relative z-10 min-w-0 w-full"
         >
           <h1 className="text-display text-[2.25rem] sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6 tracking-tight break-words">
-            Apaiser l’alimentation émotionnelle en comprenant ce qui se joue vraiment
+            Perdre du poids
+            <br />
+            <span className="italic font-normal text-primary">autrement.</span>
           </h1>
 
           <p className="text-body text-sm md:text-base text-foreground/70 max-w-md mb-8 leading-relaxed">
-            Un parcours personnalisé de 33 jours pour comprendre vos déclencheurs, sortir du pilote automatique et transformer progressivement votre relation à la nourriture.
+            Lunaé est un parcours de transformation de 33 jours qui agit là où
+            tout se joue vraiment&nbsp;: le cerveau, les émotions et les automatismes.
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-8">
