@@ -22,6 +22,15 @@ const canonicalMap: Record<string, string> = {
   "/aide": "https://lunae-app.fr/aide",
 };
 
+const titleMap: Record<string, string> = {
+  "/": "Alimentation émotionnelle : programme de 33 jours | Lunaé",
+  "/mentions-legales": "Mentions légales | Lunaé",
+  "/politique-confidentialite": "Politique de confidentialité | Lunaé",
+  "/cgv": "Conditions générales de vente | Lunaé",
+  "/cgu": "Conditions générales d’utilisation | Lunaé",
+  "/aide": "Aide et contact | Lunaé",
+};
+
 const CanonicalManager = () => {
   const location = useLocation();
 
@@ -42,6 +51,16 @@ const CanonicalManager = () => {
   return null;
 };
 
+const TitleManager = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    document.title = titleMap[location.pathname] ?? "Lunaé";
+  }, [location.pathname]);
+
+  return null;
+};
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -51,6 +70,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <CanonicalManager />
+        <TitleManager />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/cgv" element={<CGV />} />
