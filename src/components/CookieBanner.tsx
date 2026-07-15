@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
 import {
@@ -43,12 +44,12 @@ const CookieBanner = () => {
           </p>
           <p className="text-body text-xs text-foreground/60">
             En savoir plus dans notre{" "}
-            <a
-              href="/politique-confidentialite"
+            <Link
+              to="/politique-confidentialite"
               className="text-primary underline underline-offset-2 hover:text-primary/80 transition-colors"
             >
               politique de confidentialité
-            </a>
+            </Link>
             .
           </p>
         </div>
