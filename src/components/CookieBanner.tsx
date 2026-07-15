@@ -36,11 +36,13 @@ const CookieBanner = () => {
     >
       <div className="max-w-3xl mx-auto bg-card border border-border/60 rounded-2xl shadow-lg px-5 py-4 md:px-7 md:py-5 flex flex-col gap-4">
         <div className="space-y-2">
-          <p className="text-body text-sm font-medium text-foreground/90 leading-relaxed">
-            Lunaé utilise des cookies
+          <p className="text-body text-sm text-foreground/85 leading-relaxed">
+            <strong className="font-medium">Lunaé utilise des cookies</strong>
           </p>
           <p className="text-body text-sm text-foreground/75 leading-relaxed">
-            Nous utilisons des cookies pour comprendre comment le site est utilisé et améliorer votre expérience.{" "}
+            Nous utilisons des cookies pour comprendre comment le site est utilisé et améliorer votre expérience.
+          </p>
+          <p className="text-body text-xs text-foreground/60">
             <Link
               to="/politique-confidentialite"
               className="text-primary underline underline-offset-2 hover:text-primary/80 transition-colors"
