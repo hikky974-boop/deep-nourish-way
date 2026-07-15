@@ -148,9 +148,11 @@ export const stopClarity = (): void => {
   expireClarityCookies();
 
   w[STARTED_FLAG] = false;
-  try {
-    delete (w as { clarity?: unknown }).clarity;
-  } catch {
-    (w as { clarity?: unknown }).clarity = undefined;
+  if (typeof (w as { clarity?: unknown }).clarity !== "undefined") {
+    try {
+      delete (w as { clarity?: unknown }).clarity;
+    } catch {
+      (w as { clarity?: unknown }).clarity = undefined;
+    }
   }
 };
