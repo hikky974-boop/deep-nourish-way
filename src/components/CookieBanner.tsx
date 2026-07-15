@@ -1,21 +1,27 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
-
-const STORAGE_KEY = "lunea_cookie_consent";
+import {
+  getStoredConsent,
+  OPEN_BANNER_EVENT,
+  setConsent,
+  type ClarityConsent,
+} from "@/lib/clarity";
 
 const CookieBanner = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    if (!localStorage.getItem(STORAGE_KEY)) {
-      setVisible(true);
-    }
+    // Legacy "refused" is migrated to "denied" inside getStoredConsent().
+    // Legacy "accepted" returns null so we prompt again for explicit Clarity consent.
+    if (getStoredConsent() === null) setVisible(true);
+    const open = () => setVisible(true);
+    window.addEventListener(OPEN_BANNER_EVENT, open);
+    return () => window.removeEventListener(OPEN_BANNER_EVENT, open);
   }, []);
 
-  const handleChoice = (accepted: boolean) => {
-    localStorage.setItem(STORAGE_KEY, accepted ? "accepted" : "refused");
+  const choose = (v: ClarityConsent) => {
+    setConsent(v);
     setVisible(false);
   };
 
@@ -27,36 +33,44 @@ const CookieBanner = () => {
       aria-label="Consentement aux cookies"
       className="fixed bottom-0 left-0 right-0 z-50 px-4 pb-4 md:px-6 md:pb-6"
     >
-      <div className="max-w-3xl mx-auto bg-card border border-border/60 rounded-2xl shadow-lg px-5 py-4 md:px-7 md:py-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-        <p className="text-body text-sm text-foreground/75 leading-relaxed flex-1">
-          Lunaé utilise des cookies essentiels au fonctionnement du site. En continuant, tu acceptes notre{" "}
-          <Link
-            to="/politique-confidentialite"
-            className="text-primary underline underline-offset-2 hover:text-primary/80 transition-colors"
-          >
-            politique de confidentialité
-          </Link>
-          .
-        </p>
-        <div className="flex items-center gap-2 shrink-0">
+      <div className="max-w-3xl mx-auto bg-card border border-border/60 rounded-2xl shadow-lg px-5 py-4 md:px-7 md:py-5 flex flex-col gap-4">
+        <div className="space-y-2">
+          <p className="text-body text-sm text-foreground/85 leading-relaxed">
+            <strong className="font-medium">Cookies essentiels</strong> — toujours actifs, nécessaires au fonctionnement du site.
+          </p>
+          <p className="text-body text-sm text-foreground/75 leading-relaxed">
+            <strong className="font-medium">Mesure d’audience</strong> — nous aide à comprendre l’utilisation de la seule page d’accueil via Microsoft Clarity. Aucun contenu saisi n’est enregistré.
+          </p>
+          <p className="text-body text-xs text-foreground/60">
+            En savoir plus dans notre{" "}
+            <a
+              href="/politique-confidentialite"
+              className="text-primary underline underline-offset-2 hover:text-primary/80 transition-colors"
+            >
+              politique de confidentialité
+            </a>
+            .
+          </p>
+        </div>
+        <div className="flex items-center gap-2 justify-end">
           <Button
             variant="outline"
             size="sm"
-            onClick={() => handleChoice(false)}
+            onClick={() => choose("denied")}
             className="rounded-full border-foreground/20 text-foreground/70 hover:bg-accent/40 text-xs h-8 px-4"
           >
-            Refuser
+            Tout refuser
           </Button>
           <Button
             variant="hero"
             size="sm"
-            onClick={() => handleChoice(true)}
+            onClick={() => choose("granted")}
             className="rounded-full text-xs h-8 px-4"
           >
-            Accepter
+            Accepter la mesure d’audience
           </Button>
           <button
-            onClick={() => handleChoice(false)}
+            onClick={() => choose("denied")}
             aria-label="Fermer"
             className="ml-1 text-foreground/40 hover:text-foreground/70 transition-colors"
           >

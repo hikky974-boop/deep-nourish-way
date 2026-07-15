@@ -14,7 +14,7 @@ import FooterSection from "@/components/FooterSection";
 const Index = () => (
   <>
     <StickyHeader />
-    <main>
+    <main data-clarity-mask="true">
       <HeroSection />
       <PillarsSection />
       <CycleSection />
