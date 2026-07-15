@@ -1,5 +1,5 @@
 import { Moon } from "lucide-react";
-import { Link } from "react-router-dom";
+import { OPEN_BANNER_EVENT } from "@/lib/clarity";
 
 const FooterSection = () => (
   <footer className="px-6 pt-16 pb-8 bg-background border-t border-border/40">
@@ -35,11 +35,20 @@ const FooterSection = () => (
           Légal
         </p>
         <ul className="space-y-2 text-body text-sm text-muted-foreground">
-          <li><Link to="/mentions-legales" className="hover:text-primary transition-colors">Mentions légales</Link></li>
-          <li><Link to="/politique-confidentialite" className="hover:text-primary transition-colors">Politique de confidentialité</Link></li>
-          <li><Link to="/cgv" className="hover:text-primary transition-colors">CGV</Link></li>
-          <li><Link to="/cgu" className="hover:text-primary transition-colors">CGU</Link></li>
-          <li><Link to="/aide" className="hover:text-primary transition-colors">Aide / Contact</Link></li>
+          <li><a href="/mentions-legales" className="hover:text-primary transition-colors">Mentions légales</a></li>
+          <li><a href="/politique-confidentialite" className="hover:text-primary transition-colors">Politique de confidentialité</a></li>
+          <li><a href="/cgv" className="hover:text-primary transition-colors">CGV</a></li>
+          <li><a href="/cgu" className="hover:text-primary transition-colors">CGU</a></li>
+          <li><a href="/aide" className="hover:text-primary transition-colors">Aide / Contact</a></li>
+          <li>
+            <button
+              type="button"
+              onClick={() => window.dispatchEvent(new CustomEvent(OPEN_BANNER_EVENT))}
+              className="hover:text-primary transition-colors text-left bg-transparent p-0 border-0 cursor-pointer"
+            >
+              Gérer mes cookies
+            </button>
+          </li>
         </ul>
       </div>
 
