@@ -56,7 +56,7 @@ const CookieBanner = () => {
             onClick={() => choose("denied")}
             className="rounded-full border-foreground/20 text-foreground/70 hover:bg-accent/40 text-xs h-8 px-4"
           >
-            Tout refuser
+            Refuser
           </Button>
           <Button
             variant="hero"
@@ -64,7 +64,7 @@ const CookieBanner = () => {
             onClick={() => choose("granted")}
             className="rounded-full text-xs h-8 px-4"
           >
-            Accepter la mesure d’audience
+            Accepter les cookies
           </Button>
           <button
             onClick={() => choose("denied")}
