@@ -6,7 +6,7 @@ const testimonials = [
     name: "Mélanie D.",
     initial: "M",
     age: 38,
-    text: "Avant Lunaé, je finissais chaque soirée à grignoter devant Netflix sans vraiment avoir faim — surtout après les journées de boulot difficiles, c'était automatique. J'avais essayé les applis calories, deux régimes, rien ne tenait plus de 15 jours. Ce qui m'a surprise, c'est l'audio du soir. La troisième semaine, j'ai réalisé que je n'avais pas craqué depuis 5 jours. Pas parce que je me retenais — l'envie était juste moins forte. J'ai encore des soirs compliqués, mais maintenant je sais quoi faire quand ça arrive.",
+    text: "Avant Lunaé, je finissais chaque soirée à grignoter devant Netflix sans vraiment avoir faim, surtout après les journées de boulot difficiles. C'était automatique. J'avais essayé les applis calories, deux régimes, rien ne tenait plus de 15 jours. Ce qui m'a surprise, c'est l'audio du soir. La troisième semaine, j'ai réalisé que je n'avais pas craqué depuis 5 jours. Pas parce que je me retenais. L'envie était juste moins forte. J'ai encore des soirs compliqués, mais maintenant je sais quoi faire quand ça arrive.",
   },
   {
     name: "Aurélie B.",
