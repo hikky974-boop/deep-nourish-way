@@ -106,6 +106,7 @@ describe("2. denied", () => {
 // ---------------------------------------------------------------------------
 describe("3. granted on lunae-app.fr /", () => {
   it("injects exactly one script with consentv2 analytics=granted, ads=denied", () => {
+    setConsent("granted");
     startClarity(ALLOWED);
     expect(scriptCount()).toBe(1);
     const s = document.getElementById(CLARITY_SCRIPT_ID) as HTMLScriptElement;
@@ -120,10 +121,27 @@ describe("3. granted on lunae-app.fr /", () => {
   });
 
   it("is idempotent across double start and rerenders (StrictMode-safe)", () => {
+    setConsent("granted");
     startClarity(ALLOWED);
     startClarity(ALLOWED);
     startClarity(ALLOWED);
     expect(scriptCount()).toBe(1);
+  });
+
+  it("does NOTHING without stored consent, even on allowed location", () => {
+    // no setConsent
+    startClarity(ALLOWED);
+    expect(scriptCount()).toBe(0);
+    expect((window as unknown as { clarity?: unknown }).clarity).toBeUndefined();
+    expect(hasClickCookies()).toBe(false);
+  });
+
+  it("does NOTHING when stored consent is denied, even on allowed location", () => {
+    setConsent("denied");
+    startClarity(ALLOWED);
+    expect(scriptCount()).toBe(0);
+    expect((window as unknown as { clarity?: unknown }).clarity).toBeUndefined();
+    expect(hasClickCookies()).toBe(false);
   });
 });
 
