@@ -221,3 +221,25 @@ describe("6. withdrawal", () => {
     expect(getStoredConsent()).toBe("denied");
   });
 });
+
+// ---------------------------------------------------------------------------
+// 7. Residual cookie cleanup with no runtime present
+// ---------------------------------------------------------------------------
+describe("7. stopClarity cleans residual cookies without runtime", () => {
+  it("expires _clck/_clsk even when no script and no window.clarity exist", () => {
+    // Precondition: nothing loaded.
+    expect(scriptCount()).toBe(0);
+    expect((window as unknown as { clarity?: unknown }).clarity).toBeUndefined();
+
+    // Seed residual cookies (e.g. from a previous session).
+    document.cookie = "_clck=residual; path=/";
+    document.cookie = "_clsk=residual; path=/";
+    expect(hasClickCookies()).toBe(true);
+
+    stopClarity();
+
+    expect(hasClickCookies()).toBe(false);
+    expect(scriptCount()).toBe(0);
+    expect((window as unknown as { clarity?: unknown }).clarity).toBeUndefined();
+  });
+});
