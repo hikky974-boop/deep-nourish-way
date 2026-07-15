@@ -108,17 +108,18 @@ export const startClarity = (loc: LocationLike = window.location): void => {
 };
 
 /**
- * Stop Clarity: revoke consent, erase, stop client, remove script,
- * expire cookies, clear global marker. Does NOT change stored preference.
- * No-op if nothing was ever started.
+ * Stop Clarity: revoke consent (if runtime present), remove any residual
+ * scripts, expire cookies, clear global marker and window.clarity.
+ * Always performs DOM/cookie cleanup, even if no runtime was detected —
+ * so lingering _clck/_clsk cookies can be cleared from any page.
+ * Does NOT change stored preference.
  */
 export const stopClarity = (): void => {
   const w = window as unknown as Record<string, unknown> & {
     clarity?: (...args: unknown[]) => void;
   };
-  const hasScript = !!document.getElementById(CLARITY_SCRIPT_ID);
-  const wasStarted = w[STARTED_FLAG] === true || hasScript || typeof w.clarity === "function";
-  if (!wasStarted) return;
+
+
 
   if (typeof w.clarity === "function") {
     try {
