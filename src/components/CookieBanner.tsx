@@ -36,21 +36,17 @@ const CookieBanner = () => {
     >
       <div className="max-w-3xl mx-auto bg-card border border-border/60 rounded-2xl shadow-lg px-5 py-4 md:px-7 md:py-5 flex flex-col gap-4">
         <div className="space-y-2">
-          <p className="text-body text-sm text-foreground/85 leading-relaxed">
-            <strong className="font-medium">Cookies essentiels</strong> — toujours actifs, nécessaires au fonctionnement du site.
+          <p className="text-body text-sm font-medium text-foreground/90 leading-relaxed">
+            Lunaé utilise des cookies
           </p>
           <p className="text-body text-sm text-foreground/75 leading-relaxed">
-            <strong className="font-medium">Mesure d’audience</strong> — nous aide à comprendre l’utilisation de la seule page d’accueil via Microsoft Clarity. Aucun contenu saisi n’est enregistré.
-          </p>
-          <p className="text-body text-xs text-foreground/60">
-            En savoir plus dans notre{" "}
+            Nous utilisons des cookies pour comprendre comment le site est utilisé et améliorer votre expérience.{" "}
             <Link
               to="/politique-confidentialite"
               className="text-primary underline underline-offset-2 hover:text-primary/80 transition-colors"
             >
-              politique de confidentialité
+              En savoir plus
             </Link>
-            .
           </p>
         </div>
         <div className="flex items-center gap-2 justify-end">
@@ -60,7 +56,7 @@ const CookieBanner = () => {
             onClick={() => choose("denied")}
             className="rounded-full border-foreground/20 text-foreground/70 hover:bg-accent/40 text-xs h-8 px-4"
           >
-            Tout refuser
+            Refuser
           </Button>
           <Button
             variant="hero"
@@ -68,7 +64,7 @@ const CookieBanner = () => {
             onClick={() => choose("granted")}
             className="rounded-full text-xs h-8 px-4"
           >
-            Accepter la mesure d’audience
+            Accepter les cookies
           </Button>
           <button
             onClick={() => choose("denied")}
