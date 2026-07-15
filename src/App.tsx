@@ -185,6 +185,7 @@ const App = () => (
       <BrowserRouter>
         <CanonicalManager />
         <TitleManager />
+        <MetaManager />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/cgv" element={<CGV />} />
