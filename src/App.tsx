@@ -32,7 +32,7 @@ const titleMap: Record<string, string> = {
   "/aide": "Aide et contact | Lunaé",
 };
 
-const HOME_OG_TITLE = "Alimentation émotionnelle : découvrez le programme Lunaé";
+const HOME_OG_TITLE = "Lunaé — Libère ta relation à la nourriture";
 const HOME_OG_DESCRIPTION =
   "Un parcours personnalisé de 33 jours pour mieux comprendre vos émotions, vos automatismes et vos envies de manger.";
 
