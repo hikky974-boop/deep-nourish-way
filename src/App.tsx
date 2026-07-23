@@ -24,7 +24,7 @@ const canonicalMap: Record<string, string> = {
 };
 
 const titleMap: Record<string, string> = {
-  "/": "Alimentation émotionnelle : programme de 33 jours | Lunaé",
+  "/": "Lunaé — Libère ta relation à la nourriture",
   "/mentions-legales": "Mentions légales | Lunaé",
   "/politique-confidentialite": "Politique de confidentialité | Lunaé",
   "/cgv": "Conditions générales de vente | Lunaé",
@@ -71,7 +71,6 @@ const JSONLD_WEBSITE_CONTENT = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Lunaé",
-  alternateName: "Lunae",
   url: "https://lunae-app.fr/",
 });
 
