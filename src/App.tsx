@@ -25,7 +25,7 @@ const canonicalMap: Record<string, string> = {
 
 const titleMap: Record<string, string> = {
   "/": "Lunaé — Libère ta relation à la nourriture",
-  "/mentions-legales": "Mentions légales | Lunaé",
+  "/mentions-legales": "Mentions légales — Lunaé",
   "/politique-confidentialite": "Politique de confidentialité | Lunaé",
   "/cgv": "Conditions générales de vente | Lunaé",
   "/cgu": "Conditions générales d’utilisation | Lunaé",
@@ -50,7 +50,7 @@ const descriptionMap: Record<string, string> = {
 
 const ogTitleMap: Record<string, string> = {
   "/": HOME_OG_TITLE,
-  "/mentions-legales": "Mentions légales | Lunaé",
+  "/mentions-legales": "Mentions légales — Lunaé",
   "/politique-confidentialite": "Politique de confidentialité | Lunaé",
   "/cgv": "Conditions générales de vente | Lunaé",
   "/cgu": "Conditions générales d’utilisation | Lunaé",
@@ -146,7 +146,11 @@ const MetaManager = () => {
       upsertMeta({ attr: "name", value: "description" }, description!);
       upsertMeta({ attr: "property", value: "og:title" }, ogTitle!);
       upsertMeta({ attr: "property", value: "og:description" }, ogDescription!);
-      removeMeta({ attr: "name", value: "robots" });
+      if (path === "/mentions-legales") {
+        upsertMeta({ attr: "name", value: "robots" }, "noindex, follow");
+      } else {
+        removeMeta({ attr: "name", value: "robots" });
+      }
     } else {
       removeMeta({ attr: "name", value: "description" });
       removeMeta({ attr: "property", value: "og:title" });
