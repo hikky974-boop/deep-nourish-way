@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import logoLunea from "@/assets/logo-lunea.svg";
+import AppLink from "@/components/AppLink";
 
 const navItems = [
   { label: "Le programme", href: "#programme" },
@@ -46,7 +47,7 @@ const StickyHeader = () => {
         </nav>
 
         <Button variant="hero" size="sm" asChild className="text-sm px-5 h-9">
-          <a href="https://app.lunae-app.fr/login">Se connecter</a>
+          <AppLink href="https://app.lunae-app.fr/login">Se connecter</AppLink>
         </Button>
       </div>
     </header>

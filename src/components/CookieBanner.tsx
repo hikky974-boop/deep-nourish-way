@@ -8,6 +8,11 @@ import {
   setConsent,
   type ClarityConsent,
 } from "@/lib/clarity";
+import {
+  applyStoredGoogleConsent,
+  persistAttributionParams,
+  updateGoogleConsent,
+} from "@/lib/tracking";
 
 const CookieBanner = () => {
   const [visible, setVisible] = useState(false);
@@ -16,6 +21,9 @@ const CookieBanner = () => {
     // Legacy "refused" is migrated to "denied" inside getStoredConsent().
     // Legacy "accepted" returns null so we prompt again for explicit Clarity consent.
     if (getStoredConsent() === null) setVisible(true);
+    // Re-apply a previously stored choice to Google Consent Mode.
+    applyStoredGoogleConsent();
+    persistAttributionParams();
     const open = () => setVisible(true);
     window.addEventListener(OPEN_BANNER_EVENT, open);
     return () => window.removeEventListener(OPEN_BANNER_EVENT, open);
@@ -23,10 +31,13 @@ const CookieBanner = () => {
 
   const choose = (v: ClarityConsent) => {
     setConsent(v);
+    updateGoogleConsent(v);
+    if (v === "granted") persistAttributionParams();
     setVisible(false);
   };
 
   if (!visible) return null;
+
 
   return (
     <div
