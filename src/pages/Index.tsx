@@ -36,6 +36,8 @@ const Index = () => {
       <FooterSection />
     </main>
   </>
-);
+  );
+};
+
 
 export default Index;
