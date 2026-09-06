@@ -326,6 +326,46 @@ const PolitiqueConfidentialite = () => (
         </p>
       </Block>
 
+      {/* Google Analytics, Google Ads et Google Tag Manager */}
+      <Block title="Google Analytics, Google Ads et Google Tag Manager">
+        <p>
+          Le site utilise Google Tag Manager, un gestionnaire de balises qui permet de charger,
+          uniquement selon votre choix, les outils de mesure et de publicité décrits ci-dessous.
+          Google Tag Manager ne dépose par lui-même aucun cookie de mesure ou de publicité.
+        </p>
+        <p>
+          <strong>Finalités.</strong> Google Analytics 4 mesure de manière agrégée la fréquentation
+          et l’usage de la page publique (pages vues, provenance, parcours). Google Ads permet de
+          mesurer l’efficacité de nos campagnes publicitaires et d’attribuer une visite à une
+          campagne.
+        </p>
+        <p>
+          <strong>Aucune collecte avant consentement.</strong> Par défaut, les signaux de
+          consentement Google (mesure d’audience, stockage publicitaire, données utilisateur
+          publicitaires et personnalisation publicitaire) sont positionnés sur « refusé ». Aucun
+          cookie de mesure ou de publicité n’est déposé et aucune donnée n’est envoyée à Google
+          tant que vous n’avez pas accepté explicitement.
+        </p>
+        <p>
+          <strong>Données concernées.</strong> Nous ne transmettons volontairement aucune donnée
+          personnelle (nom, adresse e-mail, message, réponse d’onboarding, information de paiement)
+          à Google. Des identifiants de campagne (par exemple gclid ou paramètres utm) peuvent être
+          repris dans l’URL lors du passage vers l’espace d’achat, afin de rattacher une visite à
+          une campagne.
+        </p>
+        <p>
+          <strong>Durées.</strong> Les cookies de mesure Google Analytics sont conservés au maximum
+          13 mois ; les identifiants de campagne conservés en propre le sont au maximum 90 jours,
+          et uniquement si vous avez accepté.
+        </p>
+        <p>
+          <strong>Retrait du consentement.</strong> Vous pouvez modifier ou retirer votre
+          consentement à tout moment via le lien « Gérer mes cookies » présent dans le pied de page.
+          Le retrait désactive immédiatement ces mesures pour vos prochaines interactions.
+        </p>
+      </Block>
+
+
       {/* 9. Modifications */}
       <Block title="9. Modifications de la présente politique">
         <p>
