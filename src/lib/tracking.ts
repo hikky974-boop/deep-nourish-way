@@ -19,6 +19,7 @@ export const ATTRIBUTION_PARAMS = [
 
 export const ATTRIBUTION_COOKIE = "lunae_attr";
 export const APP_HOST = "app.lunae-app.fr";
+export const GA4_MEASUREMENT_ID = "G-C7X99HEE6W";
 
 type Gtag = (...args: unknown[]) => void;
 
@@ -121,13 +122,18 @@ export const decorateAppUrl = (
 
 /* --------------------------------- GA4 ---------------------------------- */
 
+/** Emit a GA4 application event, always targeting the Lunaé property. */
+const sendGA4Event = (name: string, params: Record<string, unknown> = {}): void => {
+  gtag("event", name, { ...params, send_to: GA4_MEASUREMENT_ID });
+};
+
 let landingViewSent = false;
 
 /** Fire the GA4 landing_view event exactly once. */
 export const sendLandingView = (): void => {
   if (landingViewSent) return;
   landingViewSent = true;
-  gtag("event", "landing_view", {
+  sendGA4Event("landing_view", {
     page_location: window.location.href,
     page_title: document.title,
   });
