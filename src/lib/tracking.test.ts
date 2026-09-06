@@ -70,6 +70,7 @@ describe("landing_view", () => {
     expect((events[0] as unknown[])[2]).toEqual({
       page_location: window.location.href,
       page_title: document.title,
+      send_to: "G-C7X99HEE6W",
     });
   });
 });
