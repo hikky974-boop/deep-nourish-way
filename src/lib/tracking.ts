@@ -94,7 +94,9 @@ export const persistAttributionParams = (
   if (Object.keys(merged).length === 0) return;
   const value = new URLSearchParams(merged).toString();
   const maxAge = 60 * 60 * 24 * 90;
-  document.cookie = `${ATTRIBUTION_COOKIE}=${encodeURIComponent(value)}; path=/; max-age=${maxAge}; domain=.lunae-app.fr; SameSite=Lax`;
+  const onBrandDomain = window.location.hostname.endsWith("lunae-app.fr");
+  const domain = onBrandDomain ? "; domain=.lunae-app.fr" : "";
+  document.cookie = `${ATTRIBUTION_COOKIE}=${encodeURIComponent(value)}; path=/; max-age=${maxAge}${domain}; SameSite=Lax`;
 };
 
 /** Copy attribution params onto an app.lunae-app.fr URL, without duplicates. */
