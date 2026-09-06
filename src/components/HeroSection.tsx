@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Zap, Headphones, ListChecks, CalendarCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroDoorway from "@/assets/hero-doorway.png";
+import AppLink from "@/components/AppLink";
 
 const badges = [
   { icon: Zap, label: "Accès immédiat" },
@@ -76,9 +77,9 @@ const HeroSection = () => {
 
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-8">
             <Button variant="hero" size="lg" asChild className="w-full sm:w-auto">
-              <a href="https://app.lunae-app.fr/Paywall">
+              <AppLink href="https://app.lunae-app.fr/Paywall">
                 Commencer Lunaé
-              </a>
+              </AppLink>
             </Button>
             <Button
               variant="outline"

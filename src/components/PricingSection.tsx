@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Check, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import summaryVase from "@/assets/summary-vase.jpg";
+import AppLink from "@/components/AppLink";
 
 const points = [
   "Accès immédiat",
@@ -93,15 +94,15 @@ const PricingSection = () => (
               asChild
               className="w-full mb-3 shadow-md shadow-primary/20 text-sm sm:text-base px-3 sm:px-6 whitespace-nowrap"
             >
-              <a href="https://app.lunae-app.fr/Paywall">
+              <AppLink href="https://app.lunae-app.fr/Paywall">
                 Commencer Lunaé
-              </a>
+              </AppLink>
             </Button>
 
             <Button variant="outline" size="lg" asChild className="w-full mb-3 rounded-full border-foreground/20 hover:bg-accent/40">
-              <a href="https://app.lunae-app.fr/checkout/gift">
+              <AppLink href="https://app.lunae-app.fr/checkout/gift">
                 Offrir Lunaé
-              </a>
+              </AppLink>
             </Button>
 
             <p className="flex items-center justify-center gap-1.5 text-body text-xs text-muted-foreground">
