@@ -10,9 +10,17 @@ import ForWhoSection from "@/components/ForWhoSection";
 import GuaranteeSection from "@/components/GuaranteeSection";
 import FaqSection from "@/components/FaqSection";
 import FooterSection from "@/components/FooterSection";
+import { useEffect } from "react";
+import { sendLandingView } from "@/lib/tracking";
 
-const Index = () => (
+const Index = () => {
+  useEffect(() => {
+    sendLandingView();
+  }, []);
+
+  return (
   <>
+
     <StickyHeader />
     <main data-clarity-mask="true">
       <HeroSection />
