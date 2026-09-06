@@ -19,6 +19,7 @@ export const ATTRIBUTION_PARAMS = [
 
 export const ATTRIBUTION_COOKIE = "lunae_attr";
 export const APP_HOST = "app.lunae-app.fr";
+export const GA4_MEASUREMENT_ID = "G-C7X99HEE6W";
 
 type Gtag = (...args: unknown[]) => void;
 
