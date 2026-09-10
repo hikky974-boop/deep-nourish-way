@@ -71,6 +71,13 @@ describe("legacy consent migration", () => {
     expect(localStorage.getItem(LEGACY_CONSENT_KEY)).toBe(null);
     expect(localStorage.getItem(CONSENT_KEY)).toBe("granted");
   });
+
+  it("migrates legacy lunae_clarity_consent_v1 to the new shared key", () => {
+    localStorage.setItem("lunae_clarity_consent_v1", "granted");
+    expect(getStoredConsent()).toBe("granted");
+    expect(localStorage.getItem("lunae_clarity_consent_v1")).toBe(null);
+    expect(localStorage.getItem(CONSENT_KEY)).toBe("granted");
+  });
 });
 
 // ---------------------------------------------------------------------------

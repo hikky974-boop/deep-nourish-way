@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
@@ -14,12 +14,16 @@ import {
   updateGoogleConsent,
 } from "@/lib/tracking";
 
+// Use layout effect in the browser so the stored consent update runs ASAP.
+const useIsoLayoutEffect =
+  typeof window !== "undefined" ? useLayoutEffect : useEffect;
+
 const CookieBanner = () => {
   const [visible, setVisible] = useState(false);
 
-  useEffect(() => {
-    // Legacy "refused" is migrated to "denied" inside getStoredConsent().
-    // Legacy "accepted" returns null so we prompt again for explicit Clarity consent.
+  useIsoLayoutEffect(() => {
+    // Legacy keys are migrated to "lunae_consent_v1" inside getStoredConsent().
+    // Legacy "accepted" returns null so we prompt again for explicit consent.
     if (getStoredConsent() === null) setVisible(true);
     // Re-apply a previously stored choice to Google Consent Mode.
     applyStoredGoogleConsent();

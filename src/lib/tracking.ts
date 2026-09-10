@@ -29,16 +29,25 @@ export const gtag: Gtag = (...args) => {
   w.dataLayer.push(args);
 };
 
-const consentSignals = (v: "granted" | "denied") => ({
-  ad_storage: v,
-  analytics_storage: v,
-  ad_user_data: v,
-  ad_personalization: v,
-});
+const allDenied = {
+  ad_storage: "denied",
+  analytics_storage: "denied",
+  ad_user_data: "denied",
+  ad_personalization: "denied",
+} as const;
 
-/** Push a Consent Mode v2 update for the 4 signals. */
+const analyticsGrantedAdsDenied = {
+  ad_storage: "denied",
+  analytics_storage: "granted",
+  ad_user_data: "denied",
+  ad_personalization: "denied",
+} as const;
+
+/** Push a Consent Mode v2 update matching the Lunaé banner choice.
+ *  "granted" = analytics only; advertising signals stay denied.
+ *  "denied"  = all four signals denied. */
 export const updateGoogleConsent = (consent: ClarityConsent): void => {
-  gtag("consent", "update", consentSignals(consent === "granted" ? "granted" : "denied"));
+  gtag("consent", "update", consent === "granted" ? analyticsGrantedAdsDenied : allDenied);
 };
 
 /** Re-apply a previously stored choice on later visits. Never assumes consent. */

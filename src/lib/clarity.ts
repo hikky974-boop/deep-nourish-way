@@ -6,8 +6,9 @@ export const CLARITY_PROJECT_ID = "xmrxotpa8x";
 export const CLARITY_SCRIPT_ID = "lunae-clarity-script";
 export const CLARITY_SRC = `https://www.clarity.ms/tag/${CLARITY_PROJECT_ID}`;
 
-export const CONSENT_KEY = "lunae_clarity_consent_v1";
+export const CONSENT_KEY = "lunae_consent_v1";
 export const LEGACY_CONSENT_KEY = "lunea_cookie_consent";
+export const LEGACY_CLARITY_CONSENT_KEY = "lunae_clarity_consent_v1";
 export const CLARITY_CONSENT_EVENT = "lunae:clarity-consent-change";
 export const OPEN_BANNER_EVENT = "lunae:open-cookie-banner";
 
@@ -32,6 +33,15 @@ export const getStoredConsent = (): ClarityConsent | null => {
   try {
     const v = localStorage.getItem(CONSENT_KEY);
     if (v === "granted" || v === "denied") return v;
+
+    // Migrate the old Clarity-specific key to the shared Lunaé consent key.
+    const legacyClarity = localStorage.getItem(LEGACY_CLARITY_CONSENT_KEY);
+    if (legacyClarity === "granted" || legacyClarity === "denied") {
+      localStorage.setItem(CONSENT_KEY, legacyClarity);
+      localStorage.removeItem(LEGACY_CLARITY_CONSENT_KEY);
+      return legacyClarity;
+    }
+
     const legacy = localStorage.getItem(LEGACY_CONSENT_KEY);
     if (legacy === "refused") {
       localStorage.setItem(CONSENT_KEY, "denied");
