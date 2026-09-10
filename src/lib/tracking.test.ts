@@ -38,13 +38,13 @@ describe("consent", () => {
     ]);
   });
 
-  it("granted sets the 4 signals to granted", () => {
+  it("granted only grants analytics_storage; ad signals stay denied", () => {
     updateGoogleConsent("granted");
     expect((dl()[0] as unknown[])[2]).toEqual({
-      ad_storage: "granted",
+      ad_storage: "denied",
       analytics_storage: "granted",
-      ad_user_data: "granted",
-      ad_personalization: "granted",
+      ad_user_data: "denied",
+      ad_personalization: "denied",
     });
   });
 
