@@ -23,8 +23,23 @@ export const GA4_MEASUREMENT_ID = "G-C7X99HEE6W";
 
 type Gtag = (...args: unknown[]) => void;
 
+type GoogleTagWindow = Window & {
+  dataLayer?: unknown[];
+  gtag?: Gtag;
+};
+
+/**
+ * Use the page-level gtag installed before GTM whenever it is available.
+ * This keeps consent commands on the exact global path observed by Google
+ * Tag Assistant. The fallback preserves the same dataLayer semantics in tests
+ * or if this module executes before the inline bootstrap.
+ */
 export const gtag: Gtag = (...args) => {
-  const w = window as unknown as { dataLayer?: unknown[] };
+  const w = window as GoogleTagWindow;
+  if (typeof w.gtag === "function" && w.gtag !== gtag) {
+    w.gtag(...args);
+    return;
+  }
   w.dataLayer = w.dataLayer || [];
   w.dataLayer.push(args);
 };
