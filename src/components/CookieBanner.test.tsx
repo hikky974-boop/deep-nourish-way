@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from "@testing-library/react";
+import { act, fireEvent, render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import CookieBanner from "@/components/CookieBanner";
@@ -25,7 +25,9 @@ describe("CookieBanner consent integration", () => {
       </MemoryRouter>,
     );
 
-    window.dispatchEvent(new CustomEvent(OPEN_BANNER_EVENT));
+    act(() => {
+      window.dispatchEvent(new CustomEvent(OPEN_BANNER_EVENT));
+    });
     fireEvent.click(await screen.findByRole("button", { name: "Accepter les cookies" }));
 
     expect(localStorage.getItem(CONSENT_KEY)).toBe("granted");
