@@ -36,6 +36,7 @@ describe("CookieBanner consent integration", () => {
     act(() => {
       window.dispatchEvent(new CustomEvent(OPEN_BANNER_EVENT));
     });
+    pageGtag.mockClear();
     fireEvent.click(await screen.findByRole("button", { name: "Accepter les cookies" }));
 
     expect(localStorage.getItem(CONSENT_KEY)).toBe("granted");
