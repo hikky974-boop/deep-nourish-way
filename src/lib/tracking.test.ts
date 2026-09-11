@@ -113,7 +113,6 @@ describe("landing_view", () => {
     localStorage.setItem(CONSENT_KEY, "denied");
     initializeLandingTracking();
     localStorage.setItem(CONSENT_KEY, "granted");
-    markGoogleTagReady();
     handleLandingConsentChange("denied", "granted");
 
     const locations = events().map((entry) => new URL((entry[2] as { page_location: string }).page_location));
