@@ -26,7 +26,10 @@ type Gtag = (...args: unknown[]) => void;
 type GoogleTagWindow = Window & {
   dataLayer?: unknown[];
   gtag?: Gtag;
+  google_tag_manager?: Record<string, unknown>;
 };
+
+const GTM_CONTAINER_ID = "GTM-TXSSG73C";
 
 /**
  * Use the page-level gtag installed before GTM whenever it is available.
@@ -151,19 +154,94 @@ const sendGA4Event = (name: string, params: Record<string, unknown> = {}): void 
   gtag("event", name, { ...params, send_to: GA4_MEASUREMENT_ID });
 };
 
+let landingTrackingInitialized = false;
 let landingViewSent = false;
+let manualPageViewSent = false;
+let pendingLandingMode: "restored" | "newly-granted" | null = null;
+let readinessTimer: ReturnType<typeof setTimeout> | null = null;
 
-/** Fire the GA4 landing_view event exactly once. */
-export const sendLandingView = (): void => {
-  if (landingViewSent) return;
-  landingViewSent = true;
-  sendGA4Event("landing_view", {
+/**
+ * A gtag stub exists before GTM loads, so it is not a readiness signal. GTM is
+ * considered ready only once its container exists and has processed gtm.init.
+ */
+const isGoogleTagReady = (): boolean => {
+  const w = window as GoogleTagWindow;
+  const containerReady = Boolean(w.google_tag_manager?.[GTM_CONTAINER_ID]);
+  const initProcessed = w.dataLayer?.some(
+    (entry) =>
+      typeof entry === "object" &&
+      entry !== null &&
+      "event" in entry &&
+      (entry as { event?: unknown }).event === "gtm.init",
+  );
+  return containerReady && Boolean(initProcessed);
+};
+
+const clearReadinessTimer = (): void => {
+  if (readinessTimer !== null) {
+    window.clearTimeout(readinessTimer);
+    readinessTimer = null;
+  }
+};
+
+const flushLandingTracking = (): void => {
+  if (!pendingLandingMode || landingViewSent || getStoredConsent() !== "granted") return;
+  if (!isGoogleTagReady()) {
+    if (readinessTimer === null) {
+      readinessTimer = window.setTimeout(() => {
+        readinessTimer = null;
+        flushLandingTracking();
+      }, 25);
+    }
+    return;
+  }
+
+  const page = {
     page_location: window.location.href,
     page_title: document.title,
-  });
+  };
+
+  if (pendingLandingMode === "newly-granted" && !manualPageViewSent) {
+    manualPageViewSent = true;
+    sendGA4Event("page_view", page);
+  }
+
+  landingViewSent = true;
+  pendingLandingMode = null;
+  sendGA4Event("landing_view", page);
+};
+
+const queueLandingTracking = (mode: "restored" | "newly-granted"): void => {
+  if (landingViewSent) return;
+  if (mode === "newly-granted" || pendingLandingMode === null) pendingLandingMode = mode;
+  flushLandingTracking();
+};
+
+/** Called once by the landing page. Existing consent keeps GA4's automatic page_view. */
+export const initializeLandingTracking = (): void => {
+  if (landingTrackingInitialized) return;
+  landingTrackingInitialized = true;
+  if (getStoredConsent() === "granted") queueLandingTracking("restored");
+};
+
+/** Called after the banner has persisted and pushed the Google consent update. */
+export const handleLandingConsentChange = (
+  previousConsent: ClarityConsent | null,
+  consent: ClarityConsent,
+): void => {
+  if (consent !== "granted") {
+    pendingLandingMode = null;
+    clearReadinessTimer();
+    return;
+  }
+  queueLandingTracking(previousConsent === "granted" ? "restored" : "newly-granted");
 };
 
 /** Test-only reset. */
 export const __resetLandingView = () => {
+  clearReadinessTimer();
+  landingTrackingInitialized = false;
   landingViewSent = false;
+  manualPageViewSent = false;
+  pendingLandingMode = null;
 };

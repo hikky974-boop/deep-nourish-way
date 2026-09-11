@@ -1,12 +1,13 @@
-import { beforeEach, describe, expect, it } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { CONSENT_KEY } from "@/lib/clarity";
 import {
   ATTRIBUTION_COOKIE,
   applyStoredGoogleConsent,
   currentAttributionParams,
   decorateAppUrl,
+  handleLandingConsentChange,
+  initializeLandingTracking,
   persistAttributionParams,
-  sendLandingView,
   updateGoogleConsent,
   __resetLandingView,
 } from "@/lib/tracking";
@@ -14,11 +15,27 @@ import {
 const dl = () => (window as unknown as { dataLayer: unknown[] }).dataLayer;
 
 beforeEach(() => {
+  vi.useFakeTimers();
   localStorage.clear();
   (window as unknown as { dataLayer?: unknown[] }).dataLayer = [];
+  delete (window as unknown as { google_tag_manager?: unknown }).google_tag_manager;
   document.cookie = `${ATTRIBUTION_COOKIE}=; path=/; max-age=0`;
   __resetLandingView();
 });
+
+afterEach(() => {
+  __resetLandingView();
+  vi.useRealTimers();
+});
+
+const markGoogleTagReady = () => {
+  dl().push({ event: "gtm.init" });
+  (window as unknown as { google_tag_manager: Record<string, unknown> }).google_tag_manager = {
+    "GTM-TXSSG73C": {},
+  };
+};
+
+const events = () => dl().filter((entry) => (entry as unknown[])[0] === "event") as unknown[][];
 
 const SEARCH =
   "?gclid=ABC123&utm_source=google&utm_medium=cpc&utm_campaign=lunae&utm_content=c1&utm_term=t1&_gl=1x&other=keep";
@@ -61,17 +78,70 @@ describe("consent", () => {
 });
 
 describe("landing_view", () => {
-  it("is sent only once", () => {
-    sendLandingView();
-    sendLandingView();
-    const events = dl().filter((e) => (e as unknown[])[0] === "event");
-    expect(events).toHaveLength(1);
-    expect((events[0] as unknown[])[1]).toBe("landing_view");
-    expect((events[0] as unknown[])[2]).toEqual({
+  it("sends nothing while initial consent is denied", () => {
+    localStorage.setItem(CONSENT_KEY, "denied");
+    initializeLandingTracking();
+    markGoogleTagReady();
+    vi.runOnlyPendingTimers();
+    expect(events()).toHaveLength(0);
+  });
+
+  it("sends one manual page_view then one landing_view after a new grant", () => {
+    localStorage.setItem(CONSENT_KEY, "denied");
+    initializeLandingTracking();
+    localStorage.setItem(CONSENT_KEY, "granted");
+    updateGoogleConsent("granted");
+    handleLandingConsentChange("denied", "granted");
+    expect(events()).toHaveLength(0);
+
+    markGoogleTagReady();
+    vi.runOnlyPendingTimers();
+
+    expect(events().map((entry) => entry[1])).toEqual(["page_view", "landing_view"]);
+    expect(events()[0][2]).toEqual({
       page_location: window.location.href,
       page_title: document.title,
       send_to: "G-C7X99HEE6W",
     });
+    expect(events()[1][2]).toEqual(events()[0][2]);
+  });
+
+  it("keeps the automatic page_view when consent was already granted", () => {
+    localStorage.setItem(CONSENT_KEY, "granted");
+    initializeLandingTracking();
+    markGoogleTagReady();
+    vi.runOnlyPendingTimers();
+    expect(events().map((entry) => entry[1])).toEqual(["landing_view"]);
+  });
+
+  it("does not duplicate landing_view after rerenders or repeated grants", () => {
+    localStorage.setItem(CONSENT_KEY, "granted");
+    markGoogleTagReady();
+    initializeLandingTracking();
+    initializeLandingTracking();
+    handleLandingConsentChange("granted", "granted");
+    expect(events().map((entry) => entry[1])).toEqual(["landing_view"]);
+  });
+
+  it("keeps all attribution parameters in page_location", () => {
+    window.history.replaceState({}, "", SEARCH);
+    localStorage.setItem(CONSENT_KEY, "denied");
+    initializeLandingTracking();
+    localStorage.setItem(CONSENT_KEY, "granted");
+    markGoogleTagReady();
+    handleLandingConsentChange("denied", "granted");
+
+    const locations = events().map((entry) => new URL((entry[2] as { page_location: string }).page_location));
+    expect(locations).toHaveLength(2);
+    for (const location of locations) {
+      expect(location.searchParams.get("gclid")).toBe("ABC123");
+      expect(location.searchParams.get("utm_source")).toBe("google");
+      expect(location.searchParams.get("utm_medium")).toBe("cpc");
+      expect(location.searchParams.get("utm_campaign")).toBe("lunae");
+      expect(location.searchParams.get("utm_content")).toBe("c1");
+      expect(location.searchParams.get("utm_term")).toBe("t1");
+      expect(location.searchParams.get("_gl")).toBe("1x");
+    }
   });
 });
 

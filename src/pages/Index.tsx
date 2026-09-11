@@ -11,11 +11,11 @@ import GuaranteeSection from "@/components/GuaranteeSection";
 import FaqSection from "@/components/FaqSection";
 import FooterSection from "@/components/FooterSection";
 import { useEffect } from "react";
-import { sendLandingView } from "@/lib/tracking";
+import { initializeLandingTracking } from "@/lib/tracking";
 
 const Index = () => {
   useEffect(() => {
-    sendLandingView();
+    initializeLandingTracking();
   }, []);
 
   return (
