@@ -209,7 +209,6 @@ export const handleLandingConsentChange = (
 
 /** Test-only reset. */
 export const __resetLandingView = () => {
-  clearReadinessTimer();
   landingTrackingInitialized = false;
   landingViewSent = false;
   manualPageViewSent = false;
