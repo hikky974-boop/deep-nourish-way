@@ -26,10 +26,8 @@ type Gtag = (...args: unknown[]) => void;
 type GoogleTagWindow = Window & {
   dataLayer?: unknown[];
   gtag?: Gtag;
-  google_tag_manager?: Record<string, unknown>;
 };
 
-const GTM_CONTAINER_ID = "GTM-TXSSG73C";
 
 /**
  * Use the page-level gtag installed before GTM whenever it is available.
