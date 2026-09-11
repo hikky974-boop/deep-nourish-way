@@ -158,43 +158,14 @@ let landingTrackingInitialized = false;
 let landingViewSent = false;
 let manualPageViewSent = false;
 let pendingLandingMode: "restored" | "newly-granted" | null = null;
-let readinessTimer: number | null = null;
 
 /**
- * A gtag stub exists before GTM loads, so it is not a readiness signal. GTM is
- * considered ready only once its container exists and has processed gtm.init.
+ * The official gtag/dataLayer queue is installed before GTM and accepts
+ * commands ahead of full availability: GTM replays them in order. No polling
+ * or container introspection is needed.
  */
-const isGoogleTagReady = (): boolean => {
-  const w = window as GoogleTagWindow;
-  const containerReady = Boolean(w.google_tag_manager?.[GTM_CONTAINER_ID]);
-  const initProcessed = w.dataLayer?.some(
-    (entry) =>
-      typeof entry === "object" &&
-      entry !== null &&
-      "event" in entry &&
-      (entry as { event?: unknown }).event === "gtm.init",
-  );
-  return containerReady && Boolean(initProcessed);
-};
-
-const clearReadinessTimer = (): void => {
-  if (readinessTimer !== null) {
-    window.clearTimeout(readinessTimer);
-    readinessTimer = null;
-  }
-};
-
 const flushLandingTracking = (): void => {
   if (!pendingLandingMode || landingViewSent || getStoredConsent() !== "granted") return;
-  if (!isGoogleTagReady()) {
-    if (readinessTimer === null) {
-      readinessTimer = window.setTimeout(() => {
-        readinessTimer = null;
-        flushLandingTracking();
-      }, 25);
-    }
-    return;
-  }
 
   const page = {
     page_location: window.location.href,
