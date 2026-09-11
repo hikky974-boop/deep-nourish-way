@@ -1,4 +1,4 @@
-import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { CONSENT_KEY } from "@/lib/clarity";
 import {
   ATTRIBUTION_COOKIE,
@@ -15,26 +15,17 @@ import {
 const dl = () => (window as unknown as { dataLayer: unknown[] }).dataLayer;
 
 beforeEach(() => {
-  vi.useFakeTimers();
   window.history.replaceState({}, "", "/");
   localStorage.clear();
   (window as unknown as { dataLayer?: unknown[] }).dataLayer = [];
-  delete (window as unknown as { google_tag_manager?: unknown }).google_tag_manager;
   document.cookie = `${ATTRIBUTION_COOKIE}=; path=/; max-age=0`;
   __resetLandingView();
 });
 
 afterEach(() => {
   __resetLandingView();
-  vi.useRealTimers();
 });
 
-const markGoogleTagReady = () => {
-  dl().push({ event: "gtm.init" });
-  (window as unknown as { google_tag_manager: Record<string, unknown> }).google_tag_manager = {
-    "GTM-TXSSG73C": {},
-  };
-};
 
 const events = () => dl().filter((entry) => (entry as unknown[])[0] === "event") as unknown[][];
 
@@ -82,21 +73,17 @@ describe("landing_view", () => {
   it("sends nothing while initial consent is denied", () => {
     localStorage.setItem(CONSENT_KEY, "denied");
     initializeLandingTracking();
-    markGoogleTagReady();
-    vi.runOnlyPendingTimers();
     expect(events()).toHaveLength(0);
   });
 
   it("sends one manual page_view then one landing_view after a new grant", () => {
     localStorage.setItem(CONSENT_KEY, "denied");
     initializeLandingTracking();
+    expect(events()).toHaveLength(0);
+
     localStorage.setItem(CONSENT_KEY, "granted");
     updateGoogleConsent("granted");
     handleLandingConsentChange("denied", "granted");
-    expect(events()).toHaveLength(0);
-
-    markGoogleTagReady();
-    vi.runOnlyPendingTimers();
 
     expect(events().map((entry) => entry[1])).toEqual(["page_view", "landing_view"]);
     expect(events()[0][2]).toEqual({
@@ -110,14 +97,11 @@ describe("landing_view", () => {
   it("keeps the automatic page_view when consent was already granted", () => {
     localStorage.setItem(CONSENT_KEY, "granted");
     initializeLandingTracking();
-    markGoogleTagReady();
-    vi.runOnlyPendingTimers();
     expect(events().map((entry) => entry[1])).toEqual(["landing_view"]);
   });
 
   it("does not duplicate landing_view after rerenders or repeated grants", () => {
     localStorage.setItem(CONSENT_KEY, "granted");
-    markGoogleTagReady();
     initializeLandingTracking();
     initializeLandingTracking();
     handleLandingConsentChange("granted", "granted");
@@ -129,7 +113,6 @@ describe("landing_view", () => {
     localStorage.setItem(CONSENT_KEY, "denied");
     initializeLandingTracking();
     localStorage.setItem(CONSENT_KEY, "granted");
-    markGoogleTagReady();
     handleLandingConsentChange("denied", "granted");
 
     const locations = events().map((entry) => new URL((entry[2] as { page_location: string }).page_location));

@@ -9,16 +9,12 @@ describe("CookieBanner consent integration", () => {
   beforeEach(() => {
     localStorage.clear();
     localStorage.setItem(CONSENT_KEY, "denied");
-    (window as unknown as { dataLayer: unknown[] }).dataLayer = [{ event: "gtm.init" }];
-    (window as unknown as { google_tag_manager: Record<string, unknown> }).google_tag_manager = {
-      "GTM-TXSSG73C": {},
-    };
+    (window as unknown as { dataLayer: unknown[] }).dataLayer = [];
     __resetLandingView();
   });
 
   afterEach(() => {
     delete (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
-    delete (window as unknown as { google_tag_manager?: unknown }).google_tag_manager;
     __resetLandingView();
   });
 
