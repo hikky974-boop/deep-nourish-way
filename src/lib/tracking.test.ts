@@ -15,26 +15,17 @@ import {
 const dl = () => (window as unknown as { dataLayer: unknown[] }).dataLayer;
 
 beforeEach(() => {
-  vi.useFakeTimers();
   window.history.replaceState({}, "", "/");
   localStorage.clear();
   (window as unknown as { dataLayer?: unknown[] }).dataLayer = [];
-  delete (window as unknown as { google_tag_manager?: unknown }).google_tag_manager;
   document.cookie = `${ATTRIBUTION_COOKIE}=; path=/; max-age=0`;
   __resetLandingView();
 });
 
 afterEach(() => {
   __resetLandingView();
-  vi.useRealTimers();
 });
 
-const markGoogleTagReady = () => {
-  dl().push({ event: "gtm.init" });
-  (window as unknown as { google_tag_manager: Record<string, unknown> }).google_tag_manager = {
-    "GTM-TXSSG73C": {},
-  };
-};
 
 const events = () => dl().filter((entry) => (entry as unknown[])[0] === "event") as unknown[][];
 
