@@ -202,7 +202,6 @@ export const handleLandingConsentChange = (
 ): void => {
   if (consent !== "granted") {
     pendingLandingMode = null;
-    clearReadinessTimer();
     return;
   }
   queueLandingTracking(previousConsent === "granted" ? "restored" : "newly-granted");
