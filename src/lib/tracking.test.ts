@@ -73,21 +73,17 @@ describe("landing_view", () => {
   it("sends nothing while initial consent is denied", () => {
     localStorage.setItem(CONSENT_KEY, "denied");
     initializeLandingTracking();
-    markGoogleTagReady();
-    vi.runOnlyPendingTimers();
     expect(events()).toHaveLength(0);
   });
 
   it("sends one manual page_view then one landing_view after a new grant", () => {
     localStorage.setItem(CONSENT_KEY, "denied");
     initializeLandingTracking();
+    expect(events()).toHaveLength(0);
+
     localStorage.setItem(CONSENT_KEY, "granted");
     updateGoogleConsent("granted");
     handleLandingConsentChange("denied", "granted");
-    expect(events()).toHaveLength(0);
-
-    markGoogleTagReady();
-    vi.runOnlyPendingTimers();
 
     expect(events().map((entry) => entry[1])).toEqual(["page_view", "landing_view"]);
     expect(events()[0][2]).toEqual({
