@@ -97,14 +97,11 @@ describe("landing_view", () => {
   it("keeps the automatic page_view when consent was already granted", () => {
     localStorage.setItem(CONSENT_KEY, "granted");
     initializeLandingTracking();
-    markGoogleTagReady();
-    vi.runOnlyPendingTimers();
     expect(events().map((entry) => entry[1])).toEqual(["landing_view"]);
   });
 
   it("does not duplicate landing_view after rerenders or repeated grants", () => {
     localStorage.setItem(CONSENT_KEY, "granted");
-    markGoogleTagReady();
     initializeLandingTracking();
     initializeLandingTracking();
     handleLandingConsentChange("granted", "granted");
