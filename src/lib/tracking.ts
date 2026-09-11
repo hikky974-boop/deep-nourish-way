@@ -158,7 +158,7 @@ let landingTrackingInitialized = false;
 let landingViewSent = false;
 let manualPageViewSent = false;
 let pendingLandingMode: "restored" | "newly-granted" | null = null;
-let readinessTimer: ReturnType<typeof setTimeout> | null = null;
+let readinessTimer: number | null = null;
 
 /**
  * A gtag stub exists before GTM loads, so it is not a readiness signal. GTM is

@@ -16,6 +16,7 @@ const dl = () => (window as unknown as { dataLayer: unknown[] }).dataLayer;
 
 beforeEach(() => {
   vi.useFakeTimers();
+  window.history.replaceState({}, "", "/");
   localStorage.clear();
   (window as unknown as { dataLayer?: unknown[] }).dataLayer = [];
   delete (window as unknown as { google_tag_manager?: unknown }).google_tag_manager;
