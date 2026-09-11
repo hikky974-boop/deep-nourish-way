@@ -10,6 +10,7 @@ import {
 } from "@/lib/clarity";
 import {
   applyStoredGoogleConsent,
+  handleLandingConsentChange,
   persistAttributionParams,
   updateGoogleConsent,
 } from "@/lib/tracking";
@@ -34,9 +35,11 @@ const CookieBanner = () => {
   }, []);
 
   const choose = (v: ClarityConsent) => {
+    const previousConsent = getStoredConsent();
     setConsent(v);
     updateGoogleConsent(v);
     if (v === "granted") persistAttributionParams();
+    handleLandingConsentChange(previousConsent, v);
     setVisible(false);
   };
 
