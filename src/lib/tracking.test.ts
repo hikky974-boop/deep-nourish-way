@@ -20,6 +20,7 @@ beforeEach(() => {
   localStorage.clear();
   (window as unknown as { dataLayer?: unknown[] }).dataLayer = [];
   document.cookie = `${ATTRIBUTION_COOKIE}=; path=/; max-age=0`;
+  document.cookie = `${ADS_CONSENT_COOKIE}=; path=/; max-age=0`;
   __resetLandingView();
 });
 
