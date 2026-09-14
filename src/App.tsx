@@ -192,6 +192,7 @@ const App = () => (
         <TitleManager />
         <MetaManager />
         <ClarityManager />
+        <MetaPixelManager />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/cgv" element={<CGV />} />
