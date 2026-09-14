@@ -1,5 +1,6 @@
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { CONSENT_KEY } from "@/lib/clarity";
+import { ADS_CONSENT_COOKIE, ADS_CONSENT_KEY } from "@/lib/consent";
 import {
   ATTRIBUTION_COOKIE,
   applyStoredGoogleConsent,
@@ -160,8 +161,14 @@ describe("attribution propagation", () => {
     expect(decorateAppUrl("https://app.lunae-app.fr/Paywall", SEARCH)).toContain("gclid=ABC123");
   });
 
-  it("stores params first-party once consent is granted", () => {
+  it("does not store params from an analytics-only consent", () => {
     localStorage.setItem(CONSENT_KEY, "granted");
+    persistAttributionParams(SEARCH);
+    expect(document.cookie).not.toContain(ATTRIBUTION_COOKIE);
+  });
+
+  it("stores params first-party once advertising consent is granted", () => {
+    localStorage.setItem(ADS_CONSENT_KEY, "granted");
     persistAttributionParams(SEARCH);
     expect(document.cookie).toContain(ATTRIBUTION_COOKIE);
     expect(currentAttributionParams("")).toMatchObject({ gclid: "ABC123" });
