@@ -19,26 +19,23 @@
       gtag('set', 'ads_data_redaction', true);
     </script>
 
-    <!-- Re-apply stored Lunaé consent as early as possible (after default, before GTM) -->
+    <!-- Re-apply stored Lunaé consent as early as possible (after default, before GTM).
+         Audience measurement and advertising are two independent categories:
+         an old analytics-only consent NEVER grants the advertising signals. -->
     <script>
       (function () {
         try {
           var key = 'lunae_consent_v1';
           var legacyKey = 'lunae_clarity_consent_v1';
+          var adsKey = 'lunae_consent_ads_v1';
           var stored = localStorage.getItem(key) || localStorage.getItem(legacyKey);
-          if (stored === 'granted') {
+          var ads = localStorage.getItem(adsKey) === 'granted' ? 'granted' : 'denied';
+          if (stored === 'granted' || stored === 'denied' || ads === 'granted') {
             gtag('consent', 'update', {
-              analytics_storage: 'granted',
-              ad_storage: 'denied',
-              ad_user_data: 'denied',
-              ad_personalization: 'denied'
-            });
-          } else if (stored === 'denied') {
-            gtag('consent', 'update', {
-              analytics_storage: 'denied',
-              ad_storage: 'denied',
-              ad_user_data: 'denied',
-              ad_personalization: 'denied'
+              analytics_storage: stored === 'granted' ? 'granted' : 'denied',
+              ad_storage: ads,
+              ad_user_data: ads,
+              ad_personalization: ads
             });
           }
         } catch (e) {

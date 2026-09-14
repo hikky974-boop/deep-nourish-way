@@ -14,6 +14,7 @@ import {
   persistAttributionParams,
   updateGoogleConsent,
 } from "@/lib/tracking";
+import { needsConsentChoice, setAdsConsent } from "@/lib/consent";
 
 // Use layout effect in the browser so the stored consent update runs ASAP.
 const useIsoLayoutEffect =
@@ -25,7 +26,9 @@ const CookieBanner = () => {
   useIsoLayoutEffect(() => {
     // Legacy keys are migrated to "lunae_consent_v1" inside getStoredConsent().
     // Legacy "accepted" returns null so we prompt again for explicit consent.
-    if (getStoredConsent() === null) setVisible(true);
+    // An older visitor with analytics-only consent still has no advertising
+    // choice: the banner reopens to ask for it explicitly.
+    if (needsConsentChoice()) setVisible(true);
     // Re-apply a previously stored choice to Google Consent Mode.
     applyStoredGoogleConsent();
     persistAttributionParams();
@@ -37,7 +40,11 @@ const CookieBanner = () => {
   const choose = (v: ClarityConsent) => {
     const previousConsent = getStoredConsent();
     setConsent(v);
-    updateGoogleConsent(v);
+    // The two categories are answered together by these two buttons:
+    // "Accepter les cookies" = audience + advertising measurement,
+    // "Refuser" = every category denied.
+    setAdsConsent(v);
+    updateGoogleConsent(v, v);
     if (v === "granted") persistAttributionParams();
     handleLandingConsentChange(previousConsent, v);
     setVisible(false);
@@ -58,7 +65,8 @@ const CookieBanner = () => {
             <strong className="font-medium">Lunaé utilise des cookies</strong>
           </p>
           <p className="text-body text-sm text-foreground/75 leading-relaxed">
-            Nous utilisons des cookies pour comprendre comment le site est utilisé et améliorer votre expérience.
+            « Accepter les cookies » couvre la mesure d’audience (comprendre comment le site est utilisé)
+            et la mesure publicitaire Meta et Google. « Refuser » conserve toutes ces catégories désactivées.
           </p>
           <p className="text-body text-xs text-foreground/60">
             <Link

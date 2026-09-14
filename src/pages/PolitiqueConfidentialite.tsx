@@ -365,6 +365,31 @@ const PolitiqueConfidentialite = () => (
         </p>
       </Block>
 
+      {/* Pixel Meta */}
+      <Block title="Pixel Meta (Facebook et Instagram)">
+        <p>
+          <strong>Finalité.</strong> Sous réserve de votre consentement à la mesure publicitaire,
+          la page publique lunae-app.fr charge le pixel Meta (identifiant 1610792703917119), fourni
+          par Meta Platforms Ireland Limited. Il mesure de manière agrégée l’efficacité de nos
+          campagnes publicitaires Facebook et Instagram, en enregistrant une visite de la page
+          d’accueil.
+        </p>
+        <p>
+          <strong>Aucun chargement avant acceptation.</strong> Le script Meta n’est ni chargé ni
+          exécuté tant que la catégorie « mesure publicitaire » n’a pas été explicitement acceptée.
+          En cas de refus ou d’absence de choix, aucun script, aucune image et aucune requête vers
+          Meta ne sont déclenchés. Une acceptation antérieure limitée à la mesure d’audience ne vaut
+          jamais consentement publicitaire.
+        </p>
+        <p>
+          <strong>Retrait du consentement.</strong> Vous pouvez retirer votre consentement à tout
+          moment via le lien « Gérer mes cookies » présent dans le pied de page. Le consentement
+          Meta est alors révoqué et plus aucun événement n’est envoyé.
+        </p>
+      </Block>
+
+
+
 
       {/* 9. Modifications */}
       <Block title="9. Modifications de la présente politique">
