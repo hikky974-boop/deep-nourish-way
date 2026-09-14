@@ -3,6 +3,7 @@ import { MemoryRouter } from "react-router-dom";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import CookieBanner from "@/components/CookieBanner";
 import { CONSENT_KEY, OPEN_BANNER_EVENT } from "@/lib/clarity";
+import { ADS_CONSENT_KEY } from "@/lib/consent";
 import { __resetLandingView, initializeLandingTracking } from "@/lib/tracking";
 
 describe("CookieBanner consent integration", () => {
