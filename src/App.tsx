@@ -13,6 +13,7 @@ import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import CookieBanner from "./components/CookieBanner.tsx";
 import ClarityManager from "./components/ClarityManager.tsx";
+import MetaPixelManager from "./components/MetaPixelManager.tsx";
 
 const canonicalMap: Record<string, string> = {
   "/": "https://lunae-app.fr/",
