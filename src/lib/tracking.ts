@@ -3,7 +3,7 @@
 // The GTM container + Consent Mode defaults are installed in index.html.
 
 import { getStoredConsent, type ClarityConsent } from "@/lib/clarity";
-import { getStoredAdsConsent, type AdsConsent } from "@/lib/consent";
+import { getStoredAdsConsent, hasAdvertisingConsent, type AdsConsent } from "@/lib/consent";
 
 export const ATTRIBUTION_PARAMS = [
   "gclid",
@@ -102,7 +102,8 @@ export const applyStoredGoogleConsent = (): void => {
   else if (ads === "granted") updateGoogleConsent("denied", "granted");
 };
 
-export const hasAdConsent = (): boolean => getStoredConsent() === "granted";
+/** Advertising consent ONLY (lunae_consent_ads_v1), never the analytics key. */
+export const hasAdConsent = (): boolean => hasAdvertisingConsent();
 
 /* ------------------------- attribution parameters ------------------------- */
 

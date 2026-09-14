@@ -14,7 +14,7 @@ import {
   persistAttributionParams,
   updateGoogleConsent,
 } from "@/lib/tracking";
-import { needsConsentChoice, setAdsConsent } from "@/lib/consent";
+import { needsConsentChoice, setAdsConsent, syncAdsConsentCookie } from "@/lib/consent";
 
 // Use layout effect in the browser so the stored consent update runs ASAP.
 const useIsoLayoutEffect =
@@ -31,6 +31,8 @@ const CookieBanner = () => {
     if (needsConsentChoice()) setVisible(true);
     // Re-apply a previously stored choice to Google Consent Mode.
     applyStoredGoogleConsent();
+    // Mirror an existing explicit advertising choice to the shared cookie.
+    syncAdsConsentCookie();
     persistAttributionParams();
     const open = () => setVisible(true);
     window.addEventListener(OPEN_BANNER_EVENT, open);
