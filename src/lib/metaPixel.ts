@@ -108,5 +108,6 @@ export const stopMetaPixel = (): void => {
     .forEach((el) => el.remove());
 
   w[STARTED_FLAG] = false;
-  w[PAGEVIEW_FLAG] = false;
+  // PAGEVIEW_FLAG stays set: one PageView per real page load, never re-sent
+  // after an internal navigation or a withdrawal followed by a new grant.
 };
