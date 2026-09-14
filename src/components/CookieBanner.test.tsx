@@ -36,12 +36,13 @@ describe("CookieBanner consent integration", () => {
     fireEvent.click(await screen.findByRole("button", { name: "Accepter les cookies" }));
 
     expect(localStorage.getItem(CONSENT_KEY)).toBe("granted");
+    expect(localStorage.getItem(ADS_CONSENT_KEY)).toBe("granted");
     expect(pageGtag.mock.calls).toEqual([
       ["consent", "update", {
       analytics_storage: "granted",
-      ad_storage: "denied",
-      ad_user_data: "denied",
-      ad_personalization: "denied",
+      ad_storage: "granted",
+      ad_user_data: "granted",
+      ad_personalization: "granted",
       }],
       ["event", "page_view", {
         page_location: window.location.href,
