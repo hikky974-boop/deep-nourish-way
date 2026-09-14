@@ -3,6 +3,7 @@
 // The GTM container + Consent Mode defaults are installed in index.html.
 
 import { getStoredConsent, type ClarityConsent } from "@/lib/clarity";
+import { getStoredAdsConsent, type AdsConsent } from "@/lib/consent";
 
 export const ATTRIBUTION_PARAMS = [
   "gclid",
@@ -59,18 +60,46 @@ const analyticsGrantedAdsDenied = {
   ad_personalization: "denied",
 } as const;
 
+const allGranted = {
+  ad_storage: "granted",
+  analytics_storage: "granted",
+  ad_user_data: "granted",
+  ad_personalization: "granted",
+} as const;
+
+const adsGrantedAnalyticsDenied = {
+  ad_storage: "granted",
+  analytics_storage: "denied",
+  ad_user_data: "granted",
+  ad_personalization: "granted",
+} as const;
+
 /** Push a Consent Mode v2 update matching the Lunaé banner choice.
- *  "granted" = analytics only; advertising signals stay denied.
- *  "denied"  = all four signals denied. */
-export const updateGoogleConsent = (consent: ClarityConsent): void => {
-  gtag("consent", "update", consent === "granted" ? analyticsGrantedAdsDenied : allDenied);
+ *  Advertising signals are granted ONLY when the advertising category has been
+ *  explicitly accepted; an analytics-only choice never grants them. */
+export const updateGoogleConsent = (
+  consent: ClarityConsent,
+  ads: AdsConsent = "denied",
+): void => {
+  const analyticsGranted = consent === "granted";
+  const adsGranted = ads === "granted";
+  const payload = adsGranted
+    ? analyticsGranted
+      ? allGranted
+      : adsGrantedAnalyticsDenied
+    : analyticsGranted
+      ? analyticsGrantedAdsDenied
+      : allDenied;
+  gtag("consent", "update", payload);
 };
 
 /** Re-apply a previously stored choice on later visits. Never assumes consent. */
 export const applyStoredGoogleConsent = (): void => {
   const stored = getStoredConsent();
-  if (stored === "granted") updateGoogleConsent("granted");
-  else if (stored === "denied") updateGoogleConsent("denied");
+  const ads = getStoredAdsConsent() === "granted" ? "granted" : "denied";
+  if (stored === "granted") updateGoogleConsent("granted", ads);
+  else if (stored === "denied") updateGoogleConsent("denied", ads);
+  else if (ads === "granted") updateGoogleConsent("denied", "granted");
 };
 
 export const hasAdConsent = (): boolean => getStoredConsent() === "granted";
