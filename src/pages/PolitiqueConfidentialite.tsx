@@ -386,6 +386,15 @@ const PolitiqueConfidentialite = () => (
           moment via le lien « Gérer mes cookies » présent dans le pied de page. Le consentement
           Meta est alors révoqué et plus aucun événement n’est envoyé.
         </p>
+        <p>
+          <strong>Mesure côté serveur (non active à ce jour).</strong> Si la mesure serveur Meta
+          (Conversions API) devait être activée ultérieurement, un événement d’achat minimal
+          pourrait être transmis depuis un serveur, uniquement après un paiement confirmé par
+          Stripe et uniquement si la catégorie « mesure publicitaire » a été acceptée. Aucune
+          donnée de santé, de poids, d’exercice ou de conversation ne serait transmise. Cette
+          activation resterait soumise aux règles de Meta et cette politique serait mise à jour
+          en conséquence.
+        </p>
       </Block>
 
 
