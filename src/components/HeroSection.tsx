@@ -2,9 +2,10 @@ import { motion } from "framer-motion";
 import { Zap, Headphones, ListChecks, CalendarCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroDoorway from "@/assets/hero-doorway.png";
+import { quizUrl } from "@/lib/links";
 
 const badges = [
-  { icon: Zap, label: "Accès immédiat" },
+  { icon: Zap, label: "3 jours gratuits" },
   { icon: Headphones, label: "Audios PNL & reprogrammation neuro-émotionnelle" },
   { icon: ListChecks, label: "Exercices guidés" },
   { icon: CalendarCheck, label: "Suivi quotidien" },
@@ -64,20 +65,29 @@ const HeroSection = () => {
           className="relative z-10 min-w-0 w-full"
         >
           <h1 className="text-display text-[2.25rem] sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6 tracking-tight break-words">
-            Perdre du poids
+            Libère-toi de
             <br />
-            <span className="italic font-normal text-primary">autrement.</span>
+            <span className="italic font-normal text-primary">l'effet yo-yo.</span>
           </h1>
 
+          <p className="text-body text-base md:text-lg text-foreground/85 max-w-md mb-3 leading-relaxed">
+            Perds du poids avec une méthode douce et profonde en 33&nbsp;jours, qui reprogramme
+            tes habitudes alimentaires sans privation ni frustration.
+          </p>
+          <p className="text-body text-sm md:text-base text-foreground/70 max-w-md mb-3 leading-relaxed">
+            Lunaé agit là où la plupart des régimes échouent&nbsp;: au cœur de ton cerveau et de
+            tes émotions. En identifiant tes déclencheurs automatiques, tu transformes durablement
+            ta relation avec la nourriture.
+          </p>
           <p className="text-body text-sm md:text-base text-foreground/70 max-w-md mb-8 leading-relaxed">
-            Lunaé est un parcours de transformation de 33 jours qui agit là où
-            tout se joue vraiment&nbsp;: le cerveau, les émotions et les automatismes.
+            Concrètement&nbsp;: une app avec des audios guidés de 15&nbsp;minutes par jour, un
+            bouton urgence quand l'envie monte et un coach qui t'accompagne, pendant 33&nbsp;jours.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 mb-8">
             <Button variant="hero" size="lg" asChild className="w-full sm:w-auto">
-              <a href="https://app.lunae-app.fr/Paywall">
-                Je commence ma transformation
+              <a href={quizUrl("hero")}>
+                Je fais le test gratuit
               </a>
             </Button>
             <Button
@@ -89,6 +99,9 @@ const HeroSection = () => {
               Découvrir l'approche
             </Button>
           </div>
+          <p className="text-body text-xs text-foreground/60 -mt-5 mb-8">
+            3 minutes · gratuit · découvre ton profil
+          </p>
 
           {/* Pills — wrap sur mobile/tablette, ligne unique sur desktop */}
           <div className="flex flex-wrap lg:flex-nowrap gap-1.5 sm:gap-2 lg:overflow-visible">

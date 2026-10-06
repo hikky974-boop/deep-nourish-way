@@ -2,9 +2,10 @@ import { motion } from "framer-motion";
 import { Check, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import summaryVase from "@/assets/summary-vase.jpg";
+import { quizUrl } from "@/lib/links";
 
 const points = [
-  "Accès immédiat",
+  "3 jours gratuits pour essayer",
   "33 jours de transformation complète",
   "Un accompagnement bienveillant et intelligent",
   "Des outils concrets, testés et validés",
@@ -36,7 +37,7 @@ const PricingSection = () => (
               En résumé
             </p>
             <p className="text-body text-base text-muted-foreground mb-4 leading-relaxed break-words">
-              Tu n'achètes pas un programme de perte de poids.
+              Tu n'achètes pas un régime de plus.
             </p>
             <p
               className="text-display text-xl md:text-2xl font-light leading-snug break-words"
@@ -79,11 +80,8 @@ const PricingSection = () => (
               >
                 67,90&nbsp;€
               </span>
-              <span
-                className="text-body text-xl font-medium line-through decoration-2"
-                style={{ color: "#8b2635" }}
-              >
-                99&nbsp;€
+              <span className="text-body text-xl font-medium text-muted-foreground">
+                /&nbsp;an
               </span>
             </div>
 
@@ -93,13 +91,17 @@ const PricingSection = () => (
               asChild
               className="w-full mb-3 shadow-md shadow-primary/20 text-sm sm:text-base px-3 sm:px-6 whitespace-nowrap"
             >
-              <a href="https://app.lunae-app.fr/Paywall">
-                Rejoindre Lunaé maintenant
+              <a href={quizUrl("pricing")}>
+                Je fais le test gratuit
               </a>
             </Button>
 
             <p className="flex items-center justify-center gap-1.5 text-body text-xs text-muted-foreground">
               <Lock className="w-3 h-3 shrink-0" /> Paiement sécurisé
+            </p>
+            <p className="text-body text-xs text-muted-foreground mt-3 text-center leading-relaxed">
+              3 minutes pour découvrir ton profil, puis 3 jours gratuits.
+              Annulable à tout moment, sans frais pendant l'essai.
             </p>
           </div>
 

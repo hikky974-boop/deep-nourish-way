@@ -26,7 +26,7 @@ const pillars = [
   {
     Icon: LeafIcon,
     title: "Sans brutalité",
-    desc: "Une approche douce et respectueuse pour transformer ta relation à l'alimentation durablement.",
+    desc: "Une approche douce et respectueuse pour perdre du poids en transformant durablement ta relation à l'alimentation.",
   },
   {
     Icon: LotusIcon,

@@ -1,46 +1,5 @@
 import { motion } from "framer-motion";
-import {
-  Headphones,
-  ListChecks,
-  Video,
-  Shield,
-  MessageCircle,
-  Monitor,
-} from "lucide-react";
 import devicesMockup from "@/assets/devices-mockup.jpg";
-
-const features = [
-  {
-    icon: Video,
-    title: "Vidéos courtes et claires",
-    desc: "Des contenus simples et efficaces pour avancer pas à pas.",
-  },
-  {
-    icon: Headphones,
-    title: "Audios de reprogrammation neuro-émotionnelle",
-    desc: "Pour apaiser, reprogrammer et retrouver ton équilibre.",
-  },
-  {
-    icon: ListChecks,
-    title: "Exercices de recentrage",
-    desc: "Des pratiques concrètes pour revenir à toi au quotidien.",
-  },
-  {
-    icon: Shield,
-    title: "Outils contre les envies automatiques",
-    desc: "Des stratégies puissantes pour désamorcer les compulsions.",
-  },
-  {
-    icon: MessageCircle,
-    title: "Suivi personnel",
-    desc: "Un accompagnement bienveillant pour ne jamais rester seule.",
-  },
-  {
-    icon: Monitor,
-    title: "Accès mobile, tablette et ordinateur",
-    desc: "Accède à ton espace où et quand tu veux.",
-  },
-];
 
 const modules = [
   { num: "01", title: "Observer ses automatismes" },
@@ -58,47 +17,20 @@ const ExperienceSection = () => (
         transition={{ duration: 0.7 }}
         className="text-display text-3xl md:text-4xl font-light mb-10 md:mb-14"
       >
-        Ce que tu trouves dans le programme
+        Ton parcours, dans ton téléphone
       </motion.h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
-        {/* Left: features grid */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="lg:col-span-5 bg-card rounded-3xl p-6 md:p-8 border border-border/50"
-        >
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-7">
-            {features.map((f) => (
-              <div key={f.title} className="flex items-start gap-3">
-                <div className="shrink-0 w-10 h-10 rounded-xl bg-secondary/60 flex items-center justify-center">
-                  <f.icon className="w-5 h-5 text-primary" strokeWidth={1.5} />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-display text-base font-semibold text-foreground mb-1 leading-snug">
-                    {f.title}
-                  </h3>
-                  <p className="text-body text-xs text-muted-foreground leading-relaxed">
-                    {f.desc}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </motion.div>
-
         {/* Center: parcours card */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="lg:col-span-3 bg-card rounded-3xl p-6 md:p-7 border border-border/50"
+          className="lg:col-span-5 bg-card rounded-3xl p-6 md:p-7 border border-border/50"
         >
           <h3 className="text-display text-lg font-medium mb-5">
-            Votre parcours pas à pas
+            Ton parcours pas à pas
           </h3>
           <div className="space-y-3">
             {modules.map((m) => (
@@ -133,7 +65,7 @@ const ExperienceSection = () => (
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.15 }}
-          className="lg:col-span-4"
+          className="lg:col-span-7"
         >
           <img
             src={devicesMockup}

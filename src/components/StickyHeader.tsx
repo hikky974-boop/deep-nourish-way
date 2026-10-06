@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import logoLunea from "@/assets/logo-lunea.svg";
+import { quizUrl } from "@/lib/links";
 
 const navItems = [
   { label: "Le programme", href: "#programme" },
@@ -45,8 +46,8 @@ const StickyHeader = () => {
           ))}
         </nav>
 
-        <Button variant="hero" size="sm" onClick={() => { window.location.href = "https://app.lunae-app.fr/Paywall"; }} className="text-sm px-5 h-9">
-          Me lancer
+        <Button variant="hero" size="sm" onClick={() => { window.location.href = quizUrl("header"); }} className="text-sm px-5 h-9">
+          Faire le test
         </Button>
       </div>
     </header>

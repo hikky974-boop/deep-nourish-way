@@ -1,68 +1,43 @@
 import { motion } from "framer-motion";
 import {
-  Calendar,
   Headphones,
   ListChecks,
-  Video,
   Bell,
   MessageCircle,
-  BarChart3,
-  Trophy,
   Heart,
   Check,
 } from "lucide-react";
 
 const items = [
   {
-    icon: Calendar,
-    title: "Un parcours de transformation de 33 jours",
-    desc: "Pas un régime de plus, mais une méthode qui agit là où tout se joue vraiment : ton cerveau, tes émotions, tes automatismes.",
-  },
-  {
     icon: Headphones,
-    title: "Des audios de reprogrammation neuro-émotionnelle",
-    desc: "Enregistrés par une experte certifiée en reprogrammation neuro-émotionnelle et PNL. Tu écoutes, tu te laisses guider, et ton cerveau commence à changer ses schémas en profondeur. Sans effort. Sans volonté forcée.",
+    title: "Un parcours de 33 jours, avec des audios guidés",
+    desc: "Chaque jour, 15 minutes. Des audios de reprogrammation neuro-émotionnelle et de PNL enregistrés par une experte certifiée. Tu t'installes, tu te laisses guider, et ton cerveau change ses schémas en profondeur.",
   },
   {
     icon: ListChecks,
     title: "15 exercices guidés",
     list: [
-      "Identifier tes déclencheurs émotionnels",
-      "Traverser une compulsion sans craquer",
+      "Repérer tes déclencheurs émotionnels",
+      "Traverser une envie sans craquer",
       "Transformer tes croyances limitantes",
-      "Développer la bienveillance envers toi-même",
-      "Célébrer chaque petit progrès sans te juger",
+      "Arrêter de te juger après avoir mangé",
     ],
-  },
-  {
-    icon: Video,
-    title: "2 vidéos d'automassage drainant",
-    desc: "Visage & cou, corps & jambes. Des gestes guidés par une experte en drainage lymphatique pour alléger le corps, réduire la rétention d'eau et se reconnecter à soi avec douceur.",
   },
   {
     icon: Bell,
     title: "Un bouton urgence",
-    desc: "La compulsion arrive maintenant ? En 60 secondes, tu traverses le moment sans craquer. Disponible jour et nuit.",
+    desc: "L'envie monte maintenant ? Tu appuies, et en 60 secondes tu traverses le moment au lieu de le subir. Disponible jour et nuit.",
   },
   {
     icon: MessageCircle,
     title: "Un coach IA personnel",
-    desc: "Tu ne seras jamais seule. Un accompagnement disponible 24h/24 qui s'adapte à ce que tu vis. Pas de réponses génériques : un vrai accompagnement adapté à toi.",
-  },
-  {
-    icon: BarChart3,
-    title: "Un suivi quotidien",
-    desc: "Pour mesurer ta progression et rester ancrée dans ta transformation.",
-  },
-  {
-    icon: Trophy,
-    title: "Un système de motivation intégré",
-    desc: "Achievements, streaks, micro-victoires : chaque jour compte et te garde engagée jusqu'au bout.",
+    desc: "Disponible 24h/24, il connaît ton profil et s'adapte à ce que tu vis. Tu n'es jamais seule face à une envie.",
   },
   {
     icon: Heart,
-    title: "Si tu décroches",
-    desc: "Le programme revient vers toi avec bienveillance. Pas de jugement. Juste un rappel doux que tu mérites de continuer.",
+    title: "Un suivi qui te garde sur le chemin",
+    desc: "Ta progression jour après jour, des micro-victoires à célébrer, et un rappel bienveillant si tu décroches. Sans jugement.",
   },
 ];
 
@@ -76,8 +51,8 @@ const ProgramSection = () => (
         transition={{ duration: 0.7 }}
         className="text-display text-3xl md:text-4xl font-light text-center mb-12"
       >
-        Ce que tu obtiens avec le{" "}
-        <span className="italic text-primary">programme Lunaé</span>
+        Ce que contient{" "}
+        <span className="italic text-primary">Lunaé</span>
       </motion.h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">

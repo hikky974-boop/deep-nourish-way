@@ -32,7 +32,7 @@ const CGV = () => (
     <main className="max-w-4xl mx-auto px-6 py-14 md:py-20">
       <div className="mb-12">
         <h1 className="text-display text-3xl md:text-4xl font-light mb-3">Conditions Générales de Vente</h1>
-        <p className="text-body text-sm text-muted-foreground">Version 1.0 — En vigueur à compter du 7 juin 2026</p>
+        <p className="text-body text-sm text-muted-foreground">Version 2.0 — En vigueur à compter du 1er octobre 2026</p>
       </div>
 
       {/* Vendeur */}
@@ -48,7 +48,8 @@ const CGV = () => (
         <p>
           Les présentes Conditions Générales de Vente (ci-après « CGV ») régissent exclusivement les relations
           contractuelles entre la société RIVIERE Research & Consulting SAS (ci-après « le Vendeur ») et toute
-          personne physique effectuant un achat sur le site lunae-app.fr (ci-après « le Client »).
+          personne physique souscrivant un abonnement à Lunaé depuis le site lunae-app.fr ou ses pages
+          associées, dont le test en ligne (ci-après « le Client »).
         </p>
         <p>
           Tout achat implique l'acceptation pleine, entière et sans réserve des présentes CGV. Le Client déclare
@@ -75,6 +76,11 @@ const CGV = () => (
           Les présentes CGV prévalent sur tout autre document. Les CGV applicables à une commande sont celles
           en vigueur au moment de la validation de ladite commande.
         </p>
+        <p>
+          <strong>Clientes ayant acheté avant la mise en place de l'abonnement.</strong> Les personnes ayant
+          acquis Lunaé par paiement unique avant l'entrée en vigueur de la présente version restent régies
+          par les CGV acceptées lors de leur achat et conservent l'accès à vie prévu par celles-ci.
+        </p>
       </Section>
 
       <Section num="2" title="Description du produit">
@@ -84,118 +90,175 @@ const CGV = () => (
           des exercices de recentrage émotionnel, un suivi quotidien, un bouton urgence et un coach IA personnel.
         </p>
         <p>
-          Lunaé constitue un <strong>contenu numérique fourni sur support immatériel</strong>, au sens de
-          l'article L221-1 du Code de la consommation. Il ne s'agit pas d'un bien physique ni d'un dispositif
-          médical ou d'un service de santé.
+          Lunaé constitue un <strong>contenu et un service numériques fournis sur support immatériel</strong>, au
+          sens du Code de la consommation. Il ne s'agit pas d'un bien physique ni d'un dispositif médical ou
+          d'un service de santé.
         </p>
         <p>
-          Les accès sont strictement personnels, non cessibles et non transférables. Le Client bénéficie d'un
-          accès à vie au programme, sans abonnement ni date d'expiration, sous réserve du maintien de la
-          plateforme.
+          Lunaé est proposé sous forme d'<strong>abonnement annuel</strong>, précédé d'une période d'essai
+          gratuite de trois (3) jours, dans les conditions décrites à l'Article 3.
         </p>
         <p>
           Le compte Lunaé est <strong>strictement personnel, individuel et intransmissible</strong>. Le Client
           est seul responsable de la confidentialité de ses identifiants de connexion. RIVIERE Research &
-          Consulting SAS se réserve le droit de <strong>suspendre ou supprimer immédiatement tout compte,
-          sans préavis ni remboursement</strong>, en cas de connexions simultanées suspectes, de partage
-          d'identifiants avec des tiers, ou de toute activité anormale détectée sur le compte.
+          Consulting SAS se réserve le droit de suspendre ou de clôturer un compte en cas de partage
+          d'identifiants avec des tiers, de connexions simultanées suspectes ou de toute activité anormale
+          détectée sur le compte, après en avoir informé le Client par email, sauf urgence ou fraude avérée.
         </p>
         <p>
           Le programme Lunaé est conçu selon une logique pédagogique progressive : les contenus se débloquent
-          au fur et à mesure de l'avancement du Client dans le parcours. L'accès immédiat consécutif au
-          paiement porte sur le démarrage du programme ; les modules et contenus suivants deviennent
-          accessibles à mesure que le Client progresse dans son parcours. Cette organisation constitue un
+          au fur et à mesure de l'avancement du Client dans le parcours. Cette organisation constitue un
           choix pédagogique délibéré, inhérent à la nature et à l'efficacité du programme, et ne saurait
-          être interprétée comme une restriction d'accès ou un accès incomplet au contenu acquis.
+          être interprétée comme une restriction d'accès ou un accès incomplet au contenu.
         </p>
       </Section>
 
-      <Section num="3" title="Étendue de l'accès et de l'accompagnement">
-        <p className="font-medium text-foreground">Accès à vie au contenu</p>
+      <Section num="3" title="Essai gratuit et abonnement annuel">
+        <p className="font-medium text-foreground">Le test en ligne</p>
         <p>
-          L'achat du programme Lunaé donne au client un accès à vie au contenu du programme :
-          les audios, les ressources associées et la possibilité de suivre le programme de nouveau,
-          en autonomie, sans limitation de durée ni de nombre de fois.
+          Avant toute souscription, le Client peut répondre gratuitement et sans engagement à un test en ligne
+          qui lui présente un profil et un aperçu de son parcours. Le test n'engage le Client à aucun achat.
+        </p>
+        <p className="font-medium text-foreground">L'essai gratuit de 3 jours</p>
+        <p>
+          La souscription démarre par une période d'essai gratuite de trois (3) jours, au cours de laquelle le
+          Client accède au programme. Une carte bancaire valide est demandée pour démarrer l'essai.
+          <strong> Aucun montant n'est prélevé pendant l'essai.</strong> La date du premier prélèvement est
+          indiquée au Client avant la validation de sa commande et dans l'email de confirmation.
+        </p>
+        <p>
+          Si le Client résilie avant la fin des trois jours d'essai, aucun montant n'est prélevé et
+          l'accès prend fin à l'issue de l'essai. Un seul essai gratuit est accordé par personne.
+        </p>
+        <p className="font-medium text-foreground">L'abonnement annuel</p>
+        <p>
+          À défaut de résiliation avant la fin de l'essai, l'abonnement annuel démarre automatiquement et le
+          prix de la première année est prélevé sur la carte enregistrée. L'abonnement est conclu pour une
+          durée d'un (1) an et se renouvelle ensuite par <strong>tacite reconduction</strong>, pour des
+          périodes successives d'un (1) an, au prix en vigueur à la date du renouvellement.
+        </p>
+        <p className="font-medium text-foreground">Information avant chaque renouvellement</p>
+        <p>
+          Conformément à l'article L215-1 du Code de la consommation, le Vendeur informe le Client par email,
+          au plus tôt trois mois et au plus tard un mois avant la date de renouvellement, de la possibilité de
+          ne pas reconduire son abonnement. À défaut de cette information, le Client peut mettre fin
+          gratuitement à son abonnement à tout moment à compter de la date de reconduction ; il est alors
+          remboursé des sommes versées au titre de la période postérieure à la date de résiliation.
+        </p>
+      </Section>
+
+      <Section num="4" title="Étendue de l'accès et de l'accompagnement">
+        <p className="font-medium text-foreground">Accès au contenu pendant l'abonnement</p>
+        <p>
+          Pendant toute la durée de son abonnement (essai compris), le Client accède au contenu du programme :
+          les audios, les ressources associées et la possibilité de suivre le programme de nouveau, en
+          autonomie, autant de fois qu'il le souhaite.
         </p>
         <p className="font-medium text-foreground">Accompagnement personnalisé pendant le cycle actif</p>
         <p>
           L'accompagnement personnalisé assisté par intelligence artificielle (suivi quotidien,
           relances, échanges approfondis) est inclus pendant le cycle actif du programme, d'une
-          durée de trente-trois (33) jours à compter du démarrage du parcours par le client.
+          durée de trente-trois (33) jours à compter du démarrage du parcours par le Client.
         </p>
         <p className="font-medium text-foreground">Assistance après le cycle actif</p>
         <p>
-          À l'issue du cycle actif, le client conserve l'accès à vie au contenu ainsi qu'une
-          assistance allégée assistée par intelligence artificielle, permettant notamment de
-          répondre à ses questions et de l'orienter dans le contenu du programme.
+          À l'issue du cycle actif et tant que l'abonnement est en cours, le Client conserve l'accès au
+          contenu ainsi qu'une assistance allégée assistée par intelligence artificielle, permettant
+          notamment de répondre à ses questions et de l'orienter dans le contenu du programme.
         </p>
-        <p className="font-medium text-foreground">Réactivation de l'accompagnement complet</p>
+        <p className="font-medium text-foreground">Fin de l'accès</p>
         <p>
-          Le client qui souhaite bénéficier à nouveau de l'accompagnement personnalisé complet,
-          dans le cadre d'un nouveau parcours guidé, peut en demander la réactivation. Les
-          modalités et conditions de cette réactivation sont communiquées au client au moment
-          de sa demande.
+          À la fin de l'abonnement, quelle qu'en soit la cause, l'accès au programme prend fin. Le compte du
+          Client et sa progression sont conservés dans les conditions prévues par la politique de
+          confidentialité, afin qu'il puisse reprendre son parcours s'il souscrit à nouveau.
         </p>
       </Section>
 
-      <Section num="4" title="Prix">
-        <p>Les prix sont indiqués en euros :</p>
+      <Section num="5" title="Prix">
+        <p>Les prix sont indiqués en euros, toutes taxes comprises :</p>
         <ul className="list-disc list-inside space-y-1 pl-2">
-          <li>Tarif de lancement : <strong>67,90 €</strong></li>
-          <li>Tarif régulier : <strong>99 €</strong></li>
+          <li>Essai : <strong>gratuit pendant 3 jours</strong> ;</li>
+          <li>Abonnement annuel, tarif de lancement : <strong>67,90 € par an</strong>.</li>
         </ul>
         <p className="text-foreground/60 italic text-xs">TVA non applicable, art. 293 B du CGI.</p>
         <p>
-          Le Vendeur se réserve le droit de modifier ses tarifs à tout moment. Le prix applicable est celui
-          affiché au moment de la validation de la commande.
+          Le prix applicable à la première année est celui affiché au moment de la validation de la commande.
+          En cas d'évolution du prix, le nouveau prix ne s'applique qu'au renouvellement suivant, à condition
+          que le Client en ait été informé par email au moins un mois avant la date de renouvellement. Le
+          Client qui refuse le nouveau prix peut résilier son abonnement avant cette date, sans frais.
         </p>
       </Section>
 
-      <Section num="5" title="Commande et accès">
+      <Section num="6" title="Commande et accès">
         <p>La commande est finalisée lorsque le Client :</p>
         <ol className="list-decimal list-inside space-y-1 pl-2">
-          <li>Remplit le formulaire de commande ;</li>
-          <li>Coche la case de renonciation expresse au droit de rétractation (voir Article 6) ;</li>
-          <li>Valide le paiement.</li>
+          <li>Renseigne son adresse email et sa carte bancaire sur la page de paiement sécurisée ;</li>
+          <li>Accepte les présentes CGV ;</li>
+          <li>Valide la commande, qui démarre son essai gratuit.</li>
         </ol>
         <p>
-          L'accès au programme est ouvert immédiatement après confirmation du paiement. Les identifiants de
-          connexion sont transmis à l'adresse email renseignée lors de la commande. Le Client est seul
-          responsable de la confidentialité de ses identifiants.
+          Un email de confirmation récapitulant l'offre (durée de l'essai, date et montant du premier
+          prélèvement, modalités de résiliation) est adressé au Client. L'accès au programme est ouvert dès la
+          confirmation de la commande ; les informations de connexion sont transmises à l'adresse email
+          renseignée lors de la commande.
         </p>
       </Section>
 
-      <Section num="6" title="Droit de rétractation — Exclusion expresse">
+      <Section num="7" title="Résiliation">
         <p>
-          Conformément à l'article <strong>L221-28 13° du Code de la consommation</strong>, le droit de
-          rétractation <strong>ne s'applique pas</strong> aux contenus numériques fournis sur support immatériel
-          dont l'exécution a commencé avec l'accord préalable exprès du consommateur, lequel a reconnu qu'il
-          perdrait ainsi son droit de rétractation.
+          Le Client peut résilier son abonnement <strong>à tout moment, en quelques clics</strong>, grâce au
+          lien « Résilier mon abonnement » disponible dans la rubrique Profil de l'application et dans les
+          emails relatifs à son abonnement, ou par email à{" "}
+          <a href="mailto:contact@lunae-app.fr" className="text-primary hover:underline">contact@lunae-app.fr</a>.
+          Une confirmation de résiliation lui est adressée par email.
+        </p>
+        <ul className="list-disc list-inside space-y-1 pl-2">
+          <li>
+            <strong>Pendant l'essai</strong> : aucun montant n'est prélevé ; l'accès prend fin à l'issue des
+            trois jours.
+          </li>
+          <li>
+            <strong>Après le début de l'abonnement</strong> : la résiliation empêche le renouvellement
+            suivant. L'accès reste ouvert jusqu'à la fin de la période annuelle déjà payée, sans remboursement
+            de cette période, sous réserve des Articles 3 et 9.
+          </li>
+        </ul>
+      </Section>
+
+      <Section num="8" title="Droit de rétractation — Renonciation expresse">
+        <p>
+          Lunaé est un contenu numérique fourni sur support immatériel, auquel le Client accède dès le début
+          de son essai gratuit. Conformément à l'article <strong>L221-28 13° du Code de la consommation</strong>,
+          le droit de rétractation de quatorze (14) jours <strong>ne s'applique pas</strong> lorsque
+          l'exécution a commencé avec l'accord préalable exprès du Client, qui a reconnu perdre ainsi son droit
+          de rétractation.
         </p>
         <p>
-          Avant toute validation de commande, le Client est invité à cocher la case suivante, dont la
-          validation est obligatoire pour finaliser l'achat :
+          Avant de valider sa commande, le Client coche obligatoirement, sur la page de paiement sécurisée,
+          la case suivante :
         </p>
         <blockquote className="border-l-4 border-primary/40 pl-4 italic text-foreground/70 my-3">
-          « Je reconnais que Lunaé est un contenu numérique à accès immédiat. En cochant cette case, je
-          consens expressément à ce que l'exécution commence immédiatement après mon paiement et je renonce
-          expressément à mon droit de rétractation de 14 jours, conformément à l'article L221-28 13° du Code
-          de la consommation. »
+          « J'accepte les conditions générales de vente. Je demande l'accès immédiat à Lunaé dès le début
+          de mon essai gratuit et je reconnais renoncer ainsi à mon droit de rétractation de 14 jours. Je
+          peux annuler sans frais pendant les 3 jours d'essai, depuis l'application. »
         </blockquote>
         <p>
-          En cochant cette case, le Client reconnaît et accepte irrévocablement la renonciation à son droit
-          de rétractation. Il est informé que cette renonciation est la contrepartie directe de l'accès
-          immédiat au programme.
+          Cet accord et cette renonciation sont confirmés au Client dans l'email de confirmation de sa
+          commande.
+        </p>
+        <p>
+          <strong>En contrepartie, le Client dispose de l'essai gratuit de trois (3) jours</strong> : pendant
+          cette période, il peut annuler son abonnement à tout moment, directement depuis l'application
+          (lien « Résilier mon abonnement » dans la rubrique Profil), sans aucun prélèvement ni justification. Passé ce délai,
+          l'abonnement annuel démarre et ne peut plus faire l'objet d'une rétractation.
         </p>
       </Section>
 
-      <Section num="7" title="Politique de remboursement">
+      <Section num="9" title="Remboursement">
         <p>
-          En raison de la nature numérique du produit et de la renonciation expresse du Client à son droit de
-          rétractation (Article 6), <strong>toute vente est définitive dès lors que l'accès au programme a
-          été ouvert ou que les identifiants de connexion ont été transmis</strong>.
+          En dehors du cas prévu à l'Article 3 (absence d'information avant renouvellement), les sommes versées au titre d'une période d'abonnement entamée ne sont pas
+          remboursables, sauf dans les cas suivants :
         </p>
-        <p>Aucun remboursement ne sera accordé, sauf dans les cas strictement suivants :</p>
         <ul className="list-disc list-inside space-y-1 pl-2">
           <li>
             Défaut avéré d'accès technique imputable exclusivement au Vendeur, non résolu dans un délai de
@@ -204,30 +267,33 @@ const CGV = () => (
           <li>Double facturation ou erreur de paiement documentée.</li>
         </ul>
         <p>
-          Toute demande de remboursement doit être adressée par email à contact@lunae-app.fr avec les justificatifs
-          correspondants. Le Vendeur s'engage à traiter tout signalement dans les meilleurs délais.
+          Toute demande de remboursement doit être adressée par email à contact@lunae-app.fr avec les
+          justificatifs correspondants. Le Vendeur s'engage à traiter toute demande dans les meilleurs délais.
         </p>
       </Section>
 
-      <Section num="8" title="Modalités de paiement">
+      <Section num="10" title="Modalités de paiement et défaut de paiement">
         <p>
-          Le paiement s'effectue par carte bancaire via un prestataire de paiement sécurisé. Les données
-          bancaires du Client sont traitées directement par ce prestataire et ne sont jamais stockées par
-          le Vendeur.
+          Le paiement s'effectue par carte bancaire via un prestataire de paiement sécurisé (Stripe). Les
+          données bancaires du Client sont traitées directement par ce prestataire et ne sont jamais stockées
+          par le Vendeur. Le Client autorise le prélèvement automatique du prix de l'abonnement à chaque
+          échéance annuelle, jusqu'à sa résiliation.
+        </p>
+        <p>
+          En cas d'échec d'un prélèvement, le Client en est informé par email et invité à mettre à jour son
+          moyen de paiement. Le prestataire de paiement peut procéder à de nouvelles tentatives. L'accès au
+          programme est suspendu jusqu'à régularisation ; le compte et la progression du Client sont
+          conservés. À défaut de régularisation après les tentatives prévues, l'abonnement est résilié.
         </p>
         <p>
           Le Vendeur se réserve le droit de suspendre tout accès en cas de paiement frauduleux ou de
-          rétrofacturation (chargeback) non justifiée.
-        </p>
-        <p>
-          Les journaux de connexion, adresses IP et données d'utilisation conservés par les serveurs de
-          Lunaé constituent une <strong>preuve juridique de l'accès effectif au service</strong>. Toute
-          demande de rétrofacturation infondée pourra entraîner des frais de recouvrement à la charge du
-          Client ainsi qu'un <strong>bannissement définitif de la plateforme</strong>.
+          rétrofacturation (chargeback) non justifiée. Les journaux de connexion et données d'utilisation
+          conservés par les serveurs de Lunaé peuvent être produits comme éléments de preuve de l'accès
+          effectif au service.
         </p>
       </Section>
 
-      <Section num="9" title="Propriété intellectuelle">
+      <Section num="11" title="Propriété intellectuelle">
         <p>
           L'intégralité du contenu de Lunaé — audios de reprogrammation, textes, visuels, protocoles, méthodes,
           exercices, architecture du programme et éléments de la marque — est la <strong>propriété exclusive
@@ -256,7 +322,7 @@ const CGV = () => (
         </p>
       </Section>
 
-      <Section num="10" title="Limitation de responsabilité et avertissement médical">
+      <Section num="12" title="Limitation de responsabilité et avertissement médical">
         <div className="bg-secondary/50 border border-border rounded-xl p-4 my-2">
           <p className="font-bold text-foreground text-sm uppercase tracking-wide">
             Avertissement important
@@ -299,7 +365,7 @@ const CGV = () => (
         </p>
       </Section>
 
-      <Section num="11" title="Données personnelles">
+      <Section num="13" title="Données personnelles">
         <p>
           Conformément au Règlement Général sur la Protection des Données (RGPD, règlement UE 2016/679) et à
           la loi Informatique et Libertés, le Vendeur collecte et traite les données personnelles du Client
@@ -324,7 +390,7 @@ const CGV = () => (
         </p>
       </Section>
 
-      <Section num="12" title="Médiation et règlement des litiges">
+      <Section num="14" title="Médiation et règlement des litiges">
         <p>
           En cas de litige relatif à l'interprétation ou à l'exécution des présentes CGV, le Client s'engage
           à contacter préalablement le Vendeur à l'adresse{" "}
@@ -366,7 +432,7 @@ const CGV = () => (
         </p>
       </Section>
 
-      <Section num="13" title="Droit applicable et juridiction compétente">
+      <Section num="15" title="Droit applicable et juridiction compétente">
         <p>
           Les présentes CGV sont régies exclusivement par le droit français.
         </p>
@@ -377,10 +443,15 @@ const CGV = () => (
         </p>
       </Section>
 
-      <Section num="14" title="Modification des CGV">
+      <Section num="16" title="Modification des CGV">
         <p>
           Le Vendeur se réserve le droit de modifier les présentes CGV à tout moment. Les modifications
-          prennent effet dès leur publication sur le site lunae-app.fr.
+          prennent effet dès leur publication sur le site lunae-app.fr pour les nouvelles commandes.
+        </p>
+        <p>
+          Pour les abonnements en cours, toute modification substantielle est notifiée au Client par email
+          au moins un (1) mois avant son application. Le Client qui la refuse peut résilier son abonnement
+          sans frais avant cette date.
         </p>
         <p>
           Les CGV applicables à une commande sont celles en vigueur au moment de la validation de ladite
@@ -388,7 +459,7 @@ const CGV = () => (
         </p>
       </Section>
 
-      <Section num="15" title="Dispositions diverses">
+      <Section num="17" title="Dispositions diverses">
         <p>
           Si une clause des présentes CGV était déclarée nulle ou inapplicable par une décision judiciaire
           définitive, les autres clauses demeurent pleinement en vigueur.
@@ -401,7 +472,7 @@ const CGV = () => (
 
       <div className="mt-12 pt-8 border-t border-border/40 text-body text-xs text-muted-foreground/70">
         <p>RIVIERE Research & Consulting SAS — RCS Paris 881 598 981 — 6 rue d'Armaillé, 75017 Paris</p>
-        <p className="mt-1">CGV version 1.2 — Dernière mise à jour : 12 juin 2026</p>
+        <p className="mt-1">CGV version 2.0 — Dernière mise à jour : 1er octobre 2026</p>
       </div>
     </main>
   </div>

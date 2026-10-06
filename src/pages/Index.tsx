@@ -10,18 +10,23 @@ import ForWhoSection from "@/components/ForWhoSection";
 import GuaranteeSection from "@/components/GuaranteeSection";
 import FaqSection from "@/components/FaqSection";
 import FooterSection from "@/components/FooterSection";
+import QuoteStrip from "@/components/QuoteStrip";
+import CtaBand from "@/components/CtaBand";
 
 const Index = () => (
   <>
     <StickyHeader />
     <main>
       <HeroSection />
+      <QuoteStrip />
       <PillarsSection />
       <CycleSection />
+      <CtaBand source="apres-cercle" text="Et si tu découvrais ce qui se cache derrière tes envies ?" />
       <ForWhoSection />
       <ProgramSection />
       <ExperienceSection />
       <ProofSection />
+      <CtaBand source="apres-temoignages" text="Toi aussi, découvre ton profil." />
       <GuaranteeSection />
       <PricingSection />
       <FaqSection />

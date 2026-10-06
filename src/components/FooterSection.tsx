@@ -50,7 +50,7 @@ const FooterSection = () => (
           <br />
           Nous sommes là pour toi.
           <br />
-          <a href="mailto:contact@lunae-app.fr" className="text-primary hover:underline">Contactez-nous</a>
+          <a href="mailto:contact@lunae-app.fr" className="text-primary hover:underline">Écris-nous</a>
         </p>
       </div>
     </div>

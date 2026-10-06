@@ -28,7 +28,7 @@ const GuaranteeSection = () => (
         className="inline-block mb-4 px-3 py-1 rounded-full text-[10px] tracking-[0.2em] font-semibold"
         style={{ backgroundColor: "#8b2635", color: "#fff", fontVariant: "small-caps" }}
       >
-        Inclus à vie
+        Inclus dans ton abonnement
       </span>
 
       {/* Titre */}
@@ -36,12 +36,12 @@ const GuaranteeSection = () => (
         className="text-display text-3xl md:text-4xl font-bold mb-4"
         style={{ color: "#2d4a2a" }}
       >
-        Accès à vie au programme Lunaé
+        Tout Lunaé, toute l'année
       </h2>
 
       <p className="text-body text-base text-muted-foreground leading-relaxed">
-        Tes audios et ton contenu, pour toujours. Tu peux refaire ton parcours autant de fois
-        que tu en ressens le besoin, à ton rythme, toute ta vie.
+        Tes audios et ton contenu restent à toi tant que ton abonnement est actif. Tu peux
+        refaire ton parcours autant de fois que tu en ressens le besoin, à ton rythme.
       </p>
 
       {/* Séparateur */}

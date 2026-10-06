@@ -8,12 +8,16 @@ import {
 
 const faqs = [
   {
+    q: "Comment fonctionne l'essai gratuit ?",
+    a: "Tu commences par un test de 3 minutes qui identifie ton profil. Ensuite, tu profites de 3 jours gratuits pour découvrir Lunaé. Ta carte bancaire est demandée pour démarrer l'essai, mais rien n'est prélevé pendant ces 3 jours. Si tu continues, l'abonnement est de 67,90 € par an. Tu peux annuler à tout moment en quelques clics, sans frais pendant l'essai.",
+  },
+  {
     q: "À qui s'adresse Lunaé ?",
-    a: "Lunaé s'adresse à toutes les femmes qui souhaitent transformer leur relation à la nourriture en profondeur, sans régime ni privation. Le programme est particulièrement adapté à celles qui mangent sous l'effet des émotions ou des automatismes.",
+    a: "Lunaé s'adresse à toutes les femmes qui souhaitent perdre du poids durablement en transformant leur relation à la nourriture en profondeur, sans régime ni privation. Le programme est particulièrement adapté à celles qui mangent sous l'effet des émotions ou des automatismes.",
   },
   {
     q: "Combien de temps dure le programme ?",
-    a: "Le parcours s'étend sur 33 jours, avec des contenus quotidiens courts (15 à 20 minutes). Tu gardes ensuite un accès illimité à l'ensemble des outils et audios.",
+    a: "Le parcours s'étend sur 33 jours, avec des contenus quotidiens courts (15 à 20 minutes). Tant que ton abonnement est actif, tu gardes ensuite un accès illimité à l'ensemble des outils et audios.",
   },
   {
     q: "Ai-je besoin d'expérience en reprogrammation neuro-émotionnelle ?",
