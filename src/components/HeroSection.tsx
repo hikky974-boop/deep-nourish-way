@@ -74,32 +74,27 @@ const HeroSection = () => {
             Perds du poids avec une méthode douce et profonde en 33&nbsp;jours, qui reprogramme
             tes habitudes alimentaires sans privation ni frustration.
           </p>
-          <p className="text-body text-sm md:text-base text-foreground/70 max-w-md mb-3 leading-relaxed">
-            Lunaé agit là où la plupart des régimes échouent&nbsp;: au cœur de ton cerveau et de
-            tes émotions. En identifiant tes déclencheurs automatiques, tu transformes durablement
-            ta relation avec la nourriture.
-          </p>
           <p className="text-body text-sm md:text-base text-foreground/70 max-w-md mb-8 leading-relaxed">
-            Concrètement&nbsp;: une app avec des audios guidés de 15&nbsp;minutes par jour, un
-            bouton urgence quand l'envie monte et un coach qui t'accompagne, pendant 33&nbsp;jours.
+            Lunaé agit sur ce que les régimes ignorent&nbsp;: tes automatismes, tes émotions et tes
+            déclencheurs. Audios guidés, bouton d’urgence et coach IA t’accompagnent pendant
+            33&nbsp;jours.
           </p>
 
-          <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-8">
+          <div className="flex flex-col sm:flex-row flex-wrap items-center gap-3 sm:gap-5 mb-4">
             <Button variant="hero" size="lg" asChild className="w-full sm:w-auto">
               <a href={quizUrl("hero")}>
                 Je fais le test gratuit
               </a>
             </Button>
-            <Button
-              variant="outline"
-              size="lg"
+            <button
+              type="button"
               onClick={() => scrollTo("approche")}
-              className="w-full sm:w-auto rounded-full border-foreground/20 hover:bg-accent/40"
+              className="text-body text-sm text-foreground/60 hover:text-foreground/85 transition-colors underline-offset-4 hover:underline focus:outline-none focus-visible:underline"
             >
-              Découvrir l'approche
-            </Button>
+              Découvrir l’approche →
+            </button>
           </div>
-          <p className="text-body text-xs text-foreground/60 -mt-5 mb-8">
+          <p className="text-body text-xs text-foreground/70 mb-8">
             3 minutes · gratuit · découvre ton profil
           </p>
 
