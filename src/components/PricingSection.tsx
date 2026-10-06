@@ -3,6 +3,7 @@ import { Check, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import summaryVase from "@/assets/summary-vase.jpg";
 import { quizUrl } from "@/lib/links";
+import AppLink from "@/components/AppLink";
 
 const points = [
   "3 jours gratuits pour essayer",
@@ -96,6 +97,12 @@ const PricingSection = () => (
               </a>
             </Button>
 
+            <Button variant="outline" size="lg" asChild className="w-full mb-3 rounded-full border-foreground/20 hover:bg-accent/40">
+              <AppLink href="https://app.lunae-app.fr/checkout/gift">
+                Offrir Lunaé
+              </AppLink>
+            </Button>
+
             <p className="flex items-center justify-center gap-1.5 text-body text-xs text-muted-foreground">
               <Lock className="w-3 h-3 shrink-0" /> Paiement sécurisé
             </p>
@@ -106,7 +113,7 @@ const PricingSection = () => (
           </div>
 
           <p className="text-body text-xs text-muted-foreground/80 mt-4 text-center md:text-left break-words">
-            Tarif réservé aux premières personnes qui rejoignent le programme.
+            Tarif réservé aux premiers utilisateurs qui rejoignent le programme.
           </p>
         </div>
       </div>

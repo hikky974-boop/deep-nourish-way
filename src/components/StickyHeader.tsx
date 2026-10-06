@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import logoLunea from "@/assets/logo-lunea.svg";
 import { quizUrl } from "@/lib/links";
+import AppLink from "@/components/AppLink";
 
 const navItems = [
   { label: "Le programme", href: "#programme" },
@@ -46,9 +47,17 @@ const StickyHeader = () => {
           ))}
         </nav>
 
-        <Button variant="hero" size="sm" onClick={() => { window.location.href = quizUrl("header"); }} className="text-sm px-5 h-9">
-          Faire le test
-        </Button>
+        <div className="flex items-center gap-3 sm:gap-5">
+          <AppLink
+            href="https://app.lunae-app.fr/login"
+            className="text-body text-sm text-foreground/70 hover:text-foreground transition-colors whitespace-nowrap"
+          >
+            Se connecter
+          </AppLink>
+          <Button variant="hero" size="sm" onClick={() => { window.location.href = quizUrl("header"); }} className="text-sm px-5 h-9 whitespace-nowrap">
+            Faire le test
+          </Button>
+        </div>
       </div>
     </header>
   );

@@ -3,26 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lunéa — Libère ta relation à la nourriture</title>
-    <meta name="description" content="Lunéa : un programme de reprogrammation neuro-émotionnelle et PNL pour apaiser ton rapport à la nourriture et retrouver un équilibre durable, sans régime ni lutte.">
-    <meta name="author" content="Lunéa" />
+
+    <!-- Consent Mode v2 defaults — must run BEFORE GTM -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        analytics_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        wait_for_update: 500
+      });
+      gtag('set', 'url_passthrough', true);
+      gtag('set', 'ads_data_redaction', true);
+    </script>
+
+    <!-- Re-apply stored Lunaé consent as early as possible (after default, before GTM).
+         Audience measurement and advertising are two independent categories:
+         an old analytics-only consent NEVER grants the advertising signals. -->
+    <script>
+      (function () {
+        try {
+          var key = 'lunae_consent_v1';
+          var legacyKey = 'lunae_clarity_consent_v1';
+          var adsKey = 'lunae_consent_ads_v1';
+          var stored = localStorage.getItem(key) || localStorage.getItem(legacyKey);
+          var ads = localStorage.getItem(adsKey) === 'granted' ? 'granted' : 'denied';
+          if (stored === 'granted' || stored === 'denied' || ads === 'granted') {
+            gtag('consent', 'update', {
+              analytics_storage: stored === 'granted' ? 'granted' : 'denied',
+              ad_storage: ads,
+              ad_user_data: ads,
+              ad_personalization: ads
+            });
+          }
+        } catch (e) {
+          /* ignore storage errors */
+        }
+      })();
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TXSSG73C');</script>
+    <!-- End Google Tag Manager -->
+
+    <title>Lunaé — Libère ta relation à la nourriture</title>
+    <meta name="description" content="Découvrez Lunaé, un programme personnalisé de 33 jours pour comprendre l’alimentation émotionnelle, apaiser les envies de manger et sortir des automatismes.">
+    <meta name="author" content="Lunaé">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+
+    
+    
+    
+    
+    
+    
     
     
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Lunaé" />
     <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8047f518-c6a4-4fcb-970a-14865c821a1f/id-preview-bbcd7f58--fce08524-4011-43b8-a1cd-7ee37e7d6845.lovable.app-1774070043226.png">
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
+    
     <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8047f518-c6a4-4fcb-970a-14865c821a1f/id-preview-bbcd7f58--fce08524-4011-43b8-a1cd-7ee37e7d6845.lovable.app-1774070043226.png">
-    <meta property="og:title" content="Lunéa — Libère ta relation à la nourriture">
-  <meta name="twitter:title" content="Lunéa — Libère ta relation à la nourriture">
-  <meta property="og:description" content="Lunéa : un programme de reprogrammation neuro-émotionnelle et PNL pour apaiser ton rapport à la nourriture et retrouver un équilibre durable, sans régime ni lutte.">
-  <meta name="twitter:description" content="Lunéa : un programme de reprogrammation neuro-émotionnelle et PNL pour apaiser ton rapport à la nourriture et retrouver un équilibre durable, sans régime ni lutte.">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <meta property="og:title" content="Lunaé — Libère ta relation à la nourriture">
+  <meta name="twitter:title" content="Lunaé — Libère ta relation à la nourriture">
+  <meta property="og:description" content="Découvrez Lunaé, un programme personnalisé de 33 jours pour comprendre l’alimentation émotionnelle, apaiser les envies de manger et sortir des automatismes.">
+  <meta name="twitter:description" content="Découvrez Lunaé, un programme personnalisé de 33 jours pour comprendre l’alimentation émotionnelle, apaiser les envies de manger et sortir des automatismes.">
 </head>
 
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXSSG73C"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="root"></div>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

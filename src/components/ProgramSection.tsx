@@ -32,7 +32,7 @@ const items = [
   {
     icon: MessageCircle,
     title: "Un coach IA personnel",
-    desc: "Disponible 24h/24, il connaît ton profil et s'adapte à ce que tu vis. Tu n'es jamais seule face à une envie.",
+    desc: "Disponible 24h/24, il connaît ton profil et s'adapte à ce que tu vis. Tu n'es jamais seul face à une envie.",
   },
   {
     icon: Heart,

@@ -84,7 +84,7 @@ const HeroSection = () => {
             bouton urgence quand l'envie monte et un coach qui t'accompagne, pendant 33&nbsp;jours.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-3 mb-8">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-8">
             <Button variant="hero" size="lg" asChild className="w-full sm:w-auto">
               <a href={quizUrl("hero")}>
                 Je fais le test gratuit

@@ -3,7 +3,7 @@ import { Check, X } from "lucide-react";
 
 const forYou = [
   "Tu manges sous l'effet des émotions ou des automatismes",
-  "Tu es fatiguée des approches superficielles",
+  "Tu es fatigué des approches superficielles",
   "Tu cherches une transformation douce mais profonde",
   "Tu veux un chemin plus respectueux et plus durable",
   "Tu as tout essayé et rien n'a duré",

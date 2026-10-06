@@ -12,11 +12,19 @@ import FaqSection from "@/components/FaqSection";
 import FooterSection from "@/components/FooterSection";
 import QuoteStrip from "@/components/QuoteStrip";
 import CtaBand from "@/components/CtaBand";
+import { useEffect } from "react";
+import { initializeLandingTracking } from "@/lib/tracking";
 
-const Index = () => (
+const Index = () => {
+  useEffect(() => {
+    initializeLandingTracking();
+  }, []);
+
+  return (
   <>
+
     <StickyHeader />
-    <main>
+    <main data-clarity-mask="true">
       <HeroSection />
       <QuoteStrip />
       <PillarsSection />
@@ -33,6 +41,8 @@ const Index = () => (
       <FooterSection />
     </main>
   </>
-);
+  );
+};
+
 
 export default Index;

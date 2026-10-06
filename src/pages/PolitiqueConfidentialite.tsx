@@ -39,7 +39,7 @@ const PolitiqueConfidentialite = () => (
         <p className="text-body text-sm text-muted-foreground">
           Conformément au Règlement Général sur la Protection des Données (RGPD, règlement UE
           2016/679) et à la loi Informatique et Libertés n° 78-17 du 6 janvier 1978 modifiée.
-          Dernière mise à jour : 8 juin 2026.
+          Version 1.2 — Dernière mise à jour : 12 juillet 2026.
         </p>
       </div>
 
@@ -144,10 +144,13 @@ const PolitiqueConfidentialite = () => (
           sous-traitants techniques suivants :
         </p>
         <ul className="list-disc list-inside pl-2 space-y-1 text-foreground/75 mt-1">
-          <li>Prestataire de paiement (traitement sécurisé des transactions)</li>
+          <li>Stripe (prestataire de paiement)</li>
           <li>Hébergeur de la plateforme (stockage et disponibilité du service)</li>
           <li>Outil d'envoi d'emails transactionnels (confirmation de commande, accès)</li>
         </ul>
+        <p>
+          <strong>Paiements — Stripe :</strong> Les paiements sont traités sur une page sécurisée fournie par Stripe. Les coordonnées bancaires sont saisies directement auprès de Stripe. Lunaé ne collecte ni ne conserve le numéro complet de la carte, sa date d'expiration ou son cryptogramme. Lunaé reçoit seulement les informations nécessaires au suivi de la transaction, à l'activation de l'accès et au respect de ses obligations comptables.
+        </p>
         <p>
           Chacun de ces sous-traitants est lié par un accord de traitement de données conforme
           au RGPD et n'est autorisé à utiliser les données qu'aux fins expressément définies.
@@ -155,6 +158,25 @@ const PolitiqueConfidentialite = () => (
         <p>
           En dehors de ces cas, les données ne sont communiquées à des tiers qu'en cas
           d'obligation légale (réquisition judiciaire, contrôle fiscal).
+        </p>
+      </Block>
+
+      {/* Connexion avec Google */}
+      <Block title="Connexion avec Google">
+        <p>
+          Lorsque vous choisissez « Continuer avec Google », l'authentification est gérée par Google et par Base44, la plateforme technique utilisée par Lunaé. Lunaé ne reçoit jamais votre mot de passe Google.
+        </p>
+        <p>
+          L'intégration demande uniquement les autorisations Google openid, email et profile. Elles permettent à Base44 de recevoir l'identifiant unique de votre compte Google, votre adresse e-mail et son statut de vérification, ainsi que les informations de profil de base rendues disponibles par Google, notamment votre nom et, le cas échéant, votre photo de profil et votre langue. Aucune autre donnée Google n'est demandée.
+        </p>
+        <p>
+          Ces données servent exclusivement à créer ou retrouver votre compte Lunaé, vous identifier, sécuriser votre connexion et personnaliser les informations de base de votre espace. Les données nécessaires au compte sont enregistrées dans l'environnement Base44 et conservées selon la même durée que les autres données de compte, soit trois ans après votre dernière activité, sauf demande de suppression antérieure ou obligation légale contraire. Elles ne sont ni vendues ni utilisées à des fins publicitaires. Elles sont partagées uniquement avec Google et Base44 dans la mesure nécessaire au fonctionnement et à la sécurisation de cette connexion.
+        </p>
+        <p>
+          Les autorisations demandées ne donnent aucun accès à Gmail, Google Drive, Google Contacts ou Google Agenda. Lunaé ne peut donc ni lire vos e-mails, ni consulter ou modifier vos fichiers, vos contacts ou votre calendrier.
+        </p>
+        <p>
+          Vous pouvez retirer l'autorisation depuis les paramètres de sécurité de votre compte Google. Ce retrait empêche une future connexion avec Google, mais ne supprime pas automatiquement votre compte Lunaé. Pour demander la suppression de votre compte Lunaé et des données associées, écrivez à <a href="mailto:contact@lunae-app.fr" className="text-primary hover:underline">contact@lunae-app.fr</a>. Les données qui ne doivent pas être conservées pour une obligation légale seront supprimées ou anonymisées.
         </p>
       </Block>
 
@@ -168,7 +190,7 @@ const PolitiqueConfidentialite = () => (
           L'application Lunaé (espace membre, données de progression, coach IA) est hébergée par{" "}
           <strong>Base44</strong>, service exploité par <strong>Wix.com Ltd.</strong>, dont le
           siège social est situé en <strong>Israël</strong>. À ce titre, certaines données
-          personnelles des utilisatrices — y compris les données saisies dans le programme et
+          personnelles des utilisateurs — y compris les données saisies dans le programme et
           les échanges avec le coach IA — sont susceptibles d'être transférées et hébergées en
           Israël, hors de l'EEE.
         </p>
@@ -186,9 +208,8 @@ const PolitiqueConfidentialite = () => (
           <strong>clauses contractuelles types</strong> adoptées par la Commission européenne
           (décision d'exécution 2021/914/UE), conformément à l'article 46 du RGPD.
         </p>
-        <p className="text-foreground/50 italic text-xs">
-          [À VÉRIFIER : localisation et garanties du fournisseur IA — à compléter une fois le
-          prestataire confirmé.]
+        <p>
+          <strong>Intelligence artificielle :</strong> Le coach IA de Lunaé utilise un prestataire spécialisé en intelligence artificielle. Seuls le texte saisi et les éléments de contexte strictement nécessaires à la génération de la réponse lui sont transmis. Cette transmission sert uniquement à produire la réponse demandée. Les autres données du compte ne sont pas transmises lorsqu'elles ne sont pas nécessaires à cette fonctionnalité.
         </p>
       </Block>
 
@@ -283,6 +304,102 @@ const PolitiqueConfidentialite = () => (
         </p>
       </Block>
 
+      {/* Microsoft Clarity */}
+      <Block title="Microsoft Clarity et mesure d’audience">
+        <p>
+          Sous réserve de votre consentement, Lunaé utilise Microsoft Clarity, un service de mesure d’audience fourni par Microsoft.
+        </p>
+        <p>
+          Clarity nous permet de comprendre de manière agrégée comment les visiteurs interagissent avec la page publique Lunaé, notamment les zones cliquées, la profondeur de défilement et le temps passé sur les différentes parties de la page.
+        </p>
+        <p>
+          Microsoft Clarity n’est chargé qu’après votre acceptation explicite de la catégorie “Mesure d’audience”. En cas de refus ou d’absence de choix, aucune collecte Clarity n’est déclenchée.
+        </p>
+        <p>
+          Les contenus identifiés comme sensibles sont masqués avant leur transmission. Lunaé ne transmet volontairement à Clarity aucun nom, adresse e-mail, message personnel, réponse d’onboarding, information de paiement ou donnée provenant du coach.
+        </p>
+        <p>
+          Clarity peut utiliser les cookies _clck et _clsk afin de mesurer les visites et les sessions sur la page publique, uniquement lorsque la mesure d’audience a été acceptée.
+        </p>
+        <p>
+          Vous pouvez retirer ou modifier votre consentement à tout moment depuis le lien “Gérer mes cookies” présent dans le pied de page du site.
+        </p>
+      </Block>
+
+      {/* Google Analytics, Google Ads et Google Tag Manager */}
+      <Block title="Google Analytics, Google Ads et Google Tag Manager">
+        <p>
+          Le site utilise Google Tag Manager, un gestionnaire de balises qui permet de charger,
+          uniquement selon votre choix, les outils de mesure et de publicité décrits ci-dessous.
+          Google Tag Manager ne dépose par lui-même aucun cookie de mesure ou de publicité.
+        </p>
+        <p>
+          <strong>Finalités.</strong> Google Analytics 4 mesure de manière agrégée la fréquentation
+          et l’usage de la page publique (pages vues, provenance, parcours). Google Ads permet de
+          mesurer l’efficacité de nos campagnes publicitaires et d’attribuer une visite à une
+          campagne.
+        </p>
+        <p>
+          <strong>Aucune collecte avant consentement.</strong> Par défaut, les signaux de
+          consentement Google (mesure d’audience, stockage publicitaire, données utilisateur
+          publicitaires et personnalisation publicitaire) sont positionnés sur « refusé ». Aucun
+          cookie de mesure ou de publicité n’est déposé et aucune donnée n’est envoyée à Google
+          tant que vous n’avez pas accepté explicitement.
+        </p>
+        <p>
+          <strong>Données concernées.</strong> Nous ne transmettons volontairement aucune donnée
+          personnelle (nom, adresse e-mail, message, réponse d’onboarding, information de paiement)
+          à Google. Des identifiants de campagne (par exemple gclid ou paramètres utm) peuvent être
+          repris dans l’URL lors du passage vers l’espace d’achat, afin de rattacher une visite à
+          une campagne.
+        </p>
+        <p>
+          <strong>Durées.</strong> Les cookies de mesure Google Analytics sont conservés au maximum
+          13 mois ; les identifiants de campagne conservés en propre le sont au maximum 90 jours,
+          et uniquement si vous avez accepté.
+        </p>
+        <p>
+          <strong>Retrait du consentement.</strong> Vous pouvez modifier ou retirer votre
+          consentement à tout moment via le lien « Gérer mes cookies » présent dans le pied de page.
+          Le retrait désactive immédiatement ces mesures pour vos prochaines interactions.
+        </p>
+      </Block>
+
+      {/* Pixel Meta */}
+      <Block title="Pixel Meta (Facebook et Instagram)">
+        <p>
+          <strong>Finalité.</strong> Sous réserve de votre consentement à la mesure publicitaire,
+          la page publique lunae-app.fr charge le pixel Meta (identifiant 1610792703917119), fourni
+          par Meta Platforms Ireland Limited. Il mesure de manière agrégée l’efficacité de nos
+          campagnes publicitaires Facebook et Instagram, en enregistrant une visite de la page
+          d’accueil.
+        </p>
+        <p>
+          <strong>Aucun chargement avant acceptation.</strong> Le script Meta n’est ni chargé ni
+          exécuté tant que la catégorie « mesure publicitaire » n’a pas été explicitement acceptée.
+          En cas de refus ou d’absence de choix, aucun script, aucune image et aucune requête vers
+          Meta ne sont déclenchés. Une acceptation antérieure limitée à la mesure d’audience ne vaut
+          jamais consentement publicitaire.
+        </p>
+        <p>
+          <strong>Retrait du consentement.</strong> Vous pouvez retirer votre consentement à tout
+          moment via le lien « Gérer mes cookies » présent dans le pied de page. Le consentement
+          Meta est alors révoqué et plus aucun événement n’est envoyé.
+        </p>
+        <p>
+          <strong>Mesure côté serveur (non active à ce jour).</strong> Si la mesure serveur Meta
+          (Conversions API) devait être activée ultérieurement, un événement d’achat minimal
+          pourrait être transmis depuis un serveur, uniquement après un paiement confirmé par
+          Stripe et uniquement si la catégorie « mesure publicitaire » a été acceptée. Aucune
+          donnée de santé, de poids, d’exercice ou de conversation ne serait transmise. Cette
+          activation resterait soumise aux règles de Meta et cette politique serait mise à jour
+          en conséquence.
+        </p>
+      </Block>
+
+
+
+
       {/* 9. Modifications */}
       <Block title="9. Modifications de la présente politique">
         <p>
@@ -299,7 +416,7 @@ const PolitiqueConfidentialite = () => (
 
       <div className="mt-12 pt-8 border-t border-border/40 text-body text-xs text-muted-foreground/70">
         <p>RIVIERE Research & Consulting SAS — RCS Paris 881 598 981 — 6 rue d'Armaillé, 75017 Paris</p>
-        <p className="mt-1">Politique de confidentialité v1.1 — Dernière mise à jour : 12 juin 2026</p>
+        <p className="mt-1">Version 1.2 — Dernière mise à jour : 12 juillet 2026</p>
       </div>
     </main>
   </div>

@@ -1,5 +1,6 @@
 import { Moon } from "lucide-react";
 import { Link } from "react-router-dom";
+import { OPEN_BANNER_EVENT } from "@/lib/clarity";
 
 const FooterSection = () => (
   <footer className="px-6 pt-16 pb-8 bg-background border-t border-border/40">
@@ -38,6 +39,17 @@ const FooterSection = () => (
           <li><Link to="/mentions-legales" className="hover:text-primary transition-colors">Mentions légales</Link></li>
           <li><Link to="/politique-confidentialite" className="hover:text-primary transition-colors">Politique de confidentialité</Link></li>
           <li><Link to="/cgv" className="hover:text-primary transition-colors">CGV</Link></li>
+          <li><Link to="/cgu" className="hover:text-primary transition-colors">CGU</Link></li>
+          <li><Link to="/aide" className="hover:text-primary transition-colors">Aide / Contact</Link></li>
+          <li>
+            <button
+              type="button"
+              onClick={() => window.dispatchEvent(new CustomEvent(OPEN_BANNER_EVENT))}
+              className="hover:text-primary transition-colors text-left bg-transparent p-0 border-0 cursor-pointer"
+            >
+              Gérer mes cookies
+            </button>
+          </li>
         </ul>
       </div>
 
@@ -59,9 +71,9 @@ const FooterSection = () => (
       <p className="text-body text-xs text-muted-foreground/50 leading-relaxed max-w-3xl mx-auto">
         Lunaé est un programme de bien-être et de développement personnel. Il ne constitue pas un
         dispositif médical, un traitement, une psychothérapie, ni un substitut à une consultation
-        avec un professionnel de santé. Aucun résultat n'est garanti. Les personnes souffrant de
+        avec un professionnel de santé. Aucun résultat n'est garanti. Les utilisateurs souffrant de
         troubles du comportement alimentaire, suivant un traitement psychiatrique ou présentant des
-        problèmes de santé sont invitées à consulter leur médecin avant toute utilisation.
+        problèmes de santé sont invités à consulter leur médecin avant toute utilisation.
       </p>
       <p className="text-body text-xs text-muted-foreground/70 tracking-wide">
         © {new Date().getFullYear()} — Lunaé. Tous droits réservés.
