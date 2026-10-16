@@ -9,7 +9,7 @@ import {
 const faqs = [
   {
     q: "Comment fonctionne l'essai gratuit ?",
-    a: "Tu commences par un test de 3 minutes qui identifie ton profil. Ensuite, tu profites de 3 jours gratuits pour découvrir Lunaé. Ta carte bancaire est demandée pour démarrer l'essai, mais rien n'est prélevé pendant ces 3 jours. Si tu continues, l'abonnement est de 67,90 € par an. Tu peux annuler à tout moment en quelques clics, sans frais pendant l'essai.",
+    a: "Tu commences par un test de 3 minutes qui identifie ton profil. Ensuite, tu profites de 3 jours gratuits pour découvrir Lunaé : aucun prélèvement aujourd’hui, ni pendant tes 3 jours d’essai. Si tu continues, l’abonnement est de 67,90 € par an. Tu peux annuler à tout moment en 2 clics depuis l’application, sans frais pendant l’essai.",
   },
   {
     q: "À qui s'adresse Lunaé ?",

@@ -240,10 +240,6 @@ const CGV = () => (
           3 jours d’essai, depuis l’application.
         </p>
         <p>
-          Cet accord et cette renonciation sont confirmés au Client dans l'email de confirmation de sa
-          commande.
-        </p>
-        <p>
           <strong>En contrepartie, le Client dispose de l'essai gratuit de trois (3) jours</strong> : pendant
           cette période, il peut annuler son abonnement à tout moment, directement depuis l'application
           (lien « Résilier mon abonnement » dans la rubrique Profil), sans aucun prélèvement ni justification. Passé ce délai,
