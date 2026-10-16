@@ -239,8 +239,8 @@ const CGV = () => (
           ainsi à son droit de rétractation de quatorze (14) jours. Il peut annuler sans frais pendant les
           3 jours d’essai, depuis l’application.
         </p>
-
         <p>
+
           Cet accord et cette renonciation sont confirmés au Client dans l'email de confirmation de sa
           commande.
         </p>
