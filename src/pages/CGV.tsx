@@ -234,14 +234,11 @@ const CGV = () => (
           de rétractation.
         </p>
         <p>
-          Avant de valider sa commande, le Client coche obligatoirement, sur la page de paiement sécurisée,
-          la case suivante :
+          En cochant la case « J’accepte les conditions générales de vente » avant de valider sa commande,
+          le Client demande l’accès immédiat à Lunaé dès le début de son essai gratuit et reconnaît renoncer
+          ainsi à son droit de rétractation de quatorze (14) jours. Il peut annuler sans frais pendant les
+          3 jours d’essai, depuis l’application.
         </p>
-        <blockquote className="border-l-4 border-primary/40 pl-4 italic text-foreground/70 my-3">
-          « J'accepte les conditions générales de vente. Je demande l'accès immédiat à Lunaé dès le début
-          de mon essai gratuit et je reconnais renoncer ainsi à mon droit de rétractation de 14 jours. Je
-          peux annuler sans frais pendant les 3 jours d'essai, depuis l'application. »
-        </blockquote>
         <p>
           Cet accord et cette renonciation sont confirmés au Client dans l'email de confirmation de sa
           commande.
