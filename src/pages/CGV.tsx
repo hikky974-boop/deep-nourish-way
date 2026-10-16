@@ -240,7 +240,6 @@ const CGV = () => (
           3 jours d’essai, depuis l’application.
         </p>
         <p>
-
           Cet accord et cette renonciation sont confirmés au Client dans l'email de confirmation de sa
           commande.
         </p>
