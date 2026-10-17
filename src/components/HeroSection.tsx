@@ -5,7 +5,7 @@ import heroDoorway from "@/assets/hero-doorway.png";
 import { quizUrl } from "@/lib/links";
 
 const badges = [
-  { icon: Zap, label: "3 jours gratuits" },
+  { icon: Zap, label: "7 jours gratuits" },
   { icon: Headphones, label: "Audios PNL & reprogrammation neuro-émotionnelle" },
   { icon: ListChecks, label: "Exercices guidés" },
   { icon: CalendarCheck, label: "Suivi quotidien" },

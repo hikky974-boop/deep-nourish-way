@@ -96,7 +96,7 @@ const CGV = () => (
         </p>
         <p>
           Lunaé est proposé sous forme d'<strong>abonnement annuel</strong>, précédé d'une période d'essai
-          gratuite de trois (3) jours, dans les conditions décrites à l'Article 3.
+          gratuite de sept (7) jours, dans les conditions décrites à l'Article 3.
         </p>
         <p>
           Le compte Lunaé est <strong>strictement personnel, individuel et intransmissible</strong>. Le Client
@@ -119,15 +119,15 @@ const CGV = () => (
           Avant toute souscription, le Client peut répondre gratuitement et sans engagement à un test en ligne
           qui lui présente un profil et un aperçu de son parcours. Le test n'engage le Client à aucun achat.
         </p>
-        <p className="font-medium text-foreground">L'essai gratuit de 3 jours</p>
+        <p className="font-medium text-foreground">L'essai gratuit de 7 jours</p>
         <p>
-          La souscription démarre par une période d'essai gratuite de trois (3) jours, au cours de laquelle le
+          La souscription démarre par une période d'essai gratuite de sept (7) jours, au cours de laquelle le
           Client accède au programme. Une carte bancaire valide est demandée pour démarrer l'essai.
           <strong> Aucun montant n'est prélevé pendant l'essai.</strong> La date du premier prélèvement est
           indiquée au Client avant la validation de sa commande et dans l'email de confirmation.
         </p>
         <p>
-          Si le Client résilie avant la fin des trois jours d'essai, aucun montant n'est prélevé et
+          Si le Client résilie avant la fin des sept jours d'essai, aucun montant n'est prélevé et
           l'accès prend fin à l'issue de l'essai. Un seul essai gratuit est accordé par personne.
         </p>
         <p className="font-medium text-foreground">L'abonnement annuel</p>
@@ -177,7 +177,7 @@ const CGV = () => (
       <Section num="5" title="Prix">
         <p>Les prix sont indiqués en euros, toutes taxes comprises :</p>
         <ul className="list-disc list-inside space-y-1 pl-2">
-          <li>Essai : <strong>gratuit pendant 3 jours</strong> ;</li>
+          <li>Essai : <strong>gratuit pendant 7 jours</strong> ;</li>
           <li>Abonnement annuel, tarif de lancement : <strong>67,90 € par an</strong>.</li>
         </ul>
         <p className="text-foreground/60 italic text-xs">TVA non applicable, art. 293 B du CGI.</p>
@@ -215,7 +215,7 @@ const CGV = () => (
         <ul className="list-disc list-inside space-y-1 pl-2">
           <li>
             <strong>Pendant l'essai</strong> : aucun montant n'est prélevé ; l'accès prend fin à l'issue des
-            trois jours.
+            sept jours.
           </li>
           <li>
             <strong>Après le début de l'abonnement</strong> : la résiliation empêche le renouvellement
@@ -237,10 +237,10 @@ const CGV = () => (
           En cochant la case « J’accepte les conditions générales de vente » avant de valider sa commande,
           le Client demande l’accès immédiat à Lunaé dès le début de son essai gratuit et reconnaît renoncer
           ainsi à son droit de rétractation de quatorze (14) jours. Il peut annuler sans frais pendant les
-          3 jours d’essai, depuis l’application.
+          7 jours d’essai, depuis l’application.
         </p>
         <p>
-          <strong>En contrepartie, le Client dispose de l'essai gratuit de trois (3) jours</strong> : pendant
+          <strong>En contrepartie, le Client dispose de l'essai gratuit de sept (7) jours</strong> : pendant
           cette période, il peut annuler son abonnement à tout moment, directement depuis l'application
           (lien « Résilier mon abonnement » dans la rubrique Profil), sans aucun prélèvement ni justification. Passé ce délai,
           l'abonnement annuel démarre et ne peut plus faire l'objet d'une rétractation.
