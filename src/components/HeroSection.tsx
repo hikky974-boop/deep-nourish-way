@@ -95,7 +95,7 @@ const HeroSection = () => {
             </button>
           </div>
           <p className="text-body text-xs text-foreground/70 mb-8">
-            3 minutes · gratuit · découvre ton profil
+            Environ 4 minutes · gratuit · découvre ton plan personnalisé
           </p>
 
           {/* Pills — wrap sur mobile/tablette, ligne unique sur desktop */}

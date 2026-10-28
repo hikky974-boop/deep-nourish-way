@@ -17,7 +17,7 @@ const CtaBand = ({ source, text }: { source: string; text: string }) => (
         <a href={quizUrl(source)}>Je fais le test gratuit</a>
       </Button>
       <p className="text-body text-xs text-muted-foreground mt-3">
-        3 minutes · gratuit · découvre ton profil
+        Environ 4 minutes · gratuit · découvre ton plan personnalisé
       </p>
     </motion.div>
   </section>

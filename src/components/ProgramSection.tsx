@@ -12,7 +12,7 @@ const items = [
   {
     icon: Headphones,
     title: "Un parcours de 33 jours, avec des audios guidés",
-    desc: "Chaque jour, 15 minutes. Des audios de reprogrammation neuro-émotionnelle et de PNL enregistrés par une experte certifiée. Tu t'installes, tu te laisses guider, et ton cerveau change ses schémas en profondeur.",
+    desc: "Chaque jour, 10 à 20 minutes. Des audios de reprogrammation neuro-émotionnelle et de PNL enregistrés par une experte certifiée. Tu t'installes, tu te laisses guider, et ton cerveau change ses schémas en profondeur.",
   },
   {
     icon: ListChecks,
@@ -32,7 +32,7 @@ const items = [
   {
     icon: MessageCircle,
     title: "Un coach IA personnel",
-    desc: "Disponible 24h/24, il connaît ton profil et s'adapte à ce que tu vis. Tu n'es jamais seul face à une envie.",
+    desc: "Disponible 24h/24, il connaît ton plan et s'adapte à ce que tu vis. Face à une envie, tu as toujours quelqu'un à qui parler.",
   },
   {
     icon: Heart,

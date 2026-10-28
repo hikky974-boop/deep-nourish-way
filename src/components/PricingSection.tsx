@@ -107,7 +107,7 @@ const PricingSection = () => (
               <Lock className="w-3 h-3 shrink-0" /> Paiement sécurisé
             </p>
             <p className="text-body text-xs text-muted-foreground mt-3 text-center leading-relaxed">
-              3 minutes pour découvrir ton profil, puis 7 jours gratuits.
+              Environ 4 minutes pour découvrir ton plan personnalisé, puis 7 jours gratuits.
               Annulable à tout moment, sans frais pendant l'essai.
             </p>
           </div>

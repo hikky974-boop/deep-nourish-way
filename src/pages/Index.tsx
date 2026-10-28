@@ -34,7 +34,7 @@ const Index = () => {
       <ProgramSection />
       <ExperienceSection />
       <ProofSection />
-      <CtaBand source="apres-temoignages" text="Toi aussi, découvre ton profil." />
+      <CtaBand source="apres-temoignages" text="Toi aussi, découvre ton plan personnalisé." />
       <GuaranteeSection />
       <PricingSection />
       <FaqSection />
