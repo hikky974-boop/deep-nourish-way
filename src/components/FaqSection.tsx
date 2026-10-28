@@ -9,7 +9,7 @@ import {
 const faqs = [
   {
     q: "Comment fonctionne l'essai gratuit ?",
-    a: "Tu commences par un test de 3 minutes qui identifie ton profil. Ensuite, tu profites de 7 jours gratuits pour découvrir Lunaé : aucun prélèvement aujourd’hui, ni pendant tes 7 jours d’essai. Si tu continues, l’abonnement est de 67,90 € par an. Tu peux annuler à tout moment en 2 clics depuis l’application, sans frais pendant l’essai.",
+    a: "Tu commences par un test d'environ 4 minutes qui crée ton plan personnalisé. Ensuite, tu profites de 7 jours gratuits pour découvrir Lunaé : aucun prélèvement aujourd’hui, ni pendant tes 7 jours d’essai. Si tu continues, l’abonnement est de 67,90 € par an. Tu peux annuler à tout moment en 2 clics depuis l’application, sans frais pendant l’essai.",
   },
   {
     q: "À qui s'adresse Lunaé ?",
@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: "Combien de temps dure le programme ?",
-    a: "Le parcours s'étend sur 33 jours, avec des contenus quotidiens courts (15 à 20 minutes). Tant que ton abonnement est actif, tu gardes ensuite un accès illimité à l'ensemble des outils et audios.",
+    a: "Le parcours s'étend sur 33 jours, avec des contenus quotidiens courts (10 à 20 minutes). Tant que ton abonnement est actif, tu gardes ensuite un accès illimité à l'ensemble des outils et audios.",
   },
   {
     q: "Ai-je besoin d'expérience en reprogrammation neuro-émotionnelle ?",
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: "Combien de temps par jour ?",
-    a: "Chaque journée demande entre 10 et 20 minutes. Certains contenus — comme les audios de reprogrammation — s'écoutent allongé, souvent le soir avant de dormir, donc tu peux les glisser dans ta routine sans réorganiser ta vie. Si tu as une journée vraiment chargée, certains exercices tiennent en 5 minutes. L'idée n'est pas d'ajouter une contrainte de plus, mais d'intégrer quelque chose qui te fait du bien.",
+    a: "Chaque journée demande entre 10 et 20 minutes. Certains contenus — comme les audios de reprogrammation — s'écoutent en position allongée, souvent le soir avant de dormir, donc tu peux les glisser dans ta routine sans réorganiser ta vie. Si tu as une journée vraiment chargée, certains exercices tiennent en 5 minutes. L'idée n'est pas d'ajouter une contrainte de plus, mais d'intégrer quelque chose qui te fait du bien.",
   },
   {
     q: "Est-ce que ça marche vraiment ?",
