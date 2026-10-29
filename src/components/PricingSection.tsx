@@ -126,6 +126,9 @@ const PricingSection = () => (
             </p>
           </div>
 
+          <p className="text-body text-xs text-muted-foreground/80 mt-4 text-center md:text-left break-words">
+            Tarif réservé aux premiers utilisateurs qui rejoignent le programme.
+          </p>
         </div>
       </div>
     </motion.div>
