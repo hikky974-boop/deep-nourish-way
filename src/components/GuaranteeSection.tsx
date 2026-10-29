@@ -28,7 +28,7 @@ const GuaranteeSection = () => (
         className="inline-block mb-4 px-3 py-1 rounded-full text-[10px] tracking-[0.2em] font-semibold"
         style={{ backgroundColor: "#8b2635", color: "#fff", fontVariant: "small-caps" }}
       >
-        Inclus dans ton abonnement
+        Inclus dans ton protocole
       </span>
 
       {/* Titre */}
@@ -40,8 +40,7 @@ const GuaranteeSection = () => (
       </h2>
 
       <p className="text-body text-base text-muted-foreground leading-relaxed">
-        Tes audios et ton contenu restent à toi tant que ton abonnement est actif. Tu peux
-        refaire ton parcours autant de fois que tu en ressens le besoin, à ton rythme.
+        Tu as accès à tout Lunaé pendant 12 mois : tu peux refaire ton parcours autant de fois que tu en ressens le besoin, à ton rythme.
       </p>
 
       {/* Séparateur */}
