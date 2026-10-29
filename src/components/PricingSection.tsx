@@ -6,7 +6,7 @@ import { quizUrl } from "@/lib/links";
 import AppLink from "@/components/AppLink";
 
 const points = [
-  "7 jours gratuits pour essayer",
+  "Satisfaite ou remboursée à 100 %",
   "33 jours de transformation complète",
   "Un accompagnement bienveillant et intelligent",
   "Des outils concrets, testés et validés",
@@ -67,13 +67,24 @@ const PricingSection = () => (
             ))}
           </ul>
 
+          <div className="bg-warm-glow/60 rounded-lg p-4 sm:p-6 border border-border/50 min-w-0 mb-8">
+            <h3 className="text-display text-2xl font-medium mb-4">Tes 4 bonus offerts</h3>
+            <ul className="space-y-3 text-body text-sm text-foreground/85">
+              {[
+                "Bonus 1 : La Matrice des 7 Déclencheurs Inconscients (valeur 97 €)",
+                "Bonus 2 : Le Protocole « Lendemain de Craquage : Effacement de la Culpabilité » (valeur 77 €)",
+                "Bonus 3 : Le Pack Terrain « Soirée Netflix Sans Grignotage » (valeur 97 €)",
+                "Bonus 4 : Ton Bilan Initial de Profilage Neuro-Alimentaire (valeur 67 €)",
+              ].map((bonus) => (
+                <li key={bonus} className="flex items-start gap-3 min-w-0">
+                  <Check className="w-4 h-4 text-primary mt-1 shrink-0" strokeWidth={2} />
+                  <span className="min-w-0 break-words">{bonus}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           <div className="bg-card rounded-2xl p-4 sm:p-6 md:p-8 border border-border/50 min-w-0">
-            <span
-              className="inline-block mb-3 px-3 py-1 rounded-full text-[10px] tracking-[0.2em] font-semibold"
-              style={{ backgroundColor: "#8b2635", color: "#fff", fontVariant: "small-caps" }}
-            >
-              Tarif de lancement
-            </span>
             <div className="flex items-baseline gap-3 mb-5 flex-wrap">
               <span
                 className="text-display text-5xl sm:text-6xl md:text-7xl font-light leading-none tracking-tight"
@@ -82,9 +93,13 @@ const PricingSection = () => (
                 67,90&nbsp;€
               </span>
               <span className="text-body text-xl font-medium text-muted-foreground">
-                /&nbsp;an
+                — paiement unique
               </span>
             </div>
+
+            <p className="text-body text-sm text-muted-foreground mb-5 leading-relaxed">
+              Pas d’abonnement, rien à résilier. Garantie « Fin du Yo-Yo » : tu suis tes 33 jours et rien n’a changé ? On te rembourse à 100 %.
+            </p>
 
             <Button
               variant="hero"
@@ -107,8 +122,7 @@ const PricingSection = () => (
               <Lock className="w-3 h-3 shrink-0" /> Paiement sécurisé
             </p>
             <p className="text-body text-xs text-muted-foreground mt-3 text-center leading-relaxed">
-              Environ 4 minutes pour découvrir ton plan personnalisé, puis 7 jours gratuits.
-              Annulable à tout moment, sans frais pendant l'essai.
+              Environ 4 minutes pour découvrir ton plan personnalisé, puis ton protocole de 33 jours.
             </p>
           </div>
 

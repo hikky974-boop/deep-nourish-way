@@ -8,8 +8,8 @@ import {
 
 const faqs = [
   {
-    q: "Comment fonctionne l'essai gratuit ?",
-    a: "Tu commences par un test d'environ 4 minutes qui crée ton plan personnalisé. Ensuite, tu profites de 7 jours gratuits pour découvrir Lunaé : aucun prélèvement aujourd’hui, ni pendant tes 7 jours d’essai. Si tu continues, l’abonnement est de 67,90 € par an. Tu peux annuler à tout moment en 2 clics depuis l’application, sans frais pendant l’essai.",
+    q: "Comment fonctionne le paiement ?",
+    a: "Tu fais le test gratuit (environ 4 minutes), puis tu rejoins ton protocole de 33 jours pour 67,90 € en paiement unique : pas d’abonnement, rien à résilier. Et tu es couverte par la garantie « Fin du Yo-Yo » : si tu suis tes 33 jours et que rien n’a changé, on te rembourse à 100 %.",
   },
   {
     q: "À qui s'adresse Lunaé ?",
@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: "Combien de temps dure le programme ?",
-    a: "Le parcours s'étend sur 33 jours, avec des contenus quotidiens courts (10 à 20 minutes). Tant que ton abonnement est actif, tu gardes ensuite un accès illimité à l'ensemble des outils et audios.",
+    a: "Le parcours s'étend sur 33 jours, avec des contenus quotidiens courts (10 à 20 minutes). Tu gardes un accès à l'ensemble des outils et audios pendant 12 mois.",
   },
   {
     q: "Ai-je besoin d'expérience en reprogrammation neuro-émotionnelle ?",

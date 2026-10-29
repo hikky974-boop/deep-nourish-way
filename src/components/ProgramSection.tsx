@@ -16,7 +16,7 @@ const items = [
   },
   {
     icon: ListChecks,
-    title: "15 exercices guidés",
+    title: "13 exercices guidés",
     list: [
       "Repérer tes déclencheurs émotionnels",
       "Traverser une envie sans craquer",
