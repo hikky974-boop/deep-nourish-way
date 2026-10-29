@@ -191,12 +191,11 @@ const CGV = () => (
           Lunaé bénéficie d'une garantie commerciale de remboursement intégral appelée « Fin du Yo-Yo ». Le Client peut en bénéficier uniquement si les conditions cumulatives suivantes sont remplies :
         </p>
         <ul className="list-disc list-inside space-y-1 pl-2">
-          <li>Le Client a terminé toutes les étapes du programme enregistrées dans l'application ;</li>
-          <li>La demande est effectuée au plus tôt le trente-troisième (33e) jour et au plus tard le soixante-troisième (63e) jour suivant la date de son paiement ;</li>
-          <li>La demande est transmise exclusivement au moyen du bouton « Demander ma garantie » disponible dans le profil du Client.</li>
+          <li>La Cliente a suivi le protocole de trente-trois (33) jours sans obtenir de résultat ;</li>
+          <li>La demande est envoyée par email à <a href="mailto:contact@lunae-app.fr" className="text-primary hover:underline">contact@lunae-app.fr</a> au plus tôt le trente-troisième (33e) jour et au plus tard le soixante-troisième (63e) jour suivant la date de son paiement.</li>
         </ul>
         <p>
-          Lorsque ces conditions sont remplies, le Vendeur rembourse intégralement le montant effectivement payé par le Client, soit 67,90 € ou 49,90 € selon le prix de sa commande. Le remboursement est effectué sur le moyen de paiement utilisé lors de l'achat. Le remboursement met fin immédiatement à l'accès à Lunaé.
+          Lorsque ces conditions sont remplies, le Vendeur rembourse intégralement le montant effectivement payé par le Client, soit 67,90 € ou 49,90 € selon le prix de sa commande. Le remboursement est effectué sur le moyen de paiement utilisé lors de l'achat. Le remboursement met immédiatement fin à l'accès à Lunaé.
         </p>
         <p>
           Une seule garantie « Fin du Yo-Yo » peut être accordée par cliente, quel que soit le nombre d'achats effectués.
