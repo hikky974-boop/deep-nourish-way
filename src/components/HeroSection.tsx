@@ -83,7 +83,7 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row flex-wrap items-center gap-3 sm:gap-5 mb-4">
             <Button variant="hero" size="lg" asChild className="w-full sm:w-auto">
               <a href={quizUrl("hero")}>
-                Je fais le test gratuit
+                Faire mon diagnostic personnalisé
               </a>
             </Button>
             <button
@@ -95,7 +95,7 @@ const HeroSection = () => {
             </button>
           </div>
           <p className="text-body text-xs text-foreground/70 mb-8">
-            Environ 4 minutes · gratuit · découvre ton plan personnalisé
+            Environ 4 minutes · bilan personnalisé · protocole de 33 jours proposé ensuite
           </p>
 
           {/* Pills — wrap sur mobile/tablette, ligne unique sur desktop */}

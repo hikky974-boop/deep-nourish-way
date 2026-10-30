@@ -14,10 +14,10 @@ const CtaBand = ({ source, text }: { source: string; text: string }) => (
     >
       <p className="text-display text-2xl md:text-3xl font-light mb-6 leading-snug">{text}</p>
       <Button variant="hero" size="lg" asChild className="w-full sm:w-auto">
-        <a href={quizUrl(source)}>Je fais le test gratuit</a>
+        <a href={quizUrl(source)}>Faire mon diagnostic personnalisé</a>
       </Button>
       <p className="text-body text-xs text-muted-foreground mt-3">
-        Environ 4 minutes · gratuit · découvre ton plan personnalisé
+        Environ 4 minutes · bilan personnalisé · protocole de 33 jours proposé ensuite
       </p>
     </motion.div>
   </section>
