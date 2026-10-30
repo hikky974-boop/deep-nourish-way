@@ -108,7 +108,7 @@ const PricingSection = () => (
               className="w-full mb-3 shadow-md shadow-primary/20 text-sm sm:text-base px-3 sm:px-6 whitespace-nowrap"
             >
               <a href={quizUrl("pricing")}>
-                Je fais le test gratuit
+                Faire mon diagnostic personnalisé
               </a>
             </Button>
 

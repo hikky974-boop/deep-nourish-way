@@ -55,7 +55,7 @@ const StickyHeader = () => {
             Se connecter
           </AppLink>
           <Button variant="hero" size="sm" onClick={() => { window.location.href = quizUrl("header"); }} className="text-sm px-5 h-9 whitespace-nowrap">
-            Faire le test
+            Faire mon diagnostic personnalisé
           </Button>
         </div>
       </div>
