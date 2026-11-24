@@ -85,17 +85,21 @@ const PricingSection = () => (
           </div>
 
           <div className="bg-card rounded-2xl p-4 sm:p-6 md:p-8 border border-border/50 min-w-0">
-            <div className="flex items-baseline gap-3 mb-5 flex-wrap">
+            <div className="flex items-baseline gap-3 mb-2 flex-wrap">
               <span
                 className="text-display text-5xl sm:text-6xl md:text-7xl font-light leading-none tracking-tight"
                 style={{ color: "#2d4a2a" }}
               >
-                67,90&nbsp;€
+                147&nbsp;€
               </span>
               <span className="text-body text-xl font-medium text-muted-foreground">
                 — paiement unique
               </span>
             </div>
+
+            <p className="text-body text-lg text-muted-foreground mb-5">
+              ou 3 × 49&nbsp;€ sans frais
+            </p>
 
             <p className="text-body text-sm text-muted-foreground mb-5 leading-relaxed">
               Pas d’abonnement, rien à résilier. Garantie « Fin du Yo-Yo » : tu suis tes 33 jours et rien n’a changé ? On te rembourse à 100 %.

@@ -146,12 +146,9 @@ const CGV = () => (
 
       <Section num="5" title="Prix">
         <p>Les prix sont indiqués en euros, toutes taxes comprises :</p>
-        <ul className="list-disc list-inside space-y-1 pl-2">
-          <li>Prix standard : 67,90 € TTC, en paiement unique ;</li>
-          <li>Offre de bienvenue : 49,90 € TTC, en paiement unique, lorsqu'elle est affichée et encore valable au moment de la commande.</li>
-        </ul>
+        <p>Prix : 147 € TTC en paiement unique, ou 3 × 49 € TTC sans frais (une échéance par mois).</p>
         <p>
-          L'offre de bienvenue est limitée dans le temps. Sa durée de validité est indiquée sur la page de l'offre. Le prix applicable est celui qui est clairement affiché et accepté par le Client avant la validation de la commande. Quel que soit le prix payé, l'accès fourni est identique et dure douze (12) mois.
+          Pour les commandes passées avant le 25 novembre 2026, le prix applicable reste celui payé (67,90 € ou 49,90 €).
         </p>
         <p className="text-foreground/60 italic text-xs">TVA non applicable, art. 293 B du CGI.</p>
       </Section>
@@ -195,7 +192,7 @@ const CGV = () => (
           <li>La demande est envoyée par email à <a href="mailto:contact@lunae-app.fr" className="text-primary hover:underline">contact@lunae-app.fr</a> au plus tôt le trente-troisième (33e) jour et au plus tard le soixante-troisième (63e) jour suivant la date de son paiement.</li>
         </ul>
         <p>
-          Lorsque ces conditions sont remplies, le Vendeur rembourse intégralement le montant effectivement payé par le Client, soit 67,90 € ou 49,90 € selon le prix de sa commande. Le remboursement est effectué sur le moyen de paiement utilisé lors de l'achat. Le remboursement met immédiatement fin à l'accès à Lunaé.
+          Lorsque ces conditions sont remplies, le Vendeur rembourse intégralement le montant effectivement payé par le Client. Le remboursement est effectué sur le moyen de paiement utilisé lors de l'achat. Le remboursement met immédiatement fin à l'accès à Lunaé.
         </p>
         <p>
           Une seule garantie « Fin du Yo-Yo » peut être accordée par cliente, quel que soit le nombre d'achats effectués.

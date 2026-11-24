@@ -9,7 +9,7 @@ import {
 const faqs = [
   {
     q: "Comment fonctionne le paiement ?",
-    a: "Tu fais le test gratuit (environ 4 minutes), puis tu rejoins ton protocole de 33 jours pour 67,90 € en paiement unique : pas d’abonnement, rien à résilier. Et tu es couverte par la garantie « Fin du Yo-Yo » : si tu suis tes 33 jours et que rien n’a changé, on te rembourse à 100 %.",
+    a: "Tu fais le test gratuit (environ 4 minutes), puis tu rejoins ton protocole de 33 jours pour 147 € en paiement unique, ou en 3 fois sans frais (3 × 49 €) : pas d’abonnement, rien à résilier. Et tu es couverte par la garantie « Fin du Yo-Yo » : si tu suis tes 33 jours et que rien n’a changé, on te rembourse à 100 %.",
   },
   {
     q: "À qui s'adresse Lunaé ?",
