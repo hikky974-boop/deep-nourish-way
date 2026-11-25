@@ -32,7 +32,7 @@ const CGV = () => (
     <main className="max-w-4xl mx-auto px-6 py-14 md:py-20">
       <div className="mb-12">
         <h1 className="text-display text-3xl md:text-4xl font-light mb-3">Conditions Générales de Vente</h1>
-        <p className="text-body text-sm text-muted-foreground">Version 3.0 — En vigueur à compter du 29 octobre 2026</p>
+        <p className="text-body text-sm text-muted-foreground">Version 4.0 — En vigueur à compter du 25 novembre 2026</p>
       </div>
 
       {/* Vendeur */}
@@ -93,7 +93,7 @@ const CGV = () => (
           d'un service de santé.
         </p>
         <p>
-          Lunaé est vendu sous la forme d'un accès numérique de douze (12) mois, payé en une seule fois. Cet accès commence dès la confirmation du paiement et comprend le protocole de trente-trois (33) jours ainsi que l'ensemble des fonctionnalités et contenus décrits aux présentes CGV.
+          Lunaé est vendu sous la forme d’un accès numérique de douze (12) mois, pour un prix total de 147 € TTC. Le Client peut régler ce prix en une seule fois ou en trois échéances mensuelles de 49 € TTC sans frais. Le règlement en trois échéances constitue uniquement une facilité de paiement du prix total : il ne s’agit pas d’un abonnement et il ne donne lieu à aucun renouvellement automatique. L’accès commence dès la confirmation du premier paiement et comprend le protocole de trente-trois (33) jours ainsi que l’ensemble des fonctionnalités et contenus décrits aux présentes CGV.
         </p>
         <p>
           Le compte Lunaé est <strong>strictement personnel, individuel et intransmissible</strong>. Le Client
@@ -117,18 +117,21 @@ const CGV = () => (
         </p>
         <p className="font-medium text-foreground">L'achat de l'accès Lunaé</p>
         <p>
-          L'achat est réalisé en un paiement unique. Après confirmation du paiement, le Client bénéficie immédiatement d'un accès complet à Lunaé pendant douze (12) mois. Ce paiement ne crée aucun engagement au-delà de cette période. L'accès prend fin automatiquement à son terme, sans nouvelle facturation ni démarche du Client.
+          Le prix total de l’accès Lunaé est de 147 € TTC. Lors de la commande, le Client choisit entre un règlement en une seule fois de 147 € ou un règlement en trois échéances mensuelles de 49 € sans frais. En cas de paiement échelonné, la première échéance est prélevée lors de la commande, la deuxième trente (30) jours plus tard et la troisième soixante (60) jours après la commande.
+        </p>
+        <p>
+          Après confirmation du premier paiement, le Client bénéficie immédiatement d’un accès complet à Lunaé pendant douze (12) mois, sous réserve du règlement des échéances restant dues. Cette facilité de paiement ne constitue pas un abonnement. Elle n’entraîne aucun renouvellement ni aucun prélèvement au-delà des trois échéances expressément acceptées.
         </p>
         <p className="font-medium text-foreground">Durée de l'accès</p>
         <p>
-          La période de douze (12) mois commence à la date de confirmation du paiement. Pour bénéficier d'une nouvelle période d'accès après son expiration, le Client doit effectuer une nouvelle commande et accepter les CGV alors en vigueur.
+          La période de douze (12) mois commence à la date de confirmation du premier paiement. Pour bénéficier d'une nouvelle période d'accès après son expiration, le Client doit effectuer une nouvelle commande et accepter les CGV alors en vigueur.
         </p>
       </Section>
 
       <Section num="4" title="Étendue de l'accès">
         <p className="font-medium text-foreground">Accès complet pendant douze mois</p>
         <p>
-          Pendant douze (12) mois à compter du paiement, le Client dispose d'un accès complet à l'application Lunaé, comprenant notamment le protocole de trente-trois (33) jours, les audios, les exercices, le bouton urgence, le coach IA et les bonus disponibles.
+          Pendant douze (12) mois à compter de la confirmation du premier paiement, le Client dispose d'un accès complet à l'application Lunaé, comprenant notamment le protocole de trente-trois (33) jours, les audios, les exercices, le bouton urgence, le coach IA et les bonus disponibles.
         </p>
         <p className="font-medium text-foreground">Déblocage progressif du protocole</p>
         <p>
@@ -145,8 +148,8 @@ const CGV = () => (
       </Section>
 
       <Section num="5" title="Prix">
-        <p>Les prix sont indiqués en euros, toutes taxes comprises :</p>
-        <p>Prix : 147 € TTC en paiement unique, ou 3 × 49 € TTC sans frais (une échéance par mois).</p>
+        <p>Les prix sont indiqués en euros, toutes taxes comprises.</p>
+        <p>Prix : 147 € TTC, payable en une seule fois ou en trois échéances mensuelles de 49 € TTC sans frais. Le montant total dû est identique dans les deux cas. Le choix du mode de règlement est effectué avant la validation de la commande.</p>
         <p>
           Pour les commandes passées avant le 25 novembre 2026, le prix applicable reste celui payé (67,90 € ou 49,90 €).
         </p>
@@ -156,24 +159,28 @@ const CGV = () => (
       <Section num="6" title="Commande et accès">
         <p>La commande est finalisée lorsque le Client :</p>
         <ol className="list-decimal list-inside space-y-1 pl-2">
-          <li>Renseigne son adresse email et son moyen de paiement sur la page de paiement sécurisée ;</li>
-          <li>Accepte les présentes CGV et demande l'accès immédiat au contenu numérique ;</li>
-          <li>Valide le paiement unique du prix affiché.</li>
+          <li>renseigne son adresse email et son moyen de paiement sur la page de paiement sécurisée ;</li>
+          <li>choisit un paiement unique de 147 € ou un paiement en trois échéances mensuelles de 49 € sans frais ;</li>
+          <li>accepte les présentes CGV et demande l’accès immédiat au contenu numérique ;</li>
+          <li>valide le paiement correspondant au mode de règlement choisi.</li>
         </ol>
         <p>
-          Un email de confirmation récapitulant l'offre, le prix payé, la durée de l'accès et les informations de connexion est adressé au Client. L'accès au programme est ouvert dès la confirmation du paiement et dure douze (12) mois.
+          Un email de confirmation récapitulant l’offre, le prix total, le mode de règlement choisi, l’échéancier éventuel, la durée de l’accès et les informations de connexion est adressé au Client. L’accès au programme est ouvert dès la confirmation du premier paiement et dure douze (12) mois.
         </p>
       </Section>
 
-      <Section num="7" title="Fin de l'accès">
+      <Section num="7" title="Fin de l’accès et absence de renouvellement">
         <p>
-          Le paiement est unique et ne crée aucun engagement au-delà des douze (12) mois d'accès. Aucune nouvelle somme n'est prélevée automatiquement. L'accès prend fin à l'échéance sans démarche du Client. Pour continuer à utiliser Lunaé après cette date, le Client doit effectuer une nouvelle commande.
+          L’achat de Lunaé ne constitue pas un abonnement. Le règlement en trois échéances est une facilité de paiement portant sur le prix total et définitif de 147 € TTC. Seules les échéances expressément acceptées lors de la commande peuvent être prélevées.
+        </p>
+        <p>
+          Aucun renouvellement automatique et aucun nouveau prélèvement au-delà du prix total de 147 € TTC ne sont effectués. L’accès prend fin au terme des douze (12) mois sans démarche du Client. Pour continuer à utiliser Lunaé après cette date, le Client doit effectuer une nouvelle commande et accepter les CGV alors en vigueur.
         </p>
       </Section>
 
       <Section num="8" title="Droit de rétractation — Renonciation expresse">
         <p>
-          Lunaé est un contenu et un service numériques fournis sur support immatériel, auxquels le Client accède immédiatement après la confirmation de son paiement. Conformément à l'article L221-28 13° du Code de la consommation, le droit de rétractation de quatorze (14) jours ne peut être exercé lorsque l'exécution a commencé avec l'accord préalable exprès du Client et que celui-ci a reconnu perdre son droit de rétractation.
+          Lunaé est un contenu et un service numériques fournis sur support immatériel, auxquels le Client accède immédiatement après la confirmation de son premier paiement. Conformément à l'article L221-28 13° du Code de la consommation, le droit de rétractation de quatorze (14) jours ne peut être exercé lorsque l'exécution a commencé avec l'accord préalable exprès du Client et que celui-ci a reconnu perdre son droit de rétractation.
         </p>
         <p>
           En cochant la case « J’accepte les conditions générales de vente » avant de valider sa commande, le Client demande expressément l'accès immédiat à Lunaé avant l'expiration du délai légal de rétractation et reconnaît perdre son droit de rétractation dès le commencement de la fourniture du contenu et du service numériques.
@@ -185,29 +192,42 @@ const CGV = () => (
 
       <Section num="9" title="Garantie « Fin du Yo-Yo »">
         <p>
-          Lunaé bénéficie d'une garantie commerciale de remboursement intégral appelée « Fin du Yo-Yo ». Le Client peut en bénéficier uniquement si les conditions cumulatives suivantes sont remplies :
+          Lunaé bénéficie d’une garantie commerciale de remboursement intégral appelée “Fin du Yo-Yo”. Cette garantie est destinée au Client qui, malgré une participation complète et assidue au programme, ne constate aucune amélioration à l’issue de son parcours.
+        </p>
+        <p>
+          Pour en bénéficier, le Client doit remplir cumulativement les conditions suivantes :
         </p>
         <ul className="list-disc list-inside space-y-1 pl-2">
-          <li>La Cliente a suivi le protocole de trente-trois (33) jours sans obtenir de résultat ;</li>
-          <li>La demande est envoyée par email à <a href="mailto:contact@lunae-app.fr" className="text-primary hover:underline">contact@lunae-app.fr</a> au plus tôt le trente-troisième (33e) jour et au plus tard le soixante-troisième (63e) jour suivant la date de son paiement.</li>
+          <li>avoir terminé l’intégralité du protocole de trente-trois (33) jours ;</li>
+          <li>avoir écouté jusqu’à leur terme tous les audios prévus dans le parcours obligatoire ;</li>
+          <li>avoir réalisé et validé tous les exercices et check-ins prévus dans le parcours obligatoire, à l’exclusion des éléments expressément présentés comme facultatifs ;</li>
+          <li>avoir suivi le programme avec assiduité, sans abandon ni interruption empêchant sa réalisation complète ;</li>
+          <li>ne constater aucune amélioration après cette réalisation complète ;</li>
+          <li>envoyer sa demande par email à <a href="mailto:contact@lunae-app.fr" className="text-primary hover:underline">contact@lunae-app.fr</a> au plus tôt le trente-troisième (33e) jour et au plus tard le soixante-troisième (63e) jour suivant la date du premier paiement.</li>
         </ul>
         <p>
-          Lorsque ces conditions sont remplies, le Vendeur rembourse intégralement le montant effectivement payé par le Client. Le remboursement est effectué sur le moyen de paiement utilisé lors de l'achat. Le remboursement met immédiatement fin à l'accès à Lunaé.
+          La simple ouverture des contenus, une utilisation partielle du programme, une interruption volontaire ou l’abandon du parcours avant son terme ne permettent pas de bénéficier de cette garantie commerciale.
         </p>
         <p>
-          Une seule garantie « Fin du Yo-Yo » peut être accordée par cliente, quel que soit le nombre d'achats effectués.
+          Le respect de ces conditions est vérifié uniquement à partir des données techniques de progression enregistrées par Lunaé, notamment les étapes, audios, exercices et check-ins marqués comme terminés. Le contenu personnel des réponses, du journal ou des échanges avec le coach n’est pas utilisé pour apprécier l’éligibilité au remboursement.
         </p>
         <p>
-          Cette garantie commerciale s'ajoute aux droits légaux impératifs dont bénéficie le Client.
+          Lorsque toutes les conditions sont remplies, le Vendeur rembourse intégralement les sommes effectivement payées par le Client. En cas de paiement en trois échéances, toute échéance non encore prélevée à la date d’acceptation de la demande est annulée. Le remboursement est effectué sur le moyen de paiement utilisé lors de l’achat et met immédiatement fin à l’accès à Lunaé.
+        </p>
+        <p>
+          Une seule garantie “Fin du Yo-Yo” peut être accordée par Client, quel que soit le nombre d’achats effectués. Cette garantie commerciale est distincte des garanties légales impératives et ne limite aucun des droits que le Client tient de la loi.
         </p>
       </Section>
 
       <Section num="10" title="Modalités et incident de paiement">
         <p>
-          Le paiement unique s'effectue par carte bancaire ou par tout autre moyen proposé sur la page de paiement, via le prestataire de paiement sécurisé Stripe. Les données bancaires du Client sont traitées directement par ce prestataire et ne sont jamais stockées par le Vendeur.
+          Le paiement s’effectue par carte bancaire ou par tout autre moyen proposé sur la page de paiement sécurisée, via Stripe. Le Client peut choisir un paiement unique de 147 € TTC ou trois échéances mensuelles de 49 € TTC sans frais. Dans ce second cas, le Client autorise le prélèvement de la première échéance lors de la commande, de la deuxième trente (30) jours plus tard et de la troisième soixante (60) jours après la commande. Aucun autre prélèvement ni renouvellement automatique n’est effectué.
         </p>
         <p>
-          Si le paiement est refusé ou échoue, la commande n'est pas finalisée et l'accès n'est pas ouvert. Le Client peut effectuer une nouvelle tentative avec un moyen de paiement valide.
+          Les données bancaires du Client sont traitées directement par Stripe et ne sont jamais stockées par le Vendeur.
+        </p>
+        <p>
+          Si le premier paiement est refusé ou échoue, la commande n’est pas finalisée et l’accès n’est pas ouvert. Si une échéance ultérieure est refusée, le Client est invité à régulariser sa situation. Après information du Client, l’accès peut être suspendu jusqu’à la régularisation de l’échéance impayée, sans prolongation de la durée initiale de douze (12) mois.
         </p>
         <p>
           Le Vendeur se réserve le droit de suspendre tout accès en cas de paiement frauduleux ou de
@@ -394,7 +414,7 @@ const CGV = () => (
 
       <div className="mt-12 pt-8 border-t border-border/40 text-body text-xs text-muted-foreground/70">
         <p>RIVIERE Research & Consulting SAS — RCS Paris 881 598 981 — 6 rue d'Armaillé, 75017 Paris</p>
-        <p className="mt-1">Version 3.0 — En vigueur à compter du 29 octobre 2026</p>
+        <p className="mt-1">Version 4.0 — En vigueur à compter du 25 novembre 2026</p>
       </div>
     </main>
   </div>
